@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 我的第一個 Hugo 網站</title>
+    <link>https://bradleetw.github.io/post/</link>
+    <description>Recent content in Posts on 我的第一個 Hugo 網站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Jul 2018 12:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://bradleetw.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用Hugo產生靜態網頁</title>
+      <link>https://bradleetw.github.io/post/staticsitegenerator/hugo/usehugo_1/</link>
+      <pubDate>Tue, 17 Jul 2018 12:00:00 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/post/staticsitegenerator/hugo/usehugo_1/</guid>
+      <description>為什麼要用靜態網頁產生器(Static Site Generators)? 靜態網頁產生器一般都會有很多現成的模板(template), 只要相關設定正確, 使用者只要專心編寫你的內容即可(但只要你有強迫症, 可能就會想要自己調整更多的細節).
+原本我不知有這類的工具, 是因為在學習別的項目時看到別人的文章, 只用一兩句話描述說可以用Hugo很快產生網頁, 只要上網查找學習就可以, 然後我就上當了&amp;hellip;
+靜態網頁產生器這類工具確實可以很快產生網頁, 只要套一套現成模板, 輸入內容即可, 而且網路上也可以找到學習資源, 但是也可能因為使用這類工具太“簡單”, 相關的學習資源就沒有我預期的易懂, 所以我花了超乎預期的時間來了解使用Hugo.
+下載安裝 可參考網路資源: 1. 在 Mac 上安装 Hugo 2. Hugo 官網
+我是透過 brew 下載安裝:
+$ brew install hugo  確認安裝結果:
+$ hugo version Hugo Static Site Generator v0.42.2 darwin/amd64  建立網站 $ hugo new site MakeWebSite  hugo 會建立 MakeWebSite 目錄, 而且在這目錄底下產生 2 個檔案及 6 個目錄
+. ├── archetypes │ └── default.</description>
+    </item>
+    
+  </channel>
+</rss>
