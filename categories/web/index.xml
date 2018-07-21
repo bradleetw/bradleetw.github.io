@@ -6,10 +6,21 @@
     <description>Recent content in Web on 我的第一個 Hugo 網站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Jul 2018 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jul 2018 14:31:14 +0800</lastBuildDate>
     
 	<atom:link href="https://bradleetw.github.io/categories/web/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何利用 GitHub Pages 建立博客?</title>
+      <link>https://bradleetw.github.io/post/deployment/githubblog/usegithub_1/</link>
+      <pubDate>Thu, 19 Jul 2018 14:31:14 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/post/deployment/githubblog/usegithub_1/</guid>
+      <description>什麼是 GitHub Pages(blog)? 在大家的印象中 GitHub 只是一個利用 git 讓大家免費放代碼, 追蹤 issues , 和各地好手討論的地方. 某天看到ㄧ篇文章的 URL 很特別, 是 https://xxxxxx.github.io/ , 和我平常看 GitHub 的 https://github.com 很像, 後來才知道 GitHub 可以讓使用者在上面放 blog(有空還是要看看人家的 &amp;ldquo;Read the guide&amp;rdquo;), 重點是&amp;rdquo;不用錢&amp;rdquo;(廢話, 不過被微軟買掉後會不會調整, 就不知了).
+refer to: What is GitHub Pages?
+為什麼要使用 GitHub 來架設 blog? 在嘗試 GitHub 架設 blog 之前, 我正在學習使用 Google Cloud platfrom 試著架設 blog 網站, 自己申請域名, 申請 SSL, 突然想起 GitHub 上也有 blog 功能而且我也還沒試過, 查了一下, 還蠻容易設定的, 而且省去申請域名, SSL, 不用擔心服務器防火牆的相關問題, 當然你必須要有 GitHub 帳號(廢話 ~).</description>
+    </item>
     
     <item>
       <title>使用Hugo產生靜態網頁</title>
