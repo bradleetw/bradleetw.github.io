@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 我的第一個 Hugo 網站</title>
+    <title>Categories on 布萊德的學習網站</title>
     <link>https://bradleetw.github.io/categories/</link>
-    <description>Recent content in Categories on 我的第一個 Hugo 網站</description>
+    <description>Recent content in Categories on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -22,7 +22,7 @@
     <item>
       <title>Staticsitegenerator</title>
       <link>https://bradleetw.github.io/categories/staticsitegenerator/</link>
-      <pubDate>Tue, 17 Jul 2018 12:00:00 +0800</pubDate>
+      <pubDate>Tue, 17 Jul 2018 15:10:22 +0800</pubDate>
       
       <guid>https://bradleetw.github.io/categories/staticsitegenerator/</guid>
       <description></description>

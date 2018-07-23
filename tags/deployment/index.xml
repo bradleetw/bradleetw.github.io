@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Deployment on 我的第一個 Hugo 網站</title>
+    <title>Deployment on 布萊德的學習網站</title>
     <link>https://bradleetw.github.io/tags/deployment/</link>
-    <description>Recent content in Deployment on 我的第一個 Hugo 網站</description>
+    <description>Recent content in Deployment on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 19 Jul 2018 14:31:14 +0800</lastBuildDate>

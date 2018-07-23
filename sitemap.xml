@@ -10,6 +10,13 @@
   </url>
   
   <url>
+    <loc>https://bradleetw.github.io/post/staticsitegenerator/hugo/usehugo_2/</loc>
+    <lastmod>2018-07-17T15:10:22+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://bradleetw.github.io/post/staticsitegenerator/hugo/usehugo_1/</loc>
     <lastmod>2018-07-17T12:00:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -45,7 +52,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/tags/hugo/</loc>
-    <lastmod>2018-07-17T12:00:00+08:00</lastmod>
+    <lastmod>2018-07-17T15:10:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -59,7 +66,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/categories/staticsitegenerator/</loc>
-    <lastmod>2018-07-17T12:00:00+08:00</lastmod>
+    <lastmod>2018-07-17T15:10:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
