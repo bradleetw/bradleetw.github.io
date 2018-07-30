@@ -6,10 +6,25 @@
     <description>Recent content in Posts on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Jul 2018 14:31:14 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Jul 2018 17:41:05 +0800</lastBuildDate>
     
 	<atom:link href="https://bradleetw.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>讓 iTerm2 有很酷炫的外表!</title>
+      <link>https://bradleetw.github.io/post/others/iterm2setting/</link>
+      <pubDate>Sun, 29 Jul 2018 17:41:05 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/post/others/iterm2setting/</guid>
+      <description>常看到電影裡的駭客在操作電腦時所用的 command line 都是那麼的酷, 今天就來速記一下參考網路上別人分享設定的步驟. 參考的來源: 超簡單！十分鐘打造漂亮又好用的 zsh command line 環境
+iTerm2 的安裝就沒記錄, 因為早就安裝過, 安裝流程也不難.
+安裝 zsh + oh-my-zsh zsh 是類似 bash, 在一般的使用上兩者差不多, 而 zsh 要再搭配上 oh-my-zsh(它是基於 zsh 的一個擴展工具集, 提供了豐富的擴展功能), 就可以設置有趣的主題風格(Themes), 而 oh-my-zsh 本身就提供了很多主題可以讓你挑選.
+ 安裝 zsh:
+$ brew install zsh  將 zsh 改成預設 shell:
+$ sudo sh -c &amp;quot;echo $(which zsh) &amp;gt;&amp;gt; /etc/shells&amp;quot; $ chsh -s $(which zsh)  安裝 oh-my-zsh:
+$ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh $ bash ./install.sh   安裝 zsh theme: powerlevel9k  下載好用的主題:</description>
+    </item>
     
     <item>
       <title>如何利用 GitHub Pages 建立博客?</title>
@@ -30,7 +45,9 @@ refer to: What is GitHub Pages?
       <guid>https://bradleetw.github.io/post/staticsitegenerator/hugo/usehugo_2/</guid>
       <description>透過合適的模板來學習調整 Hugo 網站 一般來說在 GitHub 上的每一個模板除了使用說明檔(Readme.md)之外, 也會附上如何使用的範例, 例如你可以在 themes/ananke/exampleSite (ananke 換成你所下載的模板名稱)中看到相關的使用範例, 透過這些也可以很快上手 Hugo 網站的調整設定. 不過我也下載過很多沒附上 exampleSite 的模板, 而且Readme.md 也不是寫給初學者看的, 造成學習上的難度. 所以初學者挑選學習的模板請謹慎. 官方 Quick start 中所用的模板 ananke 就涵蓋這些資料.
 config.toml Hugo 網站主要是透過 config.toml 這個檔案來調控, 當你透過 $ hugo new site YourWebSite 建立空網站時 Hugo 就幫你建立一個 config.toml (也支持 yaml 和 json 格式, 預設是 toml 格式).
-直接先用所下載模板提供的 config.toml, themes/ananke/exampleSite/config.toml 取代原本 config.toml, 了解一下模板的 README.md, 再來更改相關的欄位. 1. 先移除 themesDir = &amp;quot;../..&amp;quot; 這行. 2. title = &amp;ldquo;Your new Hugo Site Title&amp;rdquo;</description>
+直接先用所下載模板提供的 config.toml, themes/ananke/exampleSite/config.toml 取代原本 config.toml, 了解一下模板的 README.md, 再來更改相關的欄位.
+ 先移除 themesDir = &amp;quot;../..&amp;quot; 這行.
+ title = &amp;ldquo;Your new Hugo Site Title&amp;rdquo;</description>
     </item>
     
     <item>
