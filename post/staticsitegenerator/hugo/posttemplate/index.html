@@ -61,7 +61,7 @@
 
 <meta itemprop="datePublished" content="2018-08-01T13:09:33&#43;08:00" />
 <meta itemprop="dateModified" content="2018-08-01T13:09:33&#43;08:00" />
-<meta itemprop="wordCount" content="167">
+<meta itemprop="wordCount" content="279">
 
 
 
@@ -219,6 +219,31 @@ author: &quot;Brad Lee&quot;
 <h2 id="題外話">題外話</h2>
 
 <p>這裡產生一個新問題, 我所用的 Atom 是否有 plug-in 可以產生 Markdown file? 待續 &hellip;</p>
+
+<p>(更新) 透過 atom install packages 中搜索 hugo ,找到了 3 個:</p>
+
+<ol>
+<li><p><strong>language-hugo</strong>:</p>
+
+<p>用途: Adds syntax highlighting to Hugo files in Atom. 若使用者在開發模板的時候, 在編寫 html 時, 會將相關的 keyword 區隔出來.</p>
+
+<p>目前版本: 0.5.1, 最後更新日期: 2018/03/15, 下載量: 2,552</p></li>
+
+<li><p>hugofy:</p>
+
+<p>用途: 功能不完善, 且只有上一次代碼, 可以直接忽略.</p>
+
+<p>目前版本: 2.0.0, 最後更新日期: 2017/02/16, 下載量: 1,369</p></li>
+
+<li><p><strong>atom-hugo</strong>:</p>
+
+<p>用途: 可以在 atom 中直接創建 hugo 用的 Markdown file, 看了一下代碼, 就等同於在 command line 中執行 <code>$ hugo new newFile.md</code>. 這應該就是我所想到問題的解答. 這個 plug-in 還提供了其他功能, 如: 建立準備部署的網站, 執行 hugo server 等, 但是, 卻無法將 <code>baseURL</code> 變更成使用者想要的, 導致這些功能產生的網頁都指向部隊的網址. 所以這個 plug-in 只剩建立新文章及建立網站架構這 2 個功能可用, 老實說, 這樣不如直接在 command line 自己創建一些 script 來得實用.</p>
+
+<p>目前版本: 0.1.2, 最後更新日期: 2018/03/13, 下載量: 458</p></li>
+</ol>
+
+<p>題外話問題的結論: 直接在 commnad line 建立 script file.
+另外, 有找到一個 plug-in, markdown-writer, 看起來功能還蠻多, 下載的人數高達 38 萬, 可惜沒支持 hugo.</p>
 <ul class="pa0">
   
    <li class="list">
