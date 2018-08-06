@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>English</title>
-      <link>https://bradleetw.github.io/tags/english/</link>
-      <pubDate>Fri, 03 Aug 2018 23:25:08 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/english/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Github</title>
       <link>https://bradleetw.github.io/tags/github/</link>
       <pubDate>Thu, 19 Jul 2018 14:31:14 +0800</pubDate>
@@ -57,11 +48,29 @@
     </item>
     
     <item>
-      <title>Web</title>
-      <link>https://bradleetw.github.io/tags/web/</link>
+      <title>Nature</title>
+      <link>https://bradleetw.github.io/tags/nature/</link>
+      <pubDate>Mon, 06 Aug 2018 16:45:02 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/tags/nature/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Static Site Generator</title>
+      <link>https://bradleetw.github.io/tags/static-site-generator/</link>
       <pubDate>Wed, 01 Aug 2018 13:09:33 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/web/</guid>
+      <guid>https://bradleetw.github.io/tags/static-site-generator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Theeconomist</title>
+      <link>https://bradleetw.github.io/tags/theeconomist/</link>
+      <pubDate>Fri, 03 Aug 2018 23:25:08 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/tags/theeconomist/</guid>
       <description></description>
     </item>
     
