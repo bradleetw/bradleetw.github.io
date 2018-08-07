@@ -3,50 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bradleetw.github.io/post/englishnews/theguardian/trumpnews_0807/</loc>
+    <lastmod>2018-08-08T00:15:33+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://bradleetw.github.io/post/englishnews/nature/thereiswateronmars_0806/</loc>
-    <lastmod>2018-08-07T10:57:33+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/post/englishnews/theeconomist/googlenews_0803/</loc>
-    <lastmod>2018-08-07T10:57:42+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/post/staticsitegenerator/hugo/posttemplate/</loc>
-    <lastmod>2018-08-04T14:59:15+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/post/others/iterm2setting/</loc>
-    <lastmod>2018-08-04T14:56:45+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/post/deployment/githubblog/usegithub_1/</loc>
-    <lastmod>2018-08-04T16:33:12+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/post/staticsitegenerator/hugo/usehugo_2/</loc>
-    <lastmod>2018-08-04T14:59:11+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/post/staticsitegenerator/hugo/usehugo_1/</loc>
-    <lastmod>2018-08-04T14:59:14+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -59,98 +66,105 @@
   
   <url>
     <loc>https://bradleetw.github.io/tags/deployment/</loc>
-    <lastmod>2018-08-04T16:33:12+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/categories/english/</loc>
-    <lastmod>2018-08-07T10:57:33+08:00</lastmod>
+    <lastmod>2018-08-08T00:15:33+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/tags/github/</loc>
-    <lastmod>2018-08-04T16:33:12+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/tags/hugo/</loc>
-    <lastmod>2018-08-04T14:59:15+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/tags/iterm2/</loc>
-    <lastmod>2018-08-04T14:56:45+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/tags/nature/</loc>
-    <lastmod>2018-08-07T10:57:33+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/post/</loc>
-    <lastmod>2018-08-07T10:57:33+08:00</lastmod>
+    <lastmod>2018-08-08T00:15:33+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/tags/static-site-generator/</loc>
-    <lastmod>2018-08-04T14:59:15+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/tags/</loc>
-    <lastmod>2018-08-04T16:33:12+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/tags/theeconomist/</loc>
-    <lastmod>2018-08-07T10:57:42+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/tags/theguardian/</loc>
+    <lastmod>2018-08-08T00:15:33+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/categories/useful-usage/</loc>
-    <lastmod>2018-08-04T14:56:45+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/categories/web/</loc>
-    <lastmod>2018-08-04T14:59:15+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/tags/zsh/</loc>
-    <lastmod>2018-08-04T14:56:45+08:00</lastmod>
+    <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://bradleetw.github.io/</loc>
-    <lastmod>2018-08-07T10:57:33+08:00</lastmod>
+    <lastmod>2018-08-08T00:15:33+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
