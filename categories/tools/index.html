@@ -27,14 +27,14 @@
     
 
     
-      <link href="https://bradleetw.github.io/index.xml" rel="alternate" type="application/rss+xml" title="布萊德的學習網站" />
-      <link href="https://bradleetw.github.io/index.xml" rel="feed" type="application/rss+xml" title="布萊德的學習網站" />
+      <link href="https://bradleetw.github.io/categories/tools/index.xml" rel="alternate" type="application/rss+xml" title="布萊德的學習網站" />
+      <link href="https://bradleetw.github.io/categories/tools/index.xml" rel="feed" type="application/rss+xml" title="布萊德的學習網站" />
     
 
-    <meta property="og:title" content="布萊德的學習網站" />
+    <meta property="og:title" content="Tools" />
 <meta property="og:description" content="The last theme you&#39;ll ever need. Maybe." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://bradleetw.github.io/" />
+<meta property="og:url" content="https://bradleetw.github.io/categories/tools/" />
 
 
 
@@ -49,11 +49,11 @@
 
 
 
-<meta itemprop="name" content="布萊德的學習網站">
+<meta itemprop="name" content="Tools">
 <meta itemprop="description" content="The last theme you&#39;ll ever need. Maybe.">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="布萊德的學習網站"/>
+<meta name="twitter:title" content="Tools"/>
 <meta name="twitter:description" content="The last theme you&#39;ll ever need. Maybe."/>
 
   </head>
@@ -117,7 +117,7 @@
 
       <div class="tc-l pv4 pv6-l ph3 ph4-ns">
         <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          布萊德的學習網站
+          Tools
         </h1>
         
       </div>
@@ -127,145 +127,38 @@
 
     <main class="pb7" role="main">
       
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    
+  <article class="cf pa3 pa4-m pa4-l">
+    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links nested-img mid-gray">
+      <p>Below you will find pages that utilize the taxonomy term “Tools”</p>
+    </div>
   </article>
-  
-  
-  
-  
-  
-  
-  
-    
-    
-
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
+  <div class="mw8 center">    
+    <section class="flex-ns flex-wrap justify-around mt5">
       
-       
-          <h1 class="flex-none">
-            Recent Posts
-          </h1>
-        
-
-      
-
-      <section class="w-100 mw8">
-        
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-          
-        
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <a href="/post/gitstudy/gitrelated_1/" class="db grow">
-            <img src="https://bradleetw.github.io/images/gitstudy/devops-3155972_1920.jpg" class="img" alt="image from [Git]如何忽略追蹤特定檔案或目錄?">
-          </a>
-        </div>
-      
-      <div class="blah w-100 w-60-ns pl3-ns">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/gitstudy/gitrelated_1/" class="color-inherit dim link">
-            [Git]如何忽略追蹤特定檔案或目錄?
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          只要編輯以下三個檔案(忽略清單)其中一個就可以忽略追蹤特定檔案或目錄:
+        <div class="relative w-100  mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Post</span>
+    <h1 class="f3 near-black">
+      <a href="/post/gitstudy/gitrelated_1/" class="link black dim">
+        [Git]如何忽略追蹤特定檔案或目錄?
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      只要編輯以下三個檔案(忽略清單)其中一個就可以忽略追蹤特定檔案或目錄:
  $HOME/.config/git/ignore: 開發者電腦中的所有倉庫都可以讀取該忽略清單. .gitignore: 每個倉庫都有自己一份的忽略清單放在該倉庫根目錄下, 而且該忽略清單可以被分享追蹤管理. .git/info/exclude: 該忽略清單無法被追蹤管理.  $HOME/.config/git/ignore 有時候系統或者一些第三方應用為了讓其運作的效果更好, 會在目錄底下產生一些額外的檔案, 列如: .DS_Store, 而這些對開發者本身而言這類無關開發的資料都是不必要去追蹤紀錄, 這時可以透過編輯 $HOME/.config/git/ignore 來寫下要忽略的檔案, 而這個是對系統內的所有倉庫都有用. 以下是該檔案內的一些範例:
 # General .DS_Store .AppleDouble .LSOverride # Files that might appear in the root of a volume .DocumentRevisions-V100 .fseventsd .Spotlight-V100 .TemporaryItems .Trashes .VolumeIcon.icns .com.apple.timemachine.donotpresent  .gitignore 在開發的環境中會因為編譯產生執行檔案, 連結檔, 某些檔案或是某些目錄開發者根本不必追蹤, 但是這個忽略清單卻是可以分享給其他開發者或者需要版本管控忽略清單 (有可能在經過一段的開發時間, 開發環境導入了新的機制或是功能, 而產生新的不必追蹤檔案) 這時只要在開發項目的根目錄下放入 .gitignore, 在該檔案中寫入你要忽略上傳的特定檔案或目錄:
  特定檔案: 直接放入檔案名稱, ex: somefolder/specific.txt
  符合特定字串的檔案: 加入萬用字元, ex: /db/*.sqlite3
  目錄: ex: somefolder/
-        </div>
-          <a href="/post/gitstudy/gitrelated_1/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
     </div>
   </div>
-</article>
+</div>
 
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-          
-        
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <a href="/post/englishnews/theguardian/trumpnews_0807/" class="db grow">
-            <img src="https://bradleetw.github.io/images/english/dementia-1750965_1920.jpg" class="img" alt="image from The Guardian News (2)">
-          </a>
         </div>
       
-      <div class="blah w-100 w-60-ns pl3-ns">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/englishnews/theguardian/trumpnews_0807/" class="color-inherit dim link">
-            The Guardian News (2)
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Trump blasts back after Times publisher decries &lsquo;enemy of the people&rsquo; attacks . blast back:(v) 猛烈回擊 { blast:(v) 爆炸 }
-. decry:(v) 譴責
-Hours after saying he had a &ldquo;very good meeting&rdquo; with the publisher of the New York Times about his labelling the press the &ldquo;enemy of the people&rdquo;, Donald Trump launched a blistering attack on &ldquo;anti-Trump haters in the dying newspaper industry&rdquo;.
-. blistering:(a) 猛烈的; 嚴厲的; 無情的
-        </div>
-          <a href="/post/englishnews/theguardian/trumpnews_0807/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
+    </section>
   </div>
-</article>
-
-          </div>
-        
-      </section>
-
-      
-      <section class="w-100">
-        <h1 class="f3">More</h1>
-        
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/englishnews/nature/thereiswateronmars_0806/" class="link black dim">
-              Nature News (1)
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/englishnews/theeconomist/googlenews_0803/" class="link black dim">
-              The Economist News (1)
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/staticsitegenerator/hugo/posttemplate/" class="link black dim">
-              [Hugo]建立固定格式的新帖子
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/post/others/iterm2setting/" class="link black dim">
-              讓 iTerm2 有很酷炫的外表!
-            </a>
-          </h2>
-        
-
-        
-        
-          <a href="/post/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Posts</a>
-        
-        </section>
-      
-
-      </div>
-  
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">

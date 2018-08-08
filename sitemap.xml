@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://bradleetw.github.io/post/gitstudy/gitrelated_1/</loc>
+    <lastmod>2018-08-08T15:32:25+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://bradleetw.github.io/post/englishnews/theguardian/trumpnews_0807/</loc>
     <lastmod>2018-08-08T00:15:33+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -79,6 +86,13 @@
   </url>
   
   <url>
+    <loc>https://bradleetw.github.io/tags/git/</loc>
+    <lastmod>2018-08-08T15:32:25+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bradleetw.github.io/tags/github/</loc>
     <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -108,7 +122,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/post/</loc>
-    <lastmod>2018-08-08T00:15:33+08:00</lastmod>
+    <lastmod>2018-08-08T15:32:25+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -142,6 +156,13 @@
   </url>
   
   <url>
+    <loc>https://bradleetw.github.io/categories/tools/</loc>
+    <lastmod>2018-08-08T15:32:25+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bradleetw.github.io/categories/useful-usage/</loc>
     <lastmod>2018-08-07T13:50:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -164,7 +185,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/</loc>
-    <lastmod>2018-08-08T00:15:33+08:00</lastmod>
+    <lastmod>2018-08-08T15:32:25+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
