@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mit on 布萊德的學習網站</title>
+    <title>MIT on 布萊德的學習網站</title>
     <link>https://bradleetw.github.io/tags/mit/</link>
-    <description>Recent content in Mit on 布萊德的學習網站</description>
+    <description>Recent content in MIT on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Thu, 09 Aug 2018 12:41:59 +0800</lastBuildDate>
     
 	<atom:link href="https://bradleetw.github.io/tags/mit/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>MIT Technology Review (1)</title>
-      <link>https://bradleetw.github.io/post/englishnews/mit/therapistswithvr_0808/</link>
+      <title>Therapists are augmenting eating-disorder treatment with virtual-reality headsets</title>
+      <link>https://bradleetw.github.io/englishnews/mit/therapistswithvr_0808/</link>
       <pubDate>Thu, 09 Aug 2018 12:41:59 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/post/englishnews/mit/therapistswithvr_0808/</guid>
-      <description>Therapists are augmenting eating-disorder treatment with virtual-reality headsets  therapists:(n) [&amp;lsquo;θerəpɪst] 心理治療師; 臨床醫學家
+      <guid>https://bradleetw.github.io/englishnews/mit/therapistswithvr_0808/</guid>
+      <description>therapists:(n) [&amp;lsquo;θerəpɪst] 心理治療師; 臨床醫學家
  augmenting:(v) [ɔ:g&amp;rsquo;mentiŋ] 增強; 加強
  He has to find work to augment his income.
  eating-disorder: 飲食失調
  treatment:(n) [&amp;lsquo;triːtm(ə)nt] 療法
  The best treatment for a cold is to rest and drink lots of fluids. 治疗感冒的最佳方法是休息和多喝水.
-  Though most consumers aren&amp;rsquo;t yet sure what to do with VR, some psychologists are using it to treat anorexia and bulimia.</description>
+  Though most consumers aren&amp;rsquo;t yet sure what to do with VR, some psychologists are using it to treat anorexia and bulimia.
+ psychologists:(n) [saɪ&amp;rsquo;kɒlədʒɪst] 心理學家</description>
     </item>
     
   </channel>

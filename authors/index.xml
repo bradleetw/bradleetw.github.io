@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on 布萊德的學習網站</title>
+    <link>https://bradleetw.github.io/authors/</link>
+    <description>Recent content in Authors on 布萊德的學習網站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://bradleetw.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bradlee</title>
+      <link>https://bradleetw.github.io/authors/bradlee/</link>
+      <pubDate>Thu, 09 Aug 2018 12:41:59 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/authors/bradlee/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

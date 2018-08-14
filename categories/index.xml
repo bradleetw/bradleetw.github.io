@@ -5,7 +5,6 @@
     <link>https://bradleetw.github.io/categories/</link>
     <description>Recent content in Categories on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     
 	<atom:link href="https://bradleetw.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,15 +24,6 @@
       <pubDate>Wed, 08 Aug 2018 11:49:49 +0800</pubDate>
       
       <guid>https://bradleetw.github.io/categories/tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Useful Usage</title>
-      <link>https://bradleetw.github.io/categories/useful-usage/</link>
-      <pubDate>Sun, 29 Jul 2018 17:41:05 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/categories/useful-usage/</guid>
       <description></description>
     </item>
     

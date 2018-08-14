@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='常看到電影裡的駭客在操作電腦時所用的 command line 都是那麼的酷, 今天就來速記一下參考網路上別人分享設定的步驟. 參考的來源: 超簡單！十分鐘打造漂亮又好用的 zsh command line 環境
+iTerm2 的安裝就沒記錄, 因為早就安裝過, 安裝流程也不難.
+安裝 zsh &#43; oh-my-zsh zsh 是類似 bash, 在一般的使用上兩者差不多, 而 zsh 要再搭配上 oh-my-zsh(它是基於 zsh 的一個擴展工具集, 提供了豐富的擴展功能), 就可以設置有趣的主題風格(Themes), 而 oh-my-zsh 本身就提供了很多主題可以讓你挑選.
+ 安裝 zsh:
+$ brew install zsh  將 zsh 改成預設 shell:
+$ sudo sh -c &quot;echo $(which zsh) &gt;&gt; /etc/shells&quot; $ chsh -s $(which zsh)  安裝 oh-my-zsh:
+$ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh $ bash ./install.sh   安裝 zsh theme: powerlevel9k  下載好用的主題:'>
+<meta name='theme-color' content='#44ccff'>
+
+<meta property='og:title' content='讓 iTerm2 有很酷炫的外表! • Brad Lee'>
+<meta property='og:description' content='常看到電影裡的駭客在操作電腦時所用的 command line 都是那麼的酷, 今天就來速記一下參考網路上別人分享設定的步驟. 參考的來源: 超簡單！十分鐘打造漂亮又好用的 zsh command line 環境
+iTerm2 的安裝就沒記錄, 因為早就安裝過, 安裝流程也不難.
+安裝 zsh &#43; oh-my-zsh zsh 是類似 bash, 在一般的使用上兩者差不多, 而 zsh 要再搭配上 oh-my-zsh(它是基於 zsh 的一個擴展工具集, 提供了豐富的擴展功能), 就可以設置有趣的主題風格(Themes), 而 oh-my-zsh 本身就提供了很多主題可以讓你挑選.
+ 安裝 zsh:
+$ brew install zsh  將 zsh 改成預設 shell:
+$ sudo sh -c &quot;echo $(which zsh) &gt;&gt; /etc/shells&quot; $ chsh -s $(which zsh)  安裝 oh-my-zsh:
+$ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh $ bash ./install.sh   安裝 zsh theme: powerlevel9k  下載好用的主題:'>
+<meta property='og:url' content='https://bradleetw.github.io/developmenttools/iterm2setting/'>
+<meta property='og:site_name' content='布萊德的學習網站'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://bradleetw.github.io/images/iTerm2withGoodTheme.png'><meta property='article:author' content='https://facebook.com/brad.lee.tw'><meta property='article:section' content='DevelopmentTools'><meta property='article:tag' content='iTerm2'><meta property='article:tag' content='zsh'><meta property='article:published_time' content='2018-07-29T17:41:05&#43;08:00'/><meta property='article:modified_time' content='2018-07-29T17:41:05&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary_large_image'><meta name='twitter:site' content='@BradLeeTW'><meta name='twitter:creator' content='@BradLeeTW'><meta property='twitter:image' content='https://bradleetw.github.io/images/iTerm2withGoodTheme.png'>
+
+<meta name="generator" content="Hugo 0.46" />
+
+  <title>讓 iTerm2 有很酷炫的外表! • Brad Lee</title>
+  <link rel='canonical' href='https://bradleetw.github.io/developmenttools/iterm2setting/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.809149b6.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#44ccff;}
+</style>
+
+  
+
+</head>
+
+
+<body class='page type-DevelopmentTools has-cover has-sidebar'>
+
+  <div class='site'>
+
+    <div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/brainstorm.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    布萊德
+    </h2>
+    <div class='desc'>
+    抽空看看 Julia
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><header>
+    <h4 class='title widget-title'>Menu</h4>
+  </header><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
+  <a href='/englishnews/'>English</a></li><li class='item'>
+  <a href='/machinelearning/'>A.I.</a></li><li class='item'>
+  <a href='/python/'>Python</a></li><li class='item'>
+  <a href='/julia/'>Julia</a></li><li class='item'>
+  <a href='/web/'>Web</a></li><li class='item'>
+  <a href='/developmenttools/'>Tools</a></li><li class='item'>
+  <a href='https://github.com/bradleetw/hello-world'>Repo</a></li></ul>
+    </div>
+  </nav>
+
+</section><section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/tags/economist' style='font-size:1em'>Economist</a>
+      </li><li>
+        <a href='/tags/git' style='font-size:1em'>Git</a>
+      </li><li>
+        <a href='/tags/github' style='font-size:1em'>GitHub</a>
+      </li><li>
+        <a href='/tags/guardian' style='font-size:1em'>Guardian</a>
+      </li><li>
+        <a href='/tags/mit' style='font-size:1em'>MIT</a>
+      </li><li>
+        <a href='/tags/nature' style='font-size:1em'>Nature</a>
+      </li><li>
+        <a href='/tags/deployment' style='font-size:1em'>Deployment</a>
+      </li><li>
+        <a href='/tags/hugo' style='font-size:2em'>Hugo</a>
+      </li><li>
+        <a href='/tags/iterm2' style='font-size:1em'>ITerm2</a>
+      </li><li>
+        <a href='/tags/zsh' style='font-size:1em'>Zsh</a>
+      </li><li>
+        <a href='/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81' style='font-size:2em'>靜態網頁</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/englishnews/'>English</a>
+      </li><li class='item'>
+        <a href='/machinelearning/'>A.I.</a>
+      </li><li class='item'>
+        <a href='/python/'>Python</a>
+      </li><li class='item'>
+        <a href='/julia/'>Julia</a>
+      </li><li class='item'>
+        <a href='/web/'>Web</a>
+      </li><li class='item'>
+        <a href='/developmenttools/'>Tools</a>
+      </li><li class='item'>
+        <a href='https://github.com/bradleetw/hello-world'>Repo</a>
+      </li></ul>
+  </div>
+</nav>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>布萊德的學習網站</p><p class='desc site-desc'>從 0 出發</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>讓 iTerm2 有很酷炫的外表!</h1>
+      
+
+    </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-07-29T17:41:05&#43;08:00'>2018, Jul 29</time>
+</span>
+
+  <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M21,21V20c0-2.76-4-5-9-5s-9,2.24-9,5v1"/>
+  <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
+  
+</svg>
+<span class='screen-reader-text'> by </span><a href='/authors/bradlee'>Brad Lee</a></span>
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+2 mins read
+</span>
+
+
+  
+  
+</div>
+
+
+  </div>
+</header>
+
+  <div class='entry-cover'>
+  <figure class='container cover-wide'>
+    <img src='/images/iTerm2withGoodTheme.png'/>
+    
+      
+    
+  </figure>
+</div>
+  
+
+  <div class='container entry-content'>
+  
+
+<p>常看到電影裡的駭客在操作電腦時所用的 command line 都是那麼的酷, 今天就來速記一下參考網路上別人分享設定的步驟. 參考的來源: <a href="https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f" target="_blank">超簡單！十分鐘打造漂亮又好用的 zsh command line 環境</a></p>
+
+<p>iTerm2 的安裝就沒記錄, 因為早就安裝過, 安裝流程也不難.</p>
+
+<h2 id="安裝-zsh-http-www-zsh-org-oh-my-zsh-http-ohmyz-sh">安裝 <a href="http://www.zsh.org/" target="_blank">zsh</a> + <a href="http://ohmyz.sh" target="_blank">oh-my-zsh</a></h2>
+
+<p><code>zsh</code> 是類似 <code>bash</code>, 在一般的使用上兩者差不多, 而 <code>zsh</code> 要再搭配上 <code>oh-my-zsh</code>(它是基於 <code>zsh</code> 的一個擴展工具集, 提供了豐富的擴展功能), 就可以設置有趣的主題風格(Themes), 而 <code>oh-my-zsh</code> 本身就提供了很多主題可以讓你挑選.</p>
+
+<ol>
+<li><p><strong>安裝 zsh</strong>:</p>
+
+<pre><code>$ brew install zsh
+</code></pre></li>
+
+<li><p><strong>將 zsh 改成預設 shell</strong>:</p>
+
+<pre><code>$ sudo sh -c &quot;echo $(which zsh) &gt;&gt; /etc/shells&quot;
+$ chsh -s $(which zsh)
+</code></pre></li>
+
+<li><p><strong>安裝 oh-my-zsh</strong>:</p>
+
+<pre><code>$ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh
+$ bash ./install.sh
+</code></pre></li>
+</ol>
+
+<h2 id="安裝-zsh-theme-powerlevel9k-https-github-com-bhilburn-powerlevel9k">安裝 zsh theme: <a href="https://github.com/bhilburn/powerlevel9k" target="_blank">powerlevel9k</a></h2>
+
+<ol>
+<li><p><strong>下載好用的主題</strong>:</p>
+
+<p>一些高手都推薦 <code>powerlevel9k</code> 這個主題, 它利用很多的特殊符號呈現很多的訊息, 方便使用者閱讀.  <code>powerlevel9k</code> 並不是 <code>oh-my-zsh</code> 預設提供的主題, 需要另外下載.</p>
+
+<pre><code>$ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+</code></pre></li>
+
+<li><p><strong>變更主題</strong>:</p>
+
+<p>打開 <code>.zshrc</code>, 將 <code>ZSH_THEME</code> 改成 <code>&quot;powerlevel9k/powerlevel9k&quot;</code>. 並且加上如下兩行資料:</p>
+
+<pre><code>POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable vcs vi_mode)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs ram load time)
+</code></pre>
+
+<p>接著請執行 <code>exec $SHELL</code>. 漂亮的主題就出現了.</p>
+
+<p>powerlevel9k 的相關功能請參閱  <a href="https://github.com/bhilburn/powerlevel9k#available-prompt-segments" target="_blank">The most awesome Powerline theme for ZSH around!</a>.</p></li>
+</ol>
+
+<h2 id="安裝-nerd-fonts">安裝 Nerd fonts</h2>
+
+<p>裝完新的 <code>oh-my-zsh</code> 主題風格 - powerlevel9k, 可能會發現一些亂碼, 原因是這每一個亂碼就代表了一特殊功能的狀態, 需要特殊的圖示來呈現, 但目前的字型並未支持, 所以我們要來安裝特殊的字型.</p>
+
+<ol>
+<li><p><strong>安裝字型</strong>:</p>
+
+<p>我們要選擇 <a href="https://github.com/ryanoasis/nerd-fonts" target="_blank">Nerd-fonts</a> 這一系列的字型, 該系列的字型有較全的符號, 而且更新頻繁.</p>
+
+<p>因為是透過 <code>brew</code> 來安裝字型, 所以必須先執行,</p>
+
+<pre><code>$ brew tap caskroom/fonts
+</code></pre>
+
+<p>接著搜索 <code>Nerd-fonts</code>, 可以找到很多.</p>
+
+<pre><code>$ brew search nerd
+</code></pre>
+
+<p>我就直接使用高手的推薦, 選用 <code>font-sourcecodepro-nerd-font</code>.</p>
+
+<pre><code>$ brew cask install font-sourcecodepro-nerd-font
+</code></pre></li>
+
+<li><p><strong>iTerm2 變更字型</strong>:</p>
+
+<p>從 <code>Preference -&gt; Profiles -&gt; Text -&gt; Change Font</code> 挑選剛剛安裝好的字型. 新版的 <code>iTerm2</code> 可以讓 ASCII 和 Non-ASCII 兩類文字設定成不同的字型, 我們這裡先不用這麼花俏, 都用相同的字型即可.</p></li>
+</ol>
+
+<h2 id="如何讓-iterm2-呈現漂亮顏色的字">如何讓 iTerm2 呈現漂亮顏色的字?</h2>
+
+<ol>
+<li><p><strong>設定 Report Terminal Type</strong>:</p>
+
+<p>將 <code>Preference -&gt; Profiles -&gt; Terminal -&gt; Report Terminal Type</code> 改成 <code>xterm-256color</code>.</p></li>
+
+<li><p><strong>設定賞心悅目的顏色組</strong>:</p>
+
+<p>從 <code>Preference -&gt; Profiles -&gt; Colors -&gt; Color Presets...</code> 挑選一組自認不錯顏色組. iTerm2 本身有附帶幾組, 我原本也就使用這些內附的, 但還不夠好看. 所以要從網路上去下載高手們提供的顏色組, GitHub 就有 <a href="https://github.com/mbadolato/iTerm2-Color-Schemes" target="_blank">iTerm2-Color-Schemes</a>, 請先自行下載下來, 再透過 <code>Preference -&gt; Profiles -&gt; Colors -&gt; Color Presets... -&gt; import...</code> 將下載資料匯入(在下載的目錄 <code>schemes</code> folder 底下有很多的 itermcolors files) , 我直接依照高手所推薦, 挑選 <code>Tomorrow Night Eighties.itermcolors</code> 這個顏色組. 因為匯入完成並不會直接套用這個顏色組, 所以請再選擇這個顏色組 <code>Preference -&gt; Profiles -&gt; Colors -&gt; Color Presets... -&gt; Tomorrow Night Eighties</code>.</p></li>
+</ol>
+
+<p>以上這些安裝設定步驟完成後, 你的 command line 呈現效果就會像以下的樣子.</p>
+
+<p><img src="/images/iTerm2withGoodTheme.png" alt="調整完畢的示意圖" /></p>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  <div class='categories'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/tools'>Tools</a></div>
+<div class='tags'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/iterm2'>iTerm2</a>, <a class='tag' href='/tags/zsh'>Zsh</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='next-entry sep-before'>
+      <a href='/developmenttools/gitstudy/gitrelated_1/'>
+        <span class='screen-reader-text'>Next post: </span>[Git]如何忽略追蹤特定檔案或目錄?<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/bradleetw' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/BradLeeTW' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:brad.lee.tw@outlook.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/brad-lee-77224542' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://www.youtube.com/channel/UCRtY7h5MSH4zMw-fhOSh64Q' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Youtube account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2018 bradlee </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='https:\/\/bradleetw.github.io\/assets\/js\/'</script>
+
+<script src='https://bradleetw.github.io/assets/js/main.68cb493a.js'></script><script src='/js/custom.js'></script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

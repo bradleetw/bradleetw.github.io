@@ -5,7 +5,6 @@
     <link>https://bradleetw.github.io/categories/tools/</link>
     <description>Recent content in Tools on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Wed, 08 Aug 2018 11:49:49 +0800</lastBuildDate>
     
 	<atom:link href="https://bradleetw.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
@@ -13,16 +12,31 @@
     
     <item>
       <title>[Git]如何忽略追蹤特定檔案或目錄?</title>
-      <link>https://bradleetw.github.io/post/gitstudy/gitrelated_1/</link>
+      <link>https://bradleetw.github.io/developmenttools/gitstudy/gitrelated_1/</link>
       <pubDate>Wed, 08 Aug 2018 11:49:49 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/post/gitstudy/gitrelated_1/</guid>
+      <guid>https://bradleetw.github.io/developmenttools/gitstudy/gitrelated_1/</guid>
       <description>只要編輯以下三個檔案(忽略清單)其中一個就可以忽略追蹤特定檔案或目錄:
  $HOME/.config/git/ignore: 開發者電腦中的所有倉庫都可以讀取該忽略清單. .gitignore: 每個倉庫都有自己一份的忽略清單放在該倉庫根目錄下, 而且該忽略清單可以被分享追蹤管理. .git/info/exclude: 該忽略清單無法被追蹤管理.  $HOME/.config/git/ignore 有時候系統或者一些第三方應用為了讓其運作的效果更好, 會在目錄底下產生一些額外的檔案, 列如: .DS_Store, 而這些對開發者本身而言這類無關開發的資料都是不必要去追蹤紀錄, 這時可以透過編輯 $HOME/.config/git/ignore 來寫下要忽略的檔案, 而這個是對系統內的所有倉庫都有用. 以下是該檔案內的一些範例:
 # General .DS_Store .AppleDouble .LSOverride # Files that might appear in the root of a volume .DocumentRevisions-V100 .fseventsd .Spotlight-V100 .TemporaryItems .Trashes .VolumeIcon.icns .com.apple.timemachine.donotpresent  .gitignore 在開發的環境中會因為編譯產生執行檔案, 連結檔, 某些檔案或是某些目錄開發者根本不必追蹤, 但是這個忽略清單卻是可以分享給其他開發者或者需要版本管控忽略清單 (有可能在經過一段的開發時間, 開發環境導入了新的機制或是功能, 而產生新的不必追蹤檔案) 這時只要在開發項目的根目錄下放入 .gitignore, 在該檔案中寫入你要忽略上傳的特定檔案或目錄:
  特定檔案: 直接放入檔案名稱, ex: somefolder/specific.txt
  符合特定字串的檔案: 加入萬用字元, ex: /db/*.sqlite3
  目錄: ex: somefolder/</description>
+    </item>
+    
+    <item>
+      <title>讓 iTerm2 有很酷炫的外表!</title>
+      <link>https://bradleetw.github.io/developmenttools/iterm2setting/</link>
+      <pubDate>Sun, 29 Jul 2018 17:41:05 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/developmenttools/iterm2setting/</guid>
+      <description>常看到電影裡的駭客在操作電腦時所用的 command line 都是那麼的酷, 今天就來速記一下參考網路上別人分享設定的步驟. 參考的來源: 超簡單！十分鐘打造漂亮又好用的 zsh command line 環境
+iTerm2 的安裝就沒記錄, 因為早就安裝過, 安裝流程也不難.
+安裝 zsh + oh-my-zsh zsh 是類似 bash, 在一般的使用上兩者差不多, 而 zsh 要再搭配上 oh-my-zsh(它是基於 zsh 的一個擴展工具集, 提供了豐富的擴展功能), 就可以設置有趣的主題風格(Themes), 而 oh-my-zsh 本身就提供了很多主題可以讓你挑選.
+ 安裝 zsh:
+$ brew install zsh  將 zsh 改成預設 shell:
+$ sudo sh -c &amp;quot;echo $(which zsh) &amp;gt;&amp;gt; /etc/shells&amp;quot; $ chsh -s $(which zsh)  安裝 oh-my-zsh:
+$ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh $ bash ./install.sh   安裝 zsh theme: powerlevel9k  下載好用的主題:</description>
     </item>
     
   </channel>

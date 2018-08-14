@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='只要編輯以下三個檔案(忽略清單)其中一個就可以忽略追蹤特定檔案或目錄:
+ $HOME/.config/git/ignore: 開發者電腦中的所有倉庫都可以讀取該忽略清單. .gitignore: 每個倉庫都有自己一份的忽略清單放在該倉庫根目錄下, 而且該忽略清單可以被分享追蹤管理. .git/info/exclude: 該忽略清單無法被追蹤管理.  $HOME/.config/git/ignore 有時候系統或者一些第三方應用為了讓其運作的效果更好, 會在目錄底下產生一些額外的檔案, 列如: .DS_Store, 而這些對開發者本身而言這類無關開發的資料都是不必要去追蹤紀錄, 這時可以透過編輯 $HOME/.config/git/ignore 來寫下要忽略的檔案, 而這個是對系統內的所有倉庫都有用. 以下是該檔案內的一些範例:
+# General .DS_Store .AppleDouble .LSOverride # Files that might appear in the root of a volume .DocumentRevisions-V100 .fseventsd .Spotlight-V100 .TemporaryItems .Trashes .VolumeIcon.icns .com.apple.timemachine.donotpresent  .gitignore 在開發的環境中會因為編譯產生執行檔案, 連結檔, 某些檔案或是某些目錄開發者根本不必追蹤, 但是這個忽略清單卻是可以分享給其他開發者或者需要版本管控忽略清單 (有可能在經過一段的開發時間, 開發環境導入了新的機制或是功能, 而產生新的不必追蹤檔案) 這時只要在開發項目的根目錄下放入 .gitignore, 在該檔案中寫入你要忽略上傳的特定檔案或目錄:
+ 特定檔案: 直接放入檔案名稱, ex: somefolder/specific.txt
+ 符合特定字串的檔案: 加入萬用字元, ex: /db/*.sqlite3
+ 目錄: ex: somefolder/'>
+<meta name='theme-color' content='#44ccff'>
+
+<meta property='og:title' content='[Git]如何忽略追蹤特定檔案或目錄? • 布萊德的學習網站'>
+<meta property='og:description' content='只要編輯以下三個檔案(忽略清單)其中一個就可以忽略追蹤特定檔案或目錄:
+ $HOME/.config/git/ignore: 開發者電腦中的所有倉庫都可以讀取該忽略清單. .gitignore: 每個倉庫都有自己一份的忽略清單放在該倉庫根目錄下, 而且該忽略清單可以被分享追蹤管理. .git/info/exclude: 該忽略清單無法被追蹤管理.  $HOME/.config/git/ignore 有時候系統或者一些第三方應用為了讓其運作的效果更好, 會在目錄底下產生一些額外的檔案, 列如: .DS_Store, 而這些對開發者本身而言這類無關開發的資料都是不必要去追蹤紀錄, 這時可以透過編輯 $HOME/.config/git/ignore 來寫下要忽略的檔案, 而這個是對系統內的所有倉庫都有用. 以下是該檔案內的一些範例:
+# General .DS_Store .AppleDouble .LSOverride # Files that might appear in the root of a volume .DocumentRevisions-V100 .fseventsd .Spotlight-V100 .TemporaryItems .Trashes .VolumeIcon.icns .com.apple.timemachine.donotpresent  .gitignore 在開發的環境中會因為編譯產生執行檔案, 連結檔, 某些檔案或是某些目錄開發者根本不必追蹤, 但是這個忽略清單卻是可以分享給其他開發者或者需要版本管控忽略清單 (有可能在經過一段的開發時間, 開發環境導入了新的機制或是功能, 而產生新的不必追蹤檔案) 這時只要在開發項目的根目錄下放入 .gitignore, 在該檔案中寫入你要忽略上傳的特定檔案或目錄:
+ 特定檔案: 直接放入檔案名稱, ex: somefolder/specific.txt
+ 符合特定字串的檔案: 加入萬用字元, ex: /db/*.sqlite3
+ 目錄: ex: somefolder/'>
+<meta property='og:url' content='https://bradleetw.github.io/developmenttools/gitstudy/gitrelated_1/'>
+<meta property='og:site_name' content='布萊德的學習網站'>
+<meta property='og:type' content='article'><meta property='article:section' content='DevelopmentTools'><meta property='article:tag' content='Git'><meta property='article:published_time' content='2018-08-08T11:49:49&#43;08:00'/><meta property='article:modified_time' content='2018-08-08T11:49:49&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@BradLeeTW'>
+
+<meta name="generator" content="Hugo 0.46" />
+
+  <title>[Git]如何忽略追蹤特定檔案或目錄? • 布萊德的學習網站</title>
+  <link rel='canonical' href='https://bradleetw.github.io/developmenttools/gitstudy/gitrelated_1/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.809149b6.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#44ccff;}
+</style>
+
+  
+
+</head>
+
+
+<body class='page type-DevelopmentTools has-sidebar'>
+
+  <div class='site'>
+
+    <div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/brainstorm.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    布萊德
+    </h2>
+    <div class='desc'>
+    抽空看看 Julia
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><header>
+    <h4 class='title widget-title'>Menu</h4>
+  </header><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/'>Home</a></li><li class='item'>
+  <a href='/englishnews/'>English</a></li><li class='item'>
+  <a href='/machinelearning/'>A.I.</a></li><li class='item'>
+  <a href='/python/'>Python</a></li><li class='item'>
+  <a href='/julia/'>Julia</a></li><li class='item'>
+  <a href='/web/'>Web</a></li><li class='item'>
+  <a href='/developmenttools/'>Tools</a></li><li class='item'>
+  <a href='https://github.com/bradleetw/hello-world'>Repo</a></li></ul>
+    </div>
+  </nav>
+
+</section><section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/tags/economist' style='font-size:1em'>Economist</a>
+      </li><li>
+        <a href='/tags/git' style='font-size:1em'>Git</a>
+      </li><li>
+        <a href='/tags/github' style='font-size:1em'>GitHub</a>
+      </li><li>
+        <a href='/tags/guardian' style='font-size:1em'>Guardian</a>
+      </li><li>
+        <a href='/tags/mit' style='font-size:1em'>MIT</a>
+      </li><li>
+        <a href='/tags/nature' style='font-size:1em'>Nature</a>
+      </li><li>
+        <a href='/tags/deployment' style='font-size:1em'>Deployment</a>
+      </li><li>
+        <a href='/tags/hugo' style='font-size:2em'>Hugo</a>
+      </li><li>
+        <a href='/tags/iterm2' style='font-size:1em'>ITerm2</a>
+      </li><li>
+        <a href='/tags/zsh' style='font-size:1em'>Zsh</a>
+      </li><li>
+        <a href='/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81' style='font-size:2em'>靜態網頁</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/englishnews/'>English</a>
+      </li><li class='item'>
+        <a href='/machinelearning/'>A.I.</a>
+      </li><li class='item'>
+        <a href='/python/'>Python</a>
+      </li><li class='item'>
+        <a href='/julia/'>Julia</a>
+      </li><li class='item'>
+        <a href='/web/'>Web</a>
+      </li><li class='item'>
+        <a href='/developmenttools/'>Tools</a>
+      </li><li class='item'>
+        <a href='https://github.com/bradleetw/hello-world'>Repo</a>
+      </li></ul>
+  </div>
+</nav>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>布萊德的學習網站</p><p class='desc site-desc'>從 0 出發</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>[Git]如何忽略追蹤特定檔案或目錄?</h1>
+      
+
+    </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-08-08T11:49:49&#43;08:00'>2018, Aug 08</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+One min read
+</span>
+
+
+  
+  
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  
+
+<p>只要編輯以下三個檔案(忽略清單)其中一個就可以忽略追蹤特定檔案或目錄:</p>
+
+<ol>
+<li><strong>$HOME/.config/git/ignore</strong>: 開發者電腦中的所有倉庫都可以讀取該忽略清單.</li>
+<li><strong>.gitignore</strong>: 每個倉庫都有自己一份的忽略清單放在該倉庫根目錄下, 而且該忽略清單可以被分享追蹤管理.</li>
+<li><strong>.git/info/exclude</strong>: 該忽略清單無法被追蹤管理.</li>
+</ol>
+
+<h3 id="home-config-git-ignore">$HOME/.config/git/ignore</h3>
+
+<p>有時候系統或者一些第三方應用為了讓其運作的效果更好, 會在目錄底下產生一些額外的檔案, 列如: <code>.DS_Store</code>, 而這些對開發者本身而言這類無關開發的資料都是不必要去追蹤紀錄, 這時可以透過編輯 <code>$HOME/.config/git/ignore</code> 來寫下要忽略的檔案, 而這個是對系統內的所有倉庫都有用. 以下是該檔案內的一些範例:</p>
+
+<pre><code># General
+.DS_Store
+.AppleDouble
+.LSOverride
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+</code></pre>
+
+<h3 id="gitignore">.gitignore</h3>
+
+<p>在開發的環境中會因為編譯產生執行檔案, 連結檔, 某些檔案或是某些目錄開發者根本不必追蹤, 但是這個忽略清單卻是可以分享給其他開發者或者需要版本管控忽略清單 (有可能在經過一段的開發時間, 開發環境導入了新的機制或是功能, 而產生新的不必追蹤檔案) 這時只要在開發項目的根目錄下放入 <code>.gitignore</code>, 在該檔案中寫入你要忽略上傳的特定檔案或目錄:</p>
+
+<ol>
+<li><p>特定檔案: 直接放入檔案名稱, ex: <code>somefolder/specific.txt</code></p></li>
+
+<li><p>符合特定字串的檔案: 加入萬用字元, ex: <code>/db/*.sqlite3</code></p></li>
+
+<li><p>目錄: ex: <code>somefolder/</code></p></li>
+</ol>
+
+<p>建議: <code>.gitignore</code> 這個檔案也可被忽略, 只要將 .gitignore 寫入, 但是不建議忽略.</p>
+
+<p>GitHub 上放了很多範例 <a href="https://github.com/github/gitignore" target="_blank">https://github.com/github/gitignore</a>.</p>
+
+<p>參考網頁: <a href="https://gitbook.tw/chapters/using-git/ignore.html" target="_blank">https://gitbook.tw/chapters/using-git/ignore.html</a></p>
+
+<h3 id="git-info-exclude">.git/info/exclude</h3>
+
+<p>若有一些在開發環境下的檔案不需要被追蹤上傳而且這忽略規則清單也不必分享追蹤管理, 列如: 個人的 memo.txt, 則可以在該倉庫底下的 <code>.git/info/exclude</code> 檔案中加入忽略規則.</p>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  <div class='categories'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/tools'>Tools</a></div>
+<div class='tags'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/git'>Git</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/developmenttools/iterm2setting/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>讓 iTerm2 有很酷炫的外表!</a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/bradleetw' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/BradLeeTW' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:brad.lee.tw@outlook.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/brad-lee-77224542' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://www.youtube.com/channel/UCRtY7h5MSH4zMw-fhOSh64Q' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Youtube account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2018 bradlee </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='https:\/\/bradleetw.github.io\/assets\/js\/'</script>
+
+<script src='https://bradleetw.github.io/assets/js/main.68cb493a.js'></script><script src='/js/custom.js'></script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
