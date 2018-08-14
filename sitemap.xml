@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/</loc>
-    <lastmod>2018-08-09T12:41:59+08:00</lastmod>
+    <lastmod>2018-08-14T11:37:18+08:00</lastmod>
   </url>
   
   <url>
@@ -32,6 +32,11 @@
   <url>
     <loc>https://bradleetw.github.io/developmenttools/</loc>
     <lastmod>2018-08-08T11:49:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/post/usefulurl/</loc>
+    <lastmod>2018-08-14T11:37:18+08:00</lastmod>
   </url>
   
   <url>
@@ -90,7 +95,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/authors/bradlee/</loc>
-    <lastmod>2018-08-09T12:41:59+08:00</lastmod>
+    <lastmod>2018-08-14T11:37:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -156,6 +161,12 @@
   <url>
     <loc>https://bradleetw.github.io/tags/nature/</loc>
     <lastmod>2018-08-06T16:45:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/post/</loc>
+    <lastmod>2018-08-14T11:37:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
