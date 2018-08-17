@@ -9,7 +9,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/englishnews/</loc>
-    <lastmod>2018-08-15T13:20:32+08:00</lastmod>
+    <lastmod>2018-08-16T13:55:12+08:00</lastmod>
   </url>
   
   <url>
@@ -37,6 +37,11 @@
   <url>
     <loc>https://bradleetw.github.io/usefulurl/</loc>
     <lastmod>2018-08-14T11:37:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/englishnews/reuters/applebreachesonetrillion_0816/</loc>
+    <lastmod>2018-08-16T13:55:12+08:00</lastmod>
   </url>
   
   <url>
@@ -105,7 +110,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/authors/bradlee/</loc>
-    <lastmod>2018-08-15T13:20:32+08:00</lastmod>
+    <lastmod>2018-08-16T13:55:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -128,7 +133,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/categories/english/</loc>
-    <lastmod>2018-08-15T13:20:32+08:00</lastmod>
+    <lastmod>2018-08-16T13:55:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -183,6 +188,12 @@
   <url>
     <loc>https://bradleetw.github.io/page/</loc>
     <lastmod>2018-08-14T11:37:18+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/tags/reuters/</loc>
+    <lastmod>2018-08-16T13:55:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
