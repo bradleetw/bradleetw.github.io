@@ -4,23 +4,35 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='什麼是 GitHub Pages(blog)? 在大家的印象中 GitHub 只是一個利用 git 讓大家免費放代碼, 追蹤 issues , 和各地好手討論的地方. 某天看到ㄧ篇文章的 URL 很特別, 是 https://xxxxxx.github.io/ , 和我平常看 GitHub 的 https://github.com 很像, 後來才知道 GitHub 可以讓使用者在上面放 blog(有空還是要看看人家的 &ldquo;Read the guide&rdquo;), 重點是&rdquo;不用錢&rdquo;(廢話, 不過被微軟買掉後會不會調整, 就不知了).
-refer to: What is GitHub Pages?
-為什麼要使用 GitHub 來架設 blog? 在嘗試 GitHub 架設 blog 之前, 我正在學習使用 Google Cloud platfrom 試著架設 blog 網站, 自己申請域名, 申請 SSL, 突然想起 GitHub 上也有 blog 功能而且我也還沒試過, 查了一下, 還蠻容易設定的, 而且省去申請域名, SSL, 不用擔心服務器防火牆的相關問題, 當然你必須要有 GitHub 帳號(廢話 ~).'>
+<meta name='description' content='MIT 开发的 Julia 语言是全球热度上升最快的编程语言之一，下载量超过 200 万次，下载者包括谷歌、Facebook、FAA 和美国能源部等各个部门的开发者。近日，MIT CSAIL 实验室正式发布了 Julia 1.0，该语言期望结合 C 的速度、Matlab 的数学表征、Python 的通用编程与 Shell 的胶水命令行，并构建开源、自由与便捷的编程语言。
+Julia 的特點, 參考Julia 1.0, 節錄其中一段:  快速：Julia 一開始就是為高效能設計的。 Julia 可以藉由 LLVM 被編譯成不同平台的高效機器碼。   LLVM: 可參考[LLVM每日谈之一 LLVM是什么]. 節錄其中一段, &ldquo;LLVM 的主要作用是它可以作为多种语言的后端，它可以提供可编程语言无关的优化和针对很多种CPU的代码生成功能&rdquo;.
+  泛用：Julia 使用多重分派（multiple dispatch）作為程式典範（paradigm），可以更容易表達物件導向和函數-式的設計模式。標準函式庫提供了非同步 I/O，行程控制，日誌記錄，效能分析，套件管理器等等。
+ 動態：Julia 是動態型別的，用起來像腳本語言，並且很好地支援互動式的操作方式。
+ 技術：Julia 擅長數值運算，有非常貼近數學的語法，支援多種數值型別，並且支援平行運算。Julia 的多重分派結合數值和陣列相關的資料型別可以說是渾然天成。
+ 選擇性的型別標註：Julia 有豐富的資料型別描述，型別宣告可以使得程式更加清楚和穩固。
+ 組合性：Julia 的套件可以很和諧的一起運作。矩陣的單位數量或是資料表中一行的貨幣和顏色可以一起運作並且擁有良好的效能。
+  這個新的語言能作什麼, 目前還說不上, 只知道這是個從 MIT 出來, 集大家需求而生的一個開源新語言, 不想掉隊, 只有先學再說了.
+目前先從 2 個線上的資源開始'>
 <meta name='theme-color' content='#44ccff'>
 
-<meta property='og:title' content='如何利用 GitHub Pages 建立博客? • Brad Lee'>
-<meta property='og:description' content='什麼是 GitHub Pages(blog)? 在大家的印象中 GitHub 只是一個利用 git 讓大家免費放代碼, 追蹤 issues , 和各地好手討論的地方. 某天看到ㄧ篇文章的 URL 很特別, 是 https://xxxxxx.github.io/ , 和我平常看 GitHub 的 https://github.com 很像, 後來才知道 GitHub 可以讓使用者在上面放 blog(有空還是要看看人家的 &ldquo;Read the guide&rdquo;), 重點是&rdquo;不用錢&rdquo;(廢話, 不過被微軟買掉後會不會調整, 就不知了).
-refer to: What is GitHub Pages?
-為什麼要使用 GitHub 來架設 blog? 在嘗試 GitHub 架設 blog 之前, 我正在學習使用 Google Cloud platfrom 試著架設 blog 網站, 自己申請域名, 申請 SSL, 突然想起 GitHub 上也有 blog 功能而且我也還沒試過, 查了一下, 還蠻容易設定的, 而且省去申請域名, SSL, 不用擔心服務器防火牆的相關問題, 當然你必須要有 GitHub 帳號(廢話 ~).'>
-<meta property='og:url' content='https://bradleetw.github.io/web/deployment/githubblog/usegithub_1/'>
+<meta property='og:title' content='Julia Language • Brad Lee'>
+<meta property='og:description' content='MIT 开发的 Julia 语言是全球热度上升最快的编程语言之一，下载量超过 200 万次，下载者包括谷歌、Facebook、FAA 和美国能源部等各个部门的开发者。近日，MIT CSAIL 实验室正式发布了 Julia 1.0，该语言期望结合 C 的速度、Matlab 的数学表征、Python 的通用编程与 Shell 的胶水命令行，并构建开源、自由与便捷的编程语言。
+Julia 的特點, 參考Julia 1.0, 節錄其中一段:  快速：Julia 一開始就是為高效能設計的。 Julia 可以藉由 LLVM 被編譯成不同平台的高效機器碼。   LLVM: 可參考[LLVM每日谈之一 LLVM是什么]. 節錄其中一段, &ldquo;LLVM 的主要作用是它可以作为多种语言的后端，它可以提供可编程语言无关的优化和针对很多种CPU的代码生成功能&rdquo;.
+  泛用：Julia 使用多重分派（multiple dispatch）作為程式典範（paradigm），可以更容易表達物件導向和函數-式的設計模式。標準函式庫提供了非同步 I/O，行程控制，日誌記錄，效能分析，套件管理器等等。
+ 動態：Julia 是動態型別的，用起來像腳本語言，並且很好地支援互動式的操作方式。
+ 技術：Julia 擅長數值運算，有非常貼近數學的語法，支援多種數值型別，並且支援平行運算。Julia 的多重分派結合數值和陣列相關的資料型別可以說是渾然天成。
+ 選擇性的型別標註：Julia 有豐富的資料型別描述，型別宣告可以使得程式更加清楚和穩固。
+ 組合性：Julia 的套件可以很和諧的一起運作。矩陣的單位數量或是資料表中一行的貨幣和顏色可以一起運作並且擁有良好的效能。
+  這個新的語言能作什麼, 目前還說不上, 只知道這是個從 MIT 出來, 集大家需求而生的一個開源新語言, 不想掉隊, 只有先學再說了.
+目前先從 2 個線上的資源開始'>
+<meta property='og:url' content='https://bradleetw.github.io/julia/julia_0812/'>
 <meta property='og:site_name' content='布萊德的學習網站'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/4d48e2d674da46d68bd6c7fe2925cb5d?s=256'><meta property='article:author' content='https://facebook.com/brad.lee.tw'><meta property='article:section' content='Web'><meta property='article:tag' content='GitHub'><meta property='article:tag' content='deployment'><meta property='article:published_time' content='2018-07-19T14:31:14&#43;08:00'/><meta property='article:modified_time' content='2018-07-19T14:31:14&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@BradLeeTW'><meta name='twitter:creator' content='@BradLeeTW'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/4d48e2d674da46d68bd6c7fe2925cb5d?s=256'><meta property='article:author' content='https://facebook.com/brad.lee.tw'><meta property='article:section' content='Julia'><meta property='article:tag' content='Julia'><meta property='article:published_time' content='2018-08-21T16:27:25&#43;08:00'/><meta property='article:modified_time' content='2018-08-21T16:27:25&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@BradLeeTW'><meta name='twitter:creator' content='@BradLeeTW'>
 
 <meta name="generator" content="Hugo 0.46" />
 
-  <title>如何利用 GitHub Pages 建立博客? • Brad Lee</title>
-  <link rel='canonical' href='https://bradleetw.github.io/web/deployment/githubblog/usegithub_1/'>
+  <title>Julia Language • Brad Lee</title>
+  <link rel='canonical' href='https://bradleetw.github.io/julia/julia_0812/'>
   
   
   <link rel='icon' href='/favicon.ico'>
@@ -33,7 +45,7 @@ refer to: What is GitHub Pages?
 </head>
 
 
-<body class='page type-Web has-sidebar'>
+<body class='page type-Julia has-sidebar'>
 
   <div class='site'>
 
@@ -165,7 +177,7 @@ refer to: What is GitHub Pages?
   <header class='header entry-header'>
   <div class='container sep-after'>
     <div class='header-info'>
-      <h1 class='title'>如何利用 GitHub Pages 建立博客?</h1>
+      <h1 class='title'>Julia Language</h1>
       
 
     </div>
@@ -180,7 +192,7 @@ refer to: What is GitHub Pages?
   
 </svg>
 <span class='screen-reader-text'>Posted on </span>
-  <time class='entry-date' datetime='2018-07-19T14:31:14&#43;08:00'>2018, Jul 19</time>
+  <time class='entry-date' datetime='2018-08-21T16:27:25&#43;08:00'>2018, Aug 21</time>
 </span>
 
   <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
@@ -215,46 +227,43 @@ One min read
   <div class='container entry-content'>
   
 
-<h2 id="什麼是-github-pages-blog">什麼是 GitHub Pages(blog)?</h2>
+<p>MIT 开发的 Julia 语言是全球热度上升最快的编程语言之一，下载量超过 200 万次，下载者包括谷歌、Facebook、FAA 和美国能源部等各个部门的开发者。近日，MIT CSAIL 实验室正式发布了 Julia 1.0，该语言期望结合 C 的速度、Matlab 的数学表征、Python 的通用编程与 Shell 的胶水命令行，并构建开源、自由与便捷的编程语言。</p>
 
-<p>在大家的印象中 GitHub 只是一個利用 git 讓大家免費放代碼, 追蹤 issues , 和各地好手討論的地方. 某天看到ㄧ篇文章的 URL 很特別, 是 <a href="https://xxxxxx.github.io/" target="_blank">https://xxxxxx.github.io/</a> , 和我平常看 GitHub 的 <a href="https://github.com" target="_blank">https://github.com</a> 很像, 後來才知道 GitHub 可以讓使用者在上面放 blog(有空還是要看看人家的 &ldquo;Read the guide&rdquo;), 重點是&rdquo;不用錢&rdquo;(廢話, 不過被微軟買掉後會不會調整, 就不知了).</p>
+<h2 id="julia-的特點-參考-julia-1-0-https-julialang-org-blog-2018-08-one-point-zero-zh-tw-節錄其中一段">Julia 的特點, 參考<a href="https://julialang.org/blog/2018/08/one-point-zero-zh_tw" target="_blank">Julia 1.0</a>, 節錄其中一段:</h2>
 
-<p>refer to: <a href="https://help.github.com/articles/what-is-github-pages/" target="_blank">What is GitHub Pages?</a></p>
+<ul>
+<li><strong>快速</strong>：Julia 一開始就是為高效能設計的。 Julia 可以藉由 <strong>LLVM</strong> 被編譯成不同平台的高效機器碼。</li>
+</ul>
 
-<h2 id="為什麼要使用-github-來架設-blog">為什麼要使用 GitHub 來架設 blog?</h2>
+<blockquote>
+<p>LLVM: 可參考[<a href="https://blog.csdn.net/snsn1984/article/details/8036032" target="_blank">LLVM每日谈之一 LLVM是什么</a>]. 節錄其中一段, &ldquo;LLVM 的主要作用是它可以作为多种语言的后端，它可以提供可编程语言无关的优化和针对很多种CPU的代码生成功能&rdquo;.</p>
+</blockquote>
 
-<p>在嘗試 GitHub 架設 blog 之前, 我正在學習使用 Google Cloud platfrom 試著架設 blog 網站, 自己申請域名, 申請 SSL, 突然想起 GitHub 上也有 blog 功能而且我也還沒試過, 查了一下, 還蠻容易設定的, 而且省去申請域名, SSL, 不用擔心服務器防火牆的相關問題, 當然你必須要有 GitHub 帳號(廢話 ~). 所以使用可以先用 GitHub 來放你的第一個 blog, 當然還有很多地方也有這類的功能, 如 medium, wordpress, 有空也來試試.</p>
+<ul>
+<li><p><strong>泛用</strong>：Julia 使用多重分派（multiple dispatch）作為程式典範（paradigm），可以更容易表達物件導向和函數-式的設計模式。標準函式庫提供了非同步 I/O，行程控制，日誌記錄，效能分析，套件管理器等等。</p></li>
 
-<p>若你的網站不用利用 PHP, Python, or Ruby 來動態生成網頁, 只是個單純的靜態網頁(static site), 你就可以來使用 GitHub Pages.</p>
+<li><p><strong>動態</strong>：Julia 是動態型別的，用起來像腳本語言，並且很好地支援互動式的操作方式。</p></li>
 
-<p>GitHub Pages 分成兩類:</p>
+<li><p><strong>技術</strong>：Julia 擅長數值運算，有非常貼近數學的語法，支援多種數值型別，並且支援平行運算。Julia 的多重分派結合數值和陣列相關的資料型別可以說是渾然天成。</p></li>
+
+<li><p><strong>選擇性的型別標註</strong>：Julia 有豐富的資料型別描述，型別宣告可以使得程式更加清楚和穩固。</p></li>
+
+<li><p><strong>組合性</strong>：Julia 的套件可以很和諧的一起運作。矩陣的單位數量或是資料表中一行的貨幣和顏色可以一起運作並且擁有良好的效能。</p></li>
+</ul>
+
+<hr />
+
+<p>這個新的語言能作什麼, 目前還說不上, 只知道這是個從 MIT 出來, 集大家需求而生的一個開源新語言, 不想掉隊, 只有先學再說了.</p>
+
+<p>目前先從 2 個線上的資源開始</p>
 
 <ol>
-<li><p><strong>User and Organization Pages sites</strong>:
-若是為了個人博客, 或是組織網頁, 就可以採用這個方式, 使用非常簡單.</p></li>
+<li><p><a href="https://lectures.quantecon.org/jl/index_learning_julia.html" target="_blank">Programming in Julia</a></p></li>
 
-<li><p><strong>Project Pages sites</strong>:
-當要為了專案進行介紹說明, 可以採用這方式架設 GitHub Pages, 相關網站的檔案都是和專案的代碼或檔案放在同一個倉庫.</p></li>
+<li><p><a href="http://ucidatascienceinitiative.github.io/IntroToJulia/" target="_blank">A Deep Introduction to Julia for Data Science and Scientific Computing</a></p></li>
 </ol>
 
-<p>而這篇先針對 User and organization Pages sites 說明.</p>
-
-<h2 id="如何在-github-上架設-user-pages-sites">如何在 GitHub 上架設 User Pages sites?</h2>
-
-<ol>
-<li>要有個認證過的 GitHub account.</li>
-<li>建立一個新的倉庫, 重點是倉庫的名稱, <code>yourAccountName.github.io</code>, <code>yourAccountName</code> 換成你的帳號名.</li>
-<li>(假設你的開發環境已經有 git) 透過 <code>git clone</code> 將剛剛建好的倉庫拉到你的本地開發網頁根目錄. 先將路徑改到你的開發網頁根目錄, 然後執行 <code>git clone https://github.com/yourAccountName/yourAccountName.github.io.git</code>.</li>
-
-<li><p>將你的網頁檔案上傳, 執行以下指令:</p>
-
-<pre><code>git add -A
-git commit -m &quot;輸入說明&quot;
-git push origin master
-</code></pre></li>
-</ol>
-
-<p>這樣就完成了.</p>
+<p>接下來就依這兩個資源邊學邊寫讀後感.</p>
 
 </div>
 
@@ -268,7 +277,7 @@ git push origin master
   
 </svg>
 </span>
-  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/web'>Web</a></div>
+  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/julialang'>JuliaLang</a></div>
 <div class='tags'>
   <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
@@ -277,37 +286,13 @@ git push origin master
   
 </svg>
 </span>
-  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/github'>GitHub</a>, <a class='tag' href='/tags/deployment'>Deployment</a></div>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/julia'>Julia</a></div>
 
   </div>
 </footer>
 
 
 </article>
-
-<nav class='entry-nav'>
-  <div class='container'><div class='prev-entry sep-before'>
-      <a href='/web/staticsitegenerator/hugo/usehugo_2/'>
-        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <line x1="20" y1="12" x2="4" y2="12"/>
-  <polyline points="10 18 4 12 10 6"/>
-  
-</svg>
- Previous</span>
-        <span class='screen-reader-text'>Previous post: </span>透過調整 config.toml 設定 Hugo 網站(1)</a>
-    </div><div class='next-entry sep-before'>
-      <a href='/web/staticsitegenerator/hugo/posttemplate/'>
-        <span class='screen-reader-text'>Next post: </span>[Hugo]建立固定格式的新帖子<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <line x1="4" y1="12" x2="20" y2="12"/>
-  <polyline points="14 6 20 12 14 18"/>
-  
-</svg>
-</span>
-      </a>
-    </div></div>
-</nav>
 
 
 

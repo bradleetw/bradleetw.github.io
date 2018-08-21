@@ -27,6 +27,32 @@
     </item>
     
     <item>
+      <title>Julia Language</title>
+      <link>https://bradleetw.github.io/julia/julia_0812/</link>
+      <pubDate>Tue, 21 Aug 2018 16:27:25 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/julia/julia_0812/</guid>
+      <description>MIT 开发的 Julia 语言是全球热度上升最快的编程语言之一，下载量超过 200 万次，下载者包括谷歌、Facebook、FAA 和美国能源部等各个部门的开发者。近日，MIT CSAIL 实验室正式发布了 Julia 1.0，该语言期望结合 C 的速度、Matlab 的数学表征、Python 的通用编程与 Shell 的胶水命令行，并构建开源、自由与便捷的编程语言。
+Julia 的特點, 參考Julia 1.0, 節錄其中一段:  快速：Julia 一開始就是為高效能設計的。 Julia 可以藉由 LLVM 被編譯成不同平台的高效機器碼。   LLVM: 可參考[LLVM每日谈之一 LLVM是什么]. 節錄其中一段, &amp;ldquo;LLVM 的主要作用是它可以作为多种语言的后端，它可以提供可编程语言无关的优化和针对很多种CPU的代码生成功能&amp;rdquo;.
+  泛用：Julia 使用多重分派（multiple dispatch）作為程式典範（paradigm），可以更容易表達物件導向和函數-式的設計模式。標準函式庫提供了非同步 I/O，行程控制，日誌記錄，效能分析，套件管理器等等。
+ 動態：Julia 是動態型別的，用起來像腳本語言，並且很好地支援互動式的操作方式。
+ 技術：Julia 擅長數值運算，有非常貼近數學的語法，支援多種數值型別，並且支援平行運算。Julia 的多重分派結合數值和陣列相關的資料型別可以說是渾然天成。
+ 選擇性的型別標註：Julia 有豐富的資料型別描述，型別宣告可以使得程式更加清楚和穩固。
+ 組合性：Julia 的套件可以很和諧的一起運作。矩陣的單位數量或是資料表中一行的貨幣和顏色可以一起運作並且擁有良好的效能。
+  這個新的語言能作什麼, 目前還說不上, 只知道這是個從 MIT 出來, 集大家需求而生的一個開源新語言, 不想掉隊, 只有先學再說了.
+目前先從 2 個線上的資源開始</description>
+    </item>
+    
+    <item>
+      <title>[The Economist] Test-doctoring to keep Japanese women out of medical school</title>
+      <link>https://bradleetw.github.io/englishnews/theeconomist/japanesediscrimination_0821/</link>
+      <pubDate>Tue, 21 Aug 2018 13:23:12 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/englishnews/theeconomist/japanesediscrimination_0821/</guid>
+      <description>Test-doctoring to keep Japanese women out of medical school Japan has made a lot of noise in recent years about demolishing the traditional view that women should stay at home while men go out to work. So it was shocking when, on August 7th, Tokyo Medical University, a prestigious medical school, confessed to marking down the test scores of female applications to keep the ratio of women in each class below 30%.</description>
+    </item>
+    
+    <item>
       <title>[Washington Post] Pentagon is moving toward estabilishing Trump&#39;s Space Force</title>
       <link>https://bradleetw.github.io/englishnews/washingtonpost/spaceforce_0820/</link>
       <pubDate>Mon, 20 Aug 2018 14:18:53 +0800</pubDate>
@@ -116,21 +142,6 @@ Hours after saying he had a &amp;ldquo;very good meeting&amp;rdquo; with the pub
 . hater:(n) 懷恨者
 . dying:(a) 垂死的
 &amp;ldquo;The failing New York Times and the Amazon Washington Post do nothing but write bad stories even on very positive achievements,&amp;rdquo; Trump tweeted.</description>
-    </item>
-    
-    <item>
-      <title>There&#39;s water on Mars! Signs of buried lake tantalize scientists.</title>
-      <link>https://bradleetw.github.io/englishnews/nature/thereiswateronmars_0806/</link>
-      <pubDate>Mon, 06 Aug 2018 16:45:02 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/englishnews/nature/thereiswateronmars_0806/</guid>
-      <description>. bury:(v) 埋葬, 埋藏
-. tantalize:(v) 吊胃口; 引誘
-A large saltwater lake seems to lurk under ice near Mars&amp;rsquo; south pole. If confirmed, it would be the first body of liquid water ever detected on the red planet and a significant milestone in the quest to determine whether life exists there.
-. saltwater:(a) 鹽水的
-. lurk:(v) 潛藏
-. pole:(n) 極點; the South Pole(南極); the North Pole(北極)
-. in the quest to: 在尋求&amp;hellip;的過程中</description>
     </item>
     
     <item>
