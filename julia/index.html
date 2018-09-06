@@ -11,7 +11,7 @@
 <meta property='og:description' content='從 0 出發'>
 <meta property='og:url' content='https://bradleetw.github.io/julia/'>
 <meta property='og:site_name' content='布萊德的學習網站'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content='2018-09-02T16:16:21&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@BradLeeTW'>
+<meta property='og:type' content='website'><meta property='og:updated_time' content='2018-09-06T09:45:24&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@BradLeeTW'>
 
 <meta name="generator" content="Hugo 0.46" />
 
@@ -79,6 +79,8 @@
         <a href='/tags/bbc_news' style='font-size:1em'>BBC_News</a>
       </li><li>
         <a href='/tags/economist' style='font-size:1em'>Economist</a>
+      </li><li>
+        <a href='/tags/education' style='font-size:1em'>Education</a>
       </li><li>
         <a href='/tags/git' style='font-size:1em'>Git</a>
       </li><li>
@@ -188,7 +190,51 @@
 
 <p>Julia 學習資源: <a href="https://lectures.quantecon.org/jl/index_learning_julia.html" target="_blank">https://lectures.quantecon.org/jl/index_learning_julia.html</a></p>
 
-<h2 id="julia-學習資源2-http-ucidatascienceinitiative-github-io-introtojulia">Julia 學習資源2: <a href="http://ucidatascienceinitiative.github.io/IntroToJulia/" target="_blank">http://ucidatascienceinitiative.github.io/IntroToJulia/</a></h2>
+<p>Julia 學習資源2: <a href="http://ucidatascienceinitiative.github.io/IntroToJulia/" target="_blank">http://ucidatascienceinitiative.github.io/IntroToJulia/</a></p>
+
+<h3 id="repl-read-eval-print-loop">REPL (Read Eval Print Loop)</h3>
+
+<p>REPL 也就是 Juila interpreter.</p>
+
+<p>some basic command:</p>
+
+<ol>
+<li><p>type <code>?</code> -&gt; change to <code>help?&gt;</code>, access to online documentation.</p></li>
+
+<li><p>type <code>;</code> -&gt; get a shell prompt, <code>shell&gt;</code>, at which you can enter shell commands.</p></li>
+
+<li><p>type <code>]</code> -&gt; enter package management mode, <code>(v1.0) pkg&gt;</code>, you could add/update/remove package in this mode.</p></li>
+</ol>
+
+<h4 id="package-repl-mode">Package REPL-mode.</h4>
+
+<p>Type <code>]</code> key first to enter package REPL-mode:</p>
+
+<ol>
+<li><p>Press backspace when the input line is empty, or press Ctrl+C to return the <code>julia&gt;</code> prompt.</p></li>
+
+<li><p><code>(v1.0) pkg&gt; status</code> or <code>(v1.0) pkg&gt; st</code>, showing the list of installed packages.</p></li>
+
+<li><p><code>(v1.0) pkg&gt; add packageName</code>, adding a new package to project.</p></li>
+
+<li><p><code>(v1.0) pkg&gt; update</code> or <code>(v1.0) pkg&gt; up</code>, updating packages in mainfest.</p></li>
+
+<li><p><code>(v1.0) pkg&gt; remove packageName</code> or <code>(v1.0) pkg&gt; rm packageName</code>, removing packages from project or manifest.</p></li>
+</ol>
+
+<p>You also could manage package under <code>julia&gt;</code> prompt.</p>
+
+<ol>
+<li><p><code>julia&gt; using Pkg</code>: loading <code>Pkg</code> module.</p></li>
+
+<li><p><code>julia&gt; Pkg.status()</code></p></li>
+
+<li><p><code>julia&gt; Pkg.add(&quot;packageName&quot;)</code></p></li>
+
+<li><p><code>julia&gt; Pkg.update()</code></p></li>
+</ol>
+
+<hr />
 
 </div>
 
