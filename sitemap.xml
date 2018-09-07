@@ -9,7 +9,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/englishnews/</loc>
-    <lastmod>2018-09-06T09:45:24+08:00</lastmod>
+    <lastmod>2018-09-07T19:20:43+08:00</lastmod>
   </url>
   
   <url>
@@ -39,6 +39,11 @@
   <url>
     <loc>https://bradleetw.github.io/usefulurl/</loc>
     <lastmod>2018-08-14T11:37:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/englishnews/theguardian/vanillaicecreams_0907/</loc>
+    <lastmod>2018-09-07T19:20:43+08:00</lastmod>
   </url>
   
   <url>
@@ -173,7 +178,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/authors/bradlee/</loc>
-    <lastmod>2018-09-06T09:45:24+08:00</lastmod>
+    <lastmod>2018-09-07T19:20:43+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -208,7 +213,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/categories/english-guardian/</loc>
-    <lastmod>2018-09-06T09:45:24+08:00</lastmod>
+    <lastmod>2018-09-07T19:20:43+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -269,6 +274,12 @@
   <url>
     <loc>https://bradleetw.github.io/tags/newyorktimes/</loc>
     <lastmod>2018-08-25T12:00:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/tags/nutrition/</loc>
+    <lastmod>2018-09-07T19:20:43+08:00</lastmod>
     <priority>0</priority>
   </url>
   
