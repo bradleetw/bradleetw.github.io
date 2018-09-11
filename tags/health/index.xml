@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Health on 布萊德的學習網站</title>
+    <link>https://bradleetw.github.io/tags/health/</link>
+    <description>Recent content in Health on 布萊德的學習網站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 10 Sep 2018 19:02:58 +0800</lastBuildDate>
+    
+	<atom:link href="https://bradleetw.github.io/tags/health/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[The Guardian] The Guardian view on alcohol: drinking less is good for you</title>
+      <link>https://bradleetw.github.io/englishnews/theguardian/alcohol_0910/</link>
+      <pubDate>Mon, 10 Sep 2018 19:02:58 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/englishnews/theguardian/alcohol_0910/</guid>
+      <description>The Guardian view on alcohol: drinking less is good for you Alcohol is physically bad for you in any quantity; and the more you drink, the worse its health effects. The gigantic report on the subject published last week is unequivocal and authoritative. The report was based on enormous amounts of data: 28 million people around the world were examined in 592 studies to estimate the health risks.
+The variety of ways in which alcohol can kill or damage people comes as a shock.</description>
+    </item>
+    
+  </channel>
+</rss>
