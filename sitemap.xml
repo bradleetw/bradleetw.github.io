@@ -33,7 +33,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/developmenttools/</loc>
-    <lastmod>2018-08-08T11:49:49+08:00</lastmod>
+    <lastmod>2018-08-19T16:24:52+08:00</lastmod>
   </url>
   
   <url>
@@ -117,6 +117,11 @@
   </url>
   
   <url>
+    <loc>https://bradleetw.github.io/developmenttools/awk_study/</loc>
+    <lastmod>2018-08-19T16:24:52+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bradleetw.github.io/englishnews/reuters/applebreachesonetrillion_0816/</loc>
     <lastmod>2018-08-16T13:55:12+08:00</lastmod>
   </url>
@@ -173,6 +178,12 @@
   
   <url>
     <loc>https://bradleetw.github.io/authors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/tags/awk/</loc>
+    <lastmod>2018-08-19T16:24:52+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -312,8 +323,14 @@
   </url>
   
   <url>
+    <loc>https://bradleetw.github.io/categories/shell-script/</loc>
+    <lastmod>2018-08-19T16:24:52+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bradleetw.github.io/tags/</loc>
-    <lastmod>2018-08-24T14:52:34+08:00</lastmod>
+    <lastmod>2018-08-19T16:24:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='AWK AWK 是一種程式語言, 針對有固定格式的文字檔案或是命令列執行結果進行處理, 可統計, 然後依據其結果來做顯示, 或將結果存入檔案, 或傳輸到&rdquo;標準輸出&rdquo;.
+AWK 可用來對很多有相同格式的文字檔案進行修改, 更新, 或是統計某些文字內容. 而且其 script 的語法借鑒了 C, 所以較容易上手. 很多人在談 AWK 時也都提到 sed, 就初步的了解, sed 是針對 stream text 做處理, 功能比 AWK 弱些, 但我猜是這兩個定位的不同. 之後會再花個時間紀錄一下 sed 的使用方法.
+在人工智能及大數據的需求影響下, 很多語言也都提供能讀取固定格式像 csv 的文字檔案, 來進行統計, 然後畫出漂亮有重點的圖, 有這樣的需求 AWK 就較不適用, 因為 AWK 的強項並不在繪圖, 雖然他也可以, 但會比較單調. 而且沒有像 package management 的功能, 導致一些很多高手完成的有用好用的功能無法容易導入.
+所以用 AWK 的時機, 就偏向私人大量文檔的修改或統計時來採用.
+安裝 一般 linux-based 系統都有 AWK 的身影, 理論上不用額外安裝, 像我的 macOS 就內附了. 還有另一個 GAWK, 提供的功能較多, 這個是要額外下載, 但還沒試.'>
+<meta name='theme-color' content='#44ccff'>
+
+<meta property='og:title' content='[Shell Script] AWK 的介紹 • Brad Lee'>
+<meta property='og:description' content='AWK AWK 是一種程式語言, 針對有固定格式的文字檔案或是命令列執行結果進行處理, 可統計, 然後依據其結果來做顯示, 或將結果存入檔案, 或傳輸到&rdquo;標準輸出&rdquo;.
+AWK 可用來對很多有相同格式的文字檔案進行修改, 更新, 或是統計某些文字內容. 而且其 script 的語法借鑒了 C, 所以較容易上手. 很多人在談 AWK 時也都提到 sed, 就初步的了解, sed 是針對 stream text 做處理, 功能比 AWK 弱些, 但我猜是這兩個定位的不同. 之後會再花個時間紀錄一下 sed 的使用方法.
+在人工智能及大數據的需求影響下, 很多語言也都提供能讀取固定格式像 csv 的文字檔案, 來進行統計, 然後畫出漂亮有重點的圖, 有這樣的需求 AWK 就較不適用, 因為 AWK 的強項並不在繪圖, 雖然他也可以, 但會比較單調. 而且沒有像 package management 的功能, 導致一些很多高手完成的有用好用的功能無法容易導入.
+所以用 AWK 的時機, 就偏向私人大量文檔的修改或統計時來採用.
+安裝 一般 linux-based 系統都有 AWK 的身影, 理論上不用額外安裝, 像我的 macOS 就內附了. 還有另一個 GAWK, 提供的功能較多, 這個是要額外下載, 但還沒試.'>
+<meta property='og:url' content='https://bradleetw.github.io/developmenttools/awk_study/'>
+<meta property='og:site_name' content='布萊德的學習網站'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/4d48e2d674da46d68bd6c7fe2925cb5d?s=256'><meta property='article:author' content='https://facebook.com/brad.lee.tw'><meta property='article:section' content='DevelopmentTools'><meta property='article:tag' content='awk'><meta property='article:published_time' content='2018-08-19T16:24:52&#43;08:00'/><meta property='article:modified_time' content='2018-08-19T16:24:52&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@BradLeeTW'><meta name='twitter:creator' content='@BradLeeTW'>
+
+<meta name="generator" content="Hugo 0.46" />
+
+  <title>[Shell Script] AWK 的介紹 • Brad Lee</title>
+  <link rel='canonical' href='https://bradleetw.github.io/developmenttools/awk_study/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.809149b6.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#44ccff;}
+</style>
+
+  
+
+</head>
+
+
+<body class='page type-DevelopmentTools has-sidebar'>
+
+  <div class='site'>
+
+    <div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/test.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    布萊德
+    </h2>
+    <div class='desc'>
+    抽空看看 Julia
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><header>
+    <h4 class='title widget-title'>Menu</h4>
+  </header><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/python/'>Python</a></li><li class='item'>
+  <a href='/julia/'>Julia</a></li><li class='item'>
+  <a href='/web/'>Web</a></li><li class='item'>
+  <a href='/developmenttools/'>Tools</a></li><li class='item'>
+  <a href='/usefulurl/'>Useful URL</a></li></ul>
+    </div>
+  </nav>
+
+</section><section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/tags/bbc_news' style='font-size:1em'>BBC_News</a>
+      </li><li>
+        <a href='/tags/economist' style='font-size:1em'>Economist</a>
+      </li><li>
+        <a href='/tags/education' style='font-size:1em'>Education</a>
+      </li><li>
+        <a href='/tags/git' style='font-size:1em'>Git</a>
+      </li><li>
+        <a href='/tags/github' style='font-size:1em'>GitHub</a>
+      </li><li>
+        <a href='/tags/guardian' style='font-size:1.3333333333333333em'>Guardian</a>
+      </li><li>
+        <a href='/tags/health' style='font-size:1em'>Health</a>
+      </li><li>
+        <a href='/tags/julia' style='font-size:1em'>Julia</a>
+      </li><li>
+        <a href='/tags/mit' style='font-size:1.3333333333333333em'>MIT</a>
+      </li><li>
+        <a href='/tags/newyorktimes' style='font-size:1.3333333333333333em'>NewYorkTimes</a>
+      </li><li>
+        <a href='/tags/nutrition' style='font-size:1em'>Nutrition</a>
+      </li><li>
+        <a href='/tags/reuters' style='font-size:1.6666666666666665em'>Reuters</a>
+      </li><li>
+        <a href='/tags/washingtonpost' style='font-size:2em'>WashingtonPost</a>
+      </li><li>
+        <a href='/tags/awk' style='font-size:1em'>Awk</a>
+      </li><li>
+        <a href='/tags/deployment' style='font-size:1em'>Deployment</a>
+      </li><li>
+        <a href='/tags/hugo' style='font-size:1.6666666666666665em'>Hugo</a>
+      </li><li>
+        <a href='/tags/iterm2' style='font-size:1em'>ITerm2</a>
+      </li><li>
+        <a href='/tags/zsh' style='font-size:1em'>Zsh</a>
+      </li><li>
+        <a href='/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81' style='font-size:1.6666666666666665em'>靜態網頁</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/englishnews/'>English</a>
+      </li><li class='item'>
+        <a href='/machinelearning/'>A.I.</a>
+      </li><li class='item'>
+        <a href='https://github.com/bradleetw/hello-world'>Repo</a>
+      </li></ul>
+  </div>
+</nav>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>布萊德的學習網站</p><p class='desc site-desc'>從 0 出發</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>[Shell Script] AWK 的介紹</h1>
+      
+
+    </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-08-19T16:24:52&#43;08:00'>2018, Aug 19</time>
+</span>
+
+  <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M21,21V20c0-2.76-4-5-9-5s-9,2.24-9,5v1"/>
+  <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
+  
+</svg>
+<span class='screen-reader-text'> by </span><a href='/authors/bradlee'>Brad Lee</a></span>
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+6 mins read
+</span>
+
+
+  
+  
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+<details class='container entry-toc'>
+  <summary class='title'>
+    <span>Table of Contents</span>
+  </summary>
+  <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#awk">AWK</a></li>
+<li><a href="#安裝">安裝</a></li>
+<li><a href="#如何執行-awk-script-file">如何執行 awk script file</a></li>
+<li><a href="#如何編寫-awk-script">如何編寫 awk script</a>
+<ul>
+<li><a href="#區塊">區塊</a></li>
+<li><a href="#讀取資料">讀取資料</a>
+<ul>
+<li><a href="#record-field">Record &amp; Field</a></li>
+<li><a href="#當前已處理文字檔案的進度">當前已處理文字檔案的進度</a></li>
+<li><a href="#將多行的資料視為單一資料">將多行的資料視為單一資料</a></li>
+<li><a href="#區隔不同欄位所用到的符號">區隔不同欄位所用到的符號</a></li>
+<li><a href="#0">$0</a></li>
+<li><a href="#filename">FILENAME</a></li>
+</ul></li>
+<li><a href="#資料的判斷統計">資料的判斷統計:</a>
+<ul>
+<li><a href="#pattern-action">pattern { action }</a></li>
+<li><a href="#依據欄位內容當判斷標準">依據欄位內容當判斷標準</a></li>
+<li><a href="#變數">變數</a>
+<ul>
+<li><a href="#自定義變數">自定義變數</a></li>
+<li><a href="#內建變數">內建變數</a></li>
+</ul></li>
+<li><a href="#算術運算">算術運算</a></li>
+<li><a href="#內建算式函數">內建算式函數</a></li>
+<li><a href="#end-action">END { action }</a></li>
+<li><a href="#流程控制語句">流程控制語句</a>
+<ul>
+<li><a href="#if-else">if else</a></li>
+<li><a href="#while">while</a></li>
+<li><a href="#do-while">do while</a></li>
+<li><a href="#for-初始設定-條件判斷-增值">for (初始設定; 條件判斷; 增值)</a></li>
+<li><a href="#for-variable-in-array">for (variable in array)</a></li>
+<li><a href="#continue-v-s-break">continue v.s. break</a></li>
+<li><a href="#next-v-s-exit">next v.s. exit</a></li>
+</ul></li>
+<li><a href="#字串處理">字串處理</a>
+<ul>
+<li><a href="#字串相加">字串相加</a></li>
+<li><a href="#內建字串函數">內建字串函數</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#輸出結果">輸出結果</a>
+<ul>
+<li><a href="#printf-格式">printf 格式</a></li>
+<li><a href="#輸出到螢幕">輸出到螢幕</a></li>
+<li><a href="#存到檔案">存到檔案</a></li>
+<li><a href="#傳到下個命令">傳到下個命令</a></li>
+<li><a href="#更改輸出時的換行符號-分割欄位符號">更改輸出時的換行符號, 分割欄位符號</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#參考資料">參考資料</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+
+
+  <div class='container entry-content'>
+  
+
+<h2 id="awk">AWK</h2>
+
+<p>AWK 是一種程式語言, 針對有固定格式的文字檔案或是命令列執行結果進行處理, 可統計, 然後依據其結果來做顯示, 或將結果存入檔案, 或傳輸到&rdquo;標準輸出&rdquo;.</p>
+
+<p>AWK 可用來對很多有相同格式的文字檔案進行修改, 更新, 或是統計某些文字內容. 而且其 script 的語法借鑒了 C, 所以較容易上手.
+很多人在談 AWK 時也都提到 sed, 就初步的了解, sed 是針對 stream text 做處理, 功能比 AWK 弱些, 但我猜是這兩個定位的不同. 之後會再花個時間紀錄一下 sed 的使用方法.</p>
+
+<p>在人工智能及大數據的需求影響下, 很多語言也都提供能讀取固定格式像 csv 的文字檔案, 來進行統計, 然後畫出漂亮有重點的圖, 有這樣的需求 AWK 就較不適用, 因為 AWK 的強項並不在繪圖, 雖然他也可以, 但會比較單調. 而且沒有像 package management 的功能, 導致一些很多高手完成的有用好用的功能無法容易導入.</p>
+
+<p>所以用 AWK 的時機, 就偏向私人大量文檔的修改或統計時來採用.</p>
+
+<h2 id="安裝">安裝</h2>
+
+<p>一般 linux-based 系統都有 AWK 的身影, 理論上不用額外安裝, 像我的 macOS 就內附了. 還有另一個 GAWK, 提供的功能較多, 這個是要額外下載, 但還沒試.</p>
+
+<h2 id="如何執行-awk-script-file">如何執行 awk script file</h2>
+
+<p>有以下幾種方式:</p>
+
+<ol>
+<li><p><code>$ awk '{print $0}' filename.txt</code>:</p>
+
+<p>中間<code>''</code>放的就是 awk script, 後面就是接著文字檔案, 後面還可以接著更多的檔名, 後面的檔名數量其上限要再花時間深入暸解.</p></li>
+
+<li><p><code>$ awk -f scriptfile.awk filename.txt</code>:</p>
+
+<p>將 awk script 寫到檔案中, 其檔名不用加上 <code>.awk</code>, 那只是為了個人方便管理. 使用的時候在 awk script file 前面加上 <code>-f</code>.</p></li>
+
+<li><p>將 awk script file 直接變成可執行的檔案:</p>
+
+<p>a. 在 awk script file 中的首行加入 <code>#! /usr/bin/awk -f</code>.</p>
+
+<p>b. 變更權限, <code>$ chmod +x awk_script_file</code>.</p></li>
+
+<li><p><code>$ ls -al | awk '{ if(substr($1, 1, 1) == &quot;d&quot;) print $NF &quot; is direcory.&quot; }'</code>:</p>
+
+<p>透過 pipeline operator 將前面命令的成功輸出當作輸入.</p></li>
+</ol>
+
+<hr />
+
+<h2 id="如何編寫-awk-script">如何編寫 awk script</h2>
+
+<p>除了前面提到的 awk script 語法是借鑑 C, 剩下的概念也不難理解.</p>
+
+<h3 id="區塊">區塊</h3>
+
+<p>awk 根據 3 類區塊來決定執行順序, 開始(被執行次數: 1 次) -&gt; 中間(被執行次數: 根據傳入文字檔案的行數決定 ) -&gt; 結束(被執行次數: 1 次):</p>
+
+<ul>
+<li><p><strong>開始區塊</strong>: <code>BEGIN { statement }</code></p>
+
+<p>承如 <code>BEGIN</code> 的含義, 表示這個區塊(區塊的意思是在大括號中間的所有動作)會最先被執行. 主要目的是用來更改一些預設的設定, 如: FS (輸入行的欄位分割符號), RS (輸入行的換行分割符號)&hellip;等等, 以及讀取命令行的參數.</p>
+
+<p>可以多個區塊前面定義為 <code>BEGIN</code>, 也可以沒有. awk 會依序先執行所有的 <code>BEGIN</code> 區塊, 但只會被執行一次. 但不建議 script 寫成有多個 <code>BEGIN</code> 區塊, 一個就好, 這樣語意比較易懂.</p></li>
+
+<li><p><strong>中間區塊</strong>: <code>pattern { action }</code></p>
+
+<p>當執行完 <code>BEGIN</code> 區塊後, 接著就是依序執行所有的中間區塊, 所有中間區塊被執行的次數是依據被讀取文字輸入檔有多少行來決定. 一般都是在這區塊做資料的判斷統計. 一個 script 中可以沒有中間區塊, 也可以多個.</p>
+
+<p>可以在 pattern 中加入一些判斷式 ( 判斷式不一定要有, 沒寫就表示 true ), 來決定要不要執行 action.</p></li>
+
+<li><p><strong>結束區塊</strong>: <code>END { statement }</code></p>
+
+<p>這個區塊會最後被執行, 而且也只被執行一次, 通常用來輸出統計完的結果(存到檔案, 或是傳到標準輸出), 當然你也可以在中間的區塊做輸出的動作.</p>
+
+<p>和 <code>BEGIN</code> 區塊一樣你可以定義多個 <code>END</code> 區塊, 但不建議這樣操作, 每個 script 一個 <code>END</code> 區塊就好. 同樣 script 中也可以沒有 <code>END</code> 區塊.</p></li>
+</ul>
+
+<hr />
+
+<p>其實一個 awk script 是由一個或多個的 <code>pattern { action }</code> 組合而成, <code>BEGIN</code> 和 <code>END</code> 只是比較特別.</p>
+
+<hr />
+
+<h3 id="讀取資料">讀取資料</h3>
+
+<p>讀取輸入資料: awk 自動讀取所傳入的文字檔案內容或是經由標準輸入傳入的內容, 這是我認爲 awk 好用的地方, 自動讀取資料, 並且將每個欄位自動分開.</p>
+
+<h4 id="record-field">Record &amp; Field</h4>
+
+<p>當在命令列執行 awk script 後頭接上檔名, awk 會自行開檔, 並依序讀取每行資料, 每讀取<em>一行</em>, awk 就當作是一筆 Record , 接著執行 script 中的每一個中間區塊, 並將讀到的該筆 Record 中的每個欄位依序放在 <code>$1</code>, <code>$2</code>, <code>$3</code>, &hellip;這些 Field (欄位)裡, 而 <code>$NF</code> 是表示最後一個欄位 (<code>NF</code> 紀錄著該行欄位的數量).</p>
+
+<h4 id="當前已處理文字檔案的進度">當前已處理文字檔案的進度</h4>
+
+<p><code>FNR</code> 則記錄著 awk script 已經讀取當前文字檔案的 Record 次數, 其實想成 <code>中間區塊</code> 被執行的次數.</p>
+
+<p>因為 awk script 可以依序處理多個文字檔案, 所以當讀到下一個文字檔案時 <code>FNR</code> 又歸零重頭開始紀錄, 而 <code>NR</code> 則是將前面已經讀取不同文字檔案的 Record 數量累加起來.</p>
+
+<p>所以我們可以利用這個變數, 來顯示行號.</p>
+
+<pre><code>{ print FNR, $0 }
+</code></pre>
+
+<h4 id="將多行的資料視為單一資料">將多行的資料視為單一資料</h4>
+
+<p>awk 預設是每一行就是一筆 Record, 但也可以改設成多行是一筆 Record. 如下:</p>
+
+<pre><code>BEGIN { RS = &quot;&quot; }
+</code></pre>
+
+<p>利用 <code>RS</code> 這個變數紀錄著讀取輸入資料時如何判斷是一筆 Record , <code>&quot;/n&quot;</code> 是預設的判斷符號, 也就是一行就一筆 Record. 改成 RS = &ldquo;&rdquo;(空字串), 會使得 Record 之間是由一個或多個空行來分隔.</p>
+
+<h4 id="區隔不同欄位所用到的符號">區隔不同欄位所用到的符號</h4>
+
+<p>而 <code>&quot; &quot;</code> (空白符號) 是 awk 在讀取輸入資料時的預設欄位分割符號, 用 <code>FS</code> 變數記錄著. 假設你的輸入資料文檔是利用 <code>,</code> 來當分割符號, e.g. csv files, 只要有如下設定:</p>
+
+<pre><code>BEGIN { FS = &quot;,&quot; }
+</code></pre>
+
+<p>讀取 csv 的資料就非常方便. 一般變更 <code>RS</code>, <code>FS</code> 都是放在 BEGIN 區塊來執行.</p>
+
+<h4 id="0">$0</h4>
+
+<p>而 <code>$0</code> 記錄著目前讀到的這筆 Record .</p>
+
+<h4 id="filename">FILENAME</h4>
+
+<p><code>FILENAME</code> 則是用來記錄當前文字檔案名字的變數.</p>
+
+<hr />
+
+<h3 id="資料的判斷統計">資料的判斷統計:</h3>
+
+<p>當 awk 對輸入資料依序讀取每筆 Record 時, 我們可以依據該 Record 中是否符合某種條件來決定做相對應的動作, 如統計.</p>
+
+<hr />
+
+<h4 id="pattern-action">pattern { action }</h4>
+
+<p>可以在每個 <code>中間區塊</code> , <code>pattern { action }</code>, 的 <code>pattern</code> 的欄位填入判斷式.</p>
+
+<p>當 <code>pattern</code> 沒有填, 則表示 True, 也就是該 <code>action</code> 一定執行.</p>
+
+<h4 id="依據欄位內容當判斷標準">依據欄位內容當判斷標準</h4>
+
+<p>可以依據某個欄位是否大於等於小於一特定大小: <code>&lt;</code>, <code>&lt;=</code>, <code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&gt;=</code></p>
+
+<pre><code>$2 &gt; 10 { print $1, $3 * $4 }
+</code></pre>
+
+<p>第二個欄位要大於 10 才會處理該筆 Record.</p>
+
+<pre><code>$5 == &quot;January&quot; { print $0 }
+</code></pre>
+
+<p>只列印 Record 中第五個欄位是 January.</p>
+
+<pre><code>$2 + $3 &gt; 20 { print $1 }
+</code></pre>
+
+<p>第二和第三欄位的合要超過 20 才會列印第一個欄位. awk 提供: <code>&amp;&amp;</code>, <code>||</code>, <code>!()</code></p>
+
+<pre><code>$2 &gt; 5 &amp;&amp; $2 &lt; 20 { print }
+</code></pre>
+
+<p>第二欄位要在 20 和 5 這個區間才會列印該筆 Record.</p>
+
+<hr />
+
+<h4 id="變數">變數</h4>
+
+<h5 id="自定義變數">自定義變數</h5>
+
+<p>變數不需要事先聲明就可以馬上使用. 預設 awk 會給該變數設為 0.</p>
+
+<pre><code>$3 &gt; 15 { empCounter = empCounter + 1 }
+END     { print empCounter, &quot;employees worked more than 15 hours.&quot;}
+</code></pre>
+
+<h5 id="內建變數">內建變數</h5>
+
+<table>
+<thead>
+<tr>
+<th>變數</th>
+<th>意義</th>
+<th>預設值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ARGC</td>
+<td>命令行参数的个数</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>ARGV</td>
+<td>命令行参数数组</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>FILENAME</td>
+<td>当前输入文件名</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>FNR</td>
+<td>当前输入文件的记录个数</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>FS</td>
+<td>控制着输入行的欄位分割符</td>
+<td>&rdquo; &ldquo;</td>
+</tr>
+
+<tr>
+<td>NF</td>
+<td>当前记录的欄位个数</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>NR</td>
+<td>到目前为止读的记录数量</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>OFMT</td>
+<td>数值的输出格式</td>
+<td>&rdquo;%.6g&rdquo;</td>
+</tr>
+
+<tr>
+<td>OFS</td>
+<td>输出欄位分割符</td>
+<td>&rdquo; &ldquo;</td>
+</tr>
+
+<tr>
+<td>ORS</td>
+<td>输出的记录的分割符</td>
+<td>&ldquo;\n&rdquo;</td>
+</tr>
+
+<tr>
+<td>RLENGTH</td>
+<td>被函数 match 匹配的字符串的长度</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>RS</td>
+<td>控制着输入行的记录分割符</td>
+<td>&ldquo;\n&rdquo;</td>
+</tr>
+
+<tr>
+<td>RSTART</td>
+<td>被函数 match 匹配的字符串的开始</td>
+<td></td>
+</tr>
+
+<tr>
+<td>SUBSEP</td>
+<td>下标分割符</td>
+<td>&ldquo;\034&rdquo;</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h4 id="算術運算">算術運算</h4>
+
+<p>awk 提供: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>, <code>^</code>. 也提供 <code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code>, <code>^=</code>. 以及 <code>++</code>, <code>--</code>.</p>
+
+<hr />
+
+<h4 id="內建算式函數">內建算式函數</h4>
+
+<table>
+<thead>
+<tr>
+<th>函數</th>
+<th>返回值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>atan2(y,x)</td>
+<td>y/x 的反正切值, 弧度制, 定义域从 −π 到 π</td>
+</tr>
+
+<tr>
+<td>cos(x)</td>
+<td>x 的余弦值, x 以弧度为单位</td>
+</tr>
+
+<tr>
+<td>exp(x)</td>
+<td>x 的指数函数, e<sup>x</sup></td>
+</tr>
+
+<tr>
+<td>int(x)</td>
+<td>x 的整数部分; 当 x 大于 0 时, 向 0 取整</td>
+</tr>
+
+<tr>
+<td>log(x)</td>
+<td>x 的自然对数 (以 e 为底)</td>
+</tr>
+
+<tr>
+<td>rand()</td>
+<td>返回一个伪随机数r ( 0 &lt;= r &lt; 1 )</td>
+</tr>
+
+<tr>
+<td>sin(x)</td>
+<td>x 的正弦值, x 以弧度为单位.</td>
+</tr>
+
+<tr>
+<td>sqrt(x)</td>
+<td>x 的方根</td>
+</tr>
+
+<tr>
+<td>srand(x)</td>
+<td>设置随机数种子, 如果省略 x, 则默认使用当天的时间</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h4 id="end-action">END { action }</h4>
+
+<p>當所有的 Record 都掃過一遍時, 所需要的資料都已記錄下來, 接著就在 <code>END { action }</code> 的 action 做後續的計算輸出動作.</p>
+
+<hr />
+
+<h4 id="流程控制語句">流程控制語句</h4>
+
+<p>和 C 的語法類似, 提供: If-Else, While, For, Do-While 等</p>
+
+<h5 id="if-else">if else</h5>
+
+<pre><code>if (expression)
+    statements
+else
+    statements
+</code></pre>
+
+<h5 id="while">while</h5>
+
+<pre><code>while (expression)
+    statements
+</code></pre>
+
+<h5 id="do-while">do while</h5>
+
+<pre><code>do
+    statements
+while (expression)
+</code></pre>
+
+<h5 id="for-初始設定-條件判斷-增值">for (初始設定; 條件判斷; 增值)</h5>
+
+<pre><code>for(i = 0; i &lt; 10; i++)
+    print $i
+</code></pre>
+
+<h5 id="for-variable-in-array">for (variable in array)</h5>
+
+<p>透過此法所得到的 variable 是 array 的 <code>key</code>.</p>
+
+<pre><code>for (i in array)
+    print i, array[i]
+</code></pre>
+
+<h5 id="continue-v-s-break">continue v.s. break</h5>
+
+<p>continue 和 break 是控制或中斷 while, for, do 這類迴圈的命令.</p>
+
+<p>break 是馬上離開最內層, 不再執行迴圈.</p>
+
+<p>continue 是直接進入下一次的迴圈動作.</p>
+
+<h5 id="next-v-s-exit">next v.s. exit</h5>
+
+<p>next 與 exit 是控制或中斷讀取輸入資料的命令.</p>
+
+<p>next 使 awk 抓取下一個 Record, 然後從第一個 <code>中間區塊</code>繼續.</p>
+
+<p>在 <code>END 區塊</code> 中執行 <code>exit</code> 會導致程序終止, 而在其他的區塊裡, <code>exit</code> 會使得程序表現得好像所有的輸入資料都讀完了, 不會再有輸入資料被讀取, 接著就直接執行 <code>END 區塊</code></p>
+
+<hr />
+
+<h4 id="字串處理">字串處理</h4>
+
+<h5 id="字串相加">字串相加</h5>
+
+<pre><code>{ names = names $1 &quot; &quot; }
+END { print names }
+</code></pre>
+
+<h5 id="內建字串函數">內建字串函數</h5>
+
+<table>
+<thead>
+<tr>
+<th>函數</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>gsub(r,s)</td>
+<td>将 $0 中所有出现的 r 替换为 s, 返回替换发生的次数.</td>
+</tr>
+
+<tr>
+<td>gsub(r,s,t )</td>
+<td>将字符串 t 中所有出现的 r 替换为 s, 返回替换发生的次数</td>
+</tr>
+
+<tr>
+<td>index(s,t)</td>
+<td>返回字符串 t 在 s 中第一次出现的位置, 如果 t 没有出现 的话, 返回 0.</td>
+</tr>
+
+<tr>
+<td>length(s)</td>
+<td>返回 s 包含的字符个数</td>
+</tr>
+
+<tr>
+<td>match(s,r)</td>
+<td>测试 s 是否包含能被 r 匹配的子串, 返回子串的起始位置 或 0; 设置 RSTART 与 RLENGTH</td>
+</tr>
+
+<tr>
+<td>split(s,a)</td>
+<td>用 FS 将 s 分割到数组 a 中, 返回欄位的个数</td>
+</tr>
+
+<tr>
+<td>split(s,a,fs)</td>
+<td>用 fs 分割 s 到数组 a 中, 返回欄位的个数</td>
+</tr>
+
+<tr>
+<td>sprintf(fmt,expr-list)</td>
+<td>根据格式字符串 fmt 返回格式化后的 expr-list</td>
+</tr>
+
+<tr>
+<td>sub(r,s)</td>
+<td>将 $0 的最左最长的, 能被 r 匹配的子字符串替换为 s, 返 回替换发生的次数.</td>
+</tr>
+
+<tr>
+<td>sub(r,s,t)</td>
+<td>把 t 的最左最长的, 能被 r 匹配的子字符串替换为 s, 返回 替换发生的次数.</td>
+</tr>
+
+<tr>
+<td>substr(s,p)</td>
+<td>返回 s 中从位置 p 开始的后缀.</td>
+</tr>
+
+<tr>
+<td>substr(s,p,n)</td>
+<td>返回 s 中从位置 p 开始的, 长度为 n 的子字符串.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="輸出結果">輸出結果</h3>
+
+<p>利用 <code>print</code> 和 <code>printf</code> 這兩個命令將所要的資料結果輸出, <code>printf</code> 的格式和 C 是類似的.</p>
+
+<h4 id="printf-格式">printf 格式</h4>
+
+<table>
+<thead>
+<tr>
+<th>fmt</th>
+<th>$1</th>
+<th>printf(fmt, $1)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>%c, ASCII 字符</td>
+<td>97</td>
+<td>a</td>
+</tr>
+
+<tr>
+<td>%d, 10 進制整數</td>
+<td>97.5</td>
+<td>97</td>
+</tr>
+
+<tr>
+<td>%5d</td>
+<td>97.5</td>
+<td>___97 (<code>_</code> 表示空白)</td>
+</tr>
+
+<tr>
+<td>%e, 科學記號表示</td>
+<td>97.5</td>
+<td>9.750000e+01</td>
+</tr>
+
+<tr>
+<td>%f, 浮點數</td>
+<td>97.5</td>
+<td>97.500000</td>
+</tr>
+
+<tr>
+<td>%7.2f</td>
+<td>97.5</td>
+<td>__97.50 (<code>_</code> 表示空白)</td>
+</tr>
+
+<tr>
+<td>%g, 按照 %e or %f 進行轉換, 選擇較短的那個, 無意義的零會被抑制</td>
+<td>97.5</td>
+<td>97.5</td>
+</tr>
+
+<tr>
+<td>%.6g</td>
+<td>97.5</td>
+<td>97.5</td>
+</tr>
+
+<tr>
+<td>%o, 無符號 8 進制</td>
+<td>97</td>
+<td>141</td>
+</tr>
+
+<tr>
+<td>%06o</td>
+<td>97</td>
+<td>000141</td>
+</tr>
+
+<tr>
+<td>%x, 無符號 16 進制</td>
+<td>97</td>
+<td>61</td>
+</tr>
+
+<tr>
+<td>%s, 字符串</td>
+<td>January</td>
+<td>January</td>
+</tr>
+
+<tr>
+<td>%10s</td>
+<td>January</td>
+<td>___January (<code>_</code> 表示空白)</td>
+</tr>
+
+<tr>
+<td>%-10s</td>
+<td>January</td>
+<td>January___ (<code>_</code> 表示空白)</td>
+</tr>
+
+<tr>
+<td>%.3s</td>
+<td>January</td>
+<td>Jan</td>
+</tr>
+
+<tr>
+<td>%10.3s</td>
+<td>January</td>
+<td>_______Jan (<code>_</code> 表示空白)</td>
+</tr>
+
+<tr>
+<td>%-10.3s</td>
+<td>January</td>
+<td>Jan_______ (<code>_</code> 表示空白)</td>
+</tr>
+
+<tr>
+<td>%%, 打印一个百分号 %, 不会有参数被吸收</td>
+<td></td>
+<td>%</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h4 id="輸出到螢幕">輸出到螢幕</h4>
+
+<p>將結果打印到標準輸出, 也就是螢幕:</p>
+
+<pre><code>{ print $2, $NF }
+{ printf(&quot;The 2nd field is %d, %.2f&quot;, $2, $2*$4) }
+</code></pre>
+
+<h4 id="存到檔案">存到檔案</h4>
+
+<p>將結果輸出到檔案: 透過 redirector command <code>&gt;</code> (將輸出結果存到檔案, 會將原有資料覆蓋) or <code>&gt;&gt;</code> (將輸出結果附加到檔案).</p>
+
+<pre><code>{ printf(&quot;$1=%d, $2=%d&quot;, $1, $2) &gt; &quot;outFileName.txt&quot; }
+</code></pre>
+
+<p><strong>PS</strong>:<code>{ print $1, $2 &gt; $3 }</code> 和 <code>{ print $1, ($2 &gt; $3) }</code> 的差別:</p>
+
+<p>第一個式子是將 $1 和 $2 的輸出結果存到一個以 $3 內容來命名的檔案, 第二個式子是將 $1 以及 $2 是否大於 $3 的結果輸出到螢幕.</p>
+
+<h4 id="傳到下個命令">傳到下個命令</h4>
+
+<p>將結果透過 pipeline operator, <code>|</code> , 傳給 下一個命令: 目前我所看到的用法都是將輸出結果傳到 <code>sort</code> 這命令將結果做排序.</p>
+
+<pre><code>BEGIN   { FS = &quot;\t&quot; }
+        { pop[$4] += $3 }
+END     { for (c in pop)
+            printf(&quot;%15s\t%6d\n&quot;, c, pop[c]) | &quot;sort -t'\t' +1rn&quot;
+        }
+</code></pre>
+
+<p>其實也可以在命令列底下來執行相同的事:</p>
+
+<pre><code>$ awk -f someScript.awk data.txt | sort -t'\t' +1rn
+</code></pre>
+
+<hr />
+
+<h4 id="更改輸出時的換行符號-分割欄位符號">更改輸出時的換行符號, 分割欄位符號</h4>
+
+<p>這兩個變數是在使用 <code>print expression, expression, ...</code> 命令時用到的. 打印各個 expression, expression 之間由 <code>OFS</code> 分開, 由 <code>ORS</code> 終止.</p>
+
+<p><code>OFS</code> 預設的輸出欄位分割符號是<code>&quot; &quot;</code>, 而<code>ORS</code> 預設的輸出換行符號是<code>&quot;\n&quot;</code>.</p>
+
+<p><code>{ print $1, $2, $3 }</code> 輸出結果:</p>
+
+<pre><code>Beth 4.00 0
+Dan 3.75 0
+Kathy 4.00 10
+</code></pre>
+
+<p><code>{ print $1 $2 $3 }</code> 輸出結果: (這語法是將$1,$2,和$3變成一個字串)</p>
+
+<pre><code>Beth4.000
+Dan3.750
+Kathy4.0010
+</code></pre>
+
+<p>加上 <code>BEGIN{ OFS = &quot;-&quot;}</code> 其 <code>{ print $1, $2, $3 }</code>輸出結果變成:</p>
+
+<pre><code>Beth-4.00-0
+Dan-3.75-0
+Kathy-4.00-10
+</code></pre>
+
+<hr />
+
+<h2 id="參考資料">參考資料</h2>
+
+<ul>
+<li><p>GNU AWK 官方使用手冊: <a href="http://www.gnu.org/software/gawk/manual/gawk.html#toc-Getting-Started-with-awk" target="_blank">http://www.gnu.org/software/gawk/manual/gawk.html#toc-Getting-Started-with-awk</a></p></li>
+
+<li><p>簡單的介紹 sed &amp; awk &amp; grep 入門: <a href="https://www.cnblogs.com/moveofgod/p/3540575.html" target="_blank">https://www.cnblogs.com/moveofgod/p/3540575.html</a></p></li>
+
+<li><p>用一些例子介紹 sed &amp; awk: <a href="http://dongweiming.github.io/sed_and_awk/#/" target="_blank">http://dongweiming.github.io/sed_and_awk/#/</a></p></li>
+
+<li><p>Github 上一本介紹 awk programming 的中文翻譯: <a href="https://github.com/wuzhouhui/awk" target="_blank">https://github.com/wuzhouhui/awk</a></p></li>
+</ul>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  <div class='categories'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/shell-script'>Shell Script</a></div>
+<div class='tags'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/awk'>Awk</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/developmenttools/gitstudy/gitrelated_1/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>[Git]如何忽略追蹤特定檔案或目錄?</a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/bradleetw' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/BradLeeTW' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:brad.lee.tw@outlook.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/brad-lee-77224542' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://www.youtube.com/channel/UCRtY7h5MSH4zMw-fhOSh64Q' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Youtube account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2018 bradlee </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='https:\/\/bradleetw.github.io\/assets\/js\/'</script>
+
+<script src='https://bradleetw.github.io/assets/js/main.68cb493a.js'></script><script src='/js/custom.js'></script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

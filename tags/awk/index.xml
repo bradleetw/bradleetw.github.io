@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Awk on 布萊德的學習網站</title>
+    <link>https://bradleetw.github.io/tags/awk/</link>
+    <description>Recent content in Awk on 布萊德的學習網站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 19 Aug 2018 16:24:52 +0800</lastBuildDate>
+    
+	<atom:link href="https://bradleetw.github.io/tags/awk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[Shell Script] AWK 的介紹</title>
+      <link>https://bradleetw.github.io/developmenttools/awk_study/</link>
+      <pubDate>Sun, 19 Aug 2018 16:24:52 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/developmenttools/awk_study/</guid>
+      <description>AWK AWK 是一種程式語言, 針對有固定格式的文字檔案或是命令列執行結果進行處理, 可統計, 然後依據其結果來做顯示, 或將結果存入檔案, 或傳輸到&amp;rdquo;標準輸出&amp;rdquo;.
+AWK 可用來對很多有相同格式的文字檔案進行修改, 更新, 或是統計某些文字內容. 而且其 script 的語法借鑒了 C, 所以較容易上手. 很多人在談 AWK 時也都提到 sed, 就初步的了解, sed 是針對 stream text 做處理, 功能比 AWK 弱些, 但我猜是這兩個定位的不同. 之後會再花個時間紀錄一下 sed 的使用方法.
+在人工智能及大數據的需求影響下, 很多語言也都提供能讀取固定格式像 csv 的文字檔案, 來進行統計, 然後畫出漂亮有重點的圖, 有這樣的需求 AWK 就較不適用, 因為 AWK 的強項並不在繪圖, 雖然他也可以, 但會比較單調. 而且沒有像 package management 的功能, 導致一些很多高手完成的有用好用的功能無法容易導入.
+所以用 AWK 的時機, 就偏向私人大量文檔的修改或統計時來採用.
+安裝 一般 linux-based 系統都有 AWK 的身影, 理論上不用額外安裝, 像我的 macOS 就內附了. 還有另一個 GAWK, 提供的功能較多, 這個是要額外下載, 但還沒試.</description>
+    </item>
+    
+  </channel>
+</rss>
