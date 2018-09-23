@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pipenv on 布萊德的學習網站</title>
+    <link>https://bradleetw.github.io/tags/pipenv/</link>
+    <description>Recent content in Pipenv on 布萊德的學習網站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 18 Sep 2018 12:17:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://bradleetw.github.io/tags/pipenv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[Python] virtualenv, virtualenvwrapper, pyenv, and pipenv</title>
+      <link>https://bradleetw.github.io/python/pipenv_0918/</link>
+      <pubDate>Tue, 18 Sep 2018 12:17:10 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/python/pipenv_0918/</guid>
+      <description>Python 為什麼需要虛擬開發環境 開發者的電腦中也許同時存在多個開發項目但需要同一個 package 的不同版本, 所以需要利用像是 virtualenv 這類的工具來建立不同的獨立開發環境.
+利用 virtualenv 建立虛擬開發環境 首先利用 pip 安裝: $ pip install virtualenv.
+建立虛擬環境 先為你要開發的項目建立一個目錄, 然後進入該附錄後, 執行以下命令來建立虛擬開發環境.
+$ virtualenv --no-site-packages VenvName  如果想要建立的虛擬環境也要有和當前系統一樣的第三方包, 更換參數
+$ virtualenv --system-site_packages VenvName  進入虛擬環境 成功後, $ source VenvName/bin/activate 進入該虛擬開發環境.
+可利用 $ pip list 查看目前環境所安裝的第三方包. 接著就可以安裝所需要的第三方包.
+離開虛擬環境 $ deactivate 就可離開該虛擬開發環境.
+利用 virtualenvwrapper 管理所有的虛擬環境 單純使用 virtualenv 來進行開發是沒什麼大問題, 但在面臨同時在一台電腦中有多個開發項目, 使用 virtualenvwrapper 可以幫忙管理 (建立, 選擇使用, 移除 虛擬空間)多個虛擬空間. 而且提供更方便進入開發虛擬空間的命令.
+安裝 virtualenvwrapper 安裝 $ pip install virtualenvwrapper.</description>
+    </item>
+    
+  </channel>
+</rss>
