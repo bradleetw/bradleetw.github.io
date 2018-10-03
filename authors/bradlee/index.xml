@@ -5,10 +5,21 @@
     <link>https://bradleetw.github.io/authors/bradlee/</link>
     <description>Recent content in Bradlee on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 19 Sep 2018 10:56:31 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 30 Sep 2018 10:42:24 +0800</lastBuildDate>
     
 	<atom:link href="https://bradleetw.github.io/authors/bradlee/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Python] Comprehensions Concepts</title>
+      <link>https://bradleetw.github.io/python/comprehension_01_0930/</link>
+      <pubDate>Sun, 30 Sep 2018 10:42:24 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/python/comprehension_01_0930/</guid>
+      <description>What is the Comprehension? 這個 Python 必須懂的高階使用概念, 在官方的資料中並沒有單獨 comprehension 的章節, 而是可以看到如下的詞:
+ List Comprehension Set Comprehension Dict Comprehension Asynchronous Comprehension (New syntax features in 3.6)  而線上的資料大都從 List Comprehension 開始介紹這個概念. Python List Comprehensions: Explained Visually, 這篇由 Tery Hunner 邊寫的內容, 是我看到很多人引用來介紹的文章.
+Sometimes a programming design pattern becomes common enough to warrant its own special syntax. Python’s list comprehensions are a prime example of such a syntactic sugar. &amp;ndash; Tery Hunner.</description>
+    </item>
     
     <item>
       <title>[Washington Post] &#39;No pain, no gain&#39; sounds tough, but you may only be hurting yourself</title>
