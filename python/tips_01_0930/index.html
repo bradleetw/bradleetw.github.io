@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='原帖: Python开发的10个小贴士
+Tips 1: List Comprehension [Python] Comprehensions Concepts
+Tips 2: Directly Get Value of List object Bad bag = [1, 2, 3, 4, 5] for i in range(len(bag)): print(bag[i]) Good bag = [1, 2, 3, 4, 5] for i in bag: print(i) Get the index of list itme if you need bag = [1, 2, 3, 4, 5] for index, element in enumerate(bag): print(index, element) Tips 3: Exchange the value of variables Bad a = 5 b = 10 tmp = a a = b b = tmp Good a = 5 b = 10 a, b = b, a Tips 4: Initialize List General bag = [] for _ in range(10): bag.'>
+<meta name='theme-color' content='#44ccff'>
+
+<meta property='og:title' content='[Python] Some Tips • Brad Lee'>
+<meta property='og:description' content='原帖: Python开发的10个小贴士
+Tips 1: List Comprehension [Python] Comprehensions Concepts
+Tips 2: Directly Get Value of List object Bad bag = [1, 2, 3, 4, 5] for i in range(len(bag)): print(bag[i]) Good bag = [1, 2, 3, 4, 5] for i in bag: print(i) Get the index of list itme if you need bag = [1, 2, 3, 4, 5] for index, element in enumerate(bag): print(index, element) Tips 3: Exchange the value of variables Bad a = 5 b = 10 tmp = a a = b b = tmp Good a = 5 b = 10 a, b = b, a Tips 4: Initialize List General bag = [] for _ in range(10): bag.'>
+<meta property='og:url' content='https://bradleetw.github.io/python/tips_01_0930/'>
+<meta property='og:site_name' content='布萊德的學習網站'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/4d48e2d674da46d68bd6c7fe2925cb5d?s=256'><meta property='article:author' content='https://facebook.com/brad.lee.tw'><meta property='article:section' content='Python'><meta property='article:tag' content='PythonTips'><meta property='article:published_time' content='2018-09-30T09:30:57&#43;08:00'/><meta property='article:modified_time' content='2018-09-30T09:30:57&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@BradLeeTW'><meta name='twitter:creator' content='@BradLeeTW'>
+
+<meta name="generator" content="Hugo 0.46" />
+
+  <title>[Python] Some Tips • Brad Lee</title>
+  <link rel='canonical' href='https://bradleetw.github.io/python/tips_01_0930/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.809149b6.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#44ccff;}
+</style>
+
+  
+
+</head>
+
+
+<body class='page type-Python has-sidebar'>
+
+  <div class='site'>
+
+    <div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/test.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    布萊德
+    </h2>
+    <div class='desc'>
+    抽空看看 Julia
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><header>
+    <h4 class='title widget-title'>Menu</h4>
+  </header><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/python/'>Python</a></li><li class='item'>
+  <a href='/julia/'>Julia</a></li><li class='item'>
+  <a href='/web/'>Web</a></li><li class='item'>
+  <a href='/developmenttools/'>Tools</a></li><li class='item'>
+  <a href='/usefulurl/'>Useful URL</a></li></ul>
+    </div>
+  </nav>
+
+</section><section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/tags/bbc_news' style='font-size:1em'>BBC_News</a>
+      </li><li>
+        <a href='/tags/economist' style='font-size:1em'>Economist</a>
+      </li><li>
+        <a href='/tags/education' style='font-size:1em'>Education</a>
+      </li><li>
+        <a href='/tags/git' style='font-size:1em'>Git</a>
+      </li><li>
+        <a href='/tags/github' style='font-size:1em'>GitHub</a>
+      </li><li>
+        <a href='/tags/guardian' style='font-size:1.3333333333333333em'>Guardian</a>
+      </li><li>
+        <a href='/tags/health' style='font-size:1.6666666666666665em'>Health</a>
+      </li><li>
+        <a href='/tags/julia' style='font-size:1em'>Julia</a>
+      </li><li>
+        <a href='/tags/mit' style='font-size:1.3333333333333333em'>MIT</a>
+      </li><li>
+        <a href='/tags/nature' style='font-size:1em'>Nature</a>
+      </li><li>
+        <a href='/tags/newyorktimes' style='font-size:1.3333333333333333em'>NewYorkTimes</a>
+      </li><li>
+        <a href='/tags/nutrition' style='font-size:1em'>Nutrition</a>
+      </li><li>
+        <a href='/tags/pythoncomprehension' style='font-size:1em'>PythonComprehension</a>
+      </li><li>
+        <a href='/tags/pythontips' style='font-size:1em'>PythonTips</a>
+      </li><li>
+        <a href='/tags/reuters' style='font-size:1.6666666666666665em'>Reuters</a>
+      </li><li>
+        <a href='/tags/washingtonpost' style='font-size:2em'>WashingtonPost</a>
+      </li><li>
+        <a href='/tags/autoenv' style='font-size:1em'>Autoenv</a>
+      </li><li>
+        <a href='/tags/awk' style='font-size:1em'>Awk</a>
+      </li><li>
+        <a href='/tags/deployment' style='font-size:1em'>Deployment</a>
+      </li><li>
+        <a href='/tags/hugo' style='font-size:1.6666666666666665em'>Hugo</a>
+      </li><li>
+        <a href='/tags/iterm2' style='font-size:1em'>ITerm2</a>
+      </li><li>
+        <a href='/tags/pipenv' style='font-size:1em'>Pipenv</a>
+      </li><li>
+        <a href='/tags/pyenv' style='font-size:1em'>Pyenv</a>
+      </li><li>
+        <a href='/tags/virtualenv' style='font-size:1em'>Virtualenv</a>
+      </li><li>
+        <a href='/tags/virtualenvwrapper' style='font-size:1em'>Virtualenvwrapper</a>
+      </li><li>
+        <a href='/tags/zsh' style='font-size:1em'>Zsh</a>
+      </li><li>
+        <a href='/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81' style='font-size:1.6666666666666665em'>靜態網頁</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/englishnews/'>English</a>
+      </li><li class='item'>
+        <a href='/machinelearning/'>A.I.</a>
+      </li><li class='item'>
+        <a href='https://github.com/bradleetw/hello-world'>Repo</a>
+      </li></ul>
+  </div>
+</nav>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>布萊德的學習網站</p><p class='desc site-desc'>從 0 出發</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>[Python] Some Tips</h1>
+      
+
+    </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-09-30T09:30:57&#43;08:00'>2018, Sep 30</time>
+</span>
+
+  <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M21,21V20c0-2.76-4-5-9-5s-9,2.24-9,5v1"/>
+  <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
+  
+</svg>
+<span class='screen-reader-text'> by </span><a href='/authors/bradlee'>Brad Lee</a></span>
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+3 mins read
+</span>
+
+
+  
+  
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+<details class='container entry-toc'>
+  <summary class='title'>
+    <span>Table of Contents</span>
+  </summary>
+  <nav id="TableOfContents">
+<ul>
+<li><a href="#tips-1-list-comprehension">Tips 1: List Comprehension</a></li>
+<li><a href="#tips-2-directly-get-value-of-list-object">Tips 2: Directly Get Value of List object</a>
+<ul>
+<li><a href="#bad">Bad</a></li>
+<li><a href="#good">Good</a></li>
+<li><a href="#get-the-index-of-list-itme-if-you-need">Get the index of list itme if you need</a></li>
+</ul></li>
+<li><a href="#tips-3-exchange-the-value-of-variables">Tips 3: Exchange the value of variables</a>
+<ul>
+<li><a href="#bad-1">Bad</a></li>
+<li><a href="#good-1">Good</a></li>
+</ul></li>
+<li><a href="#tips-4-initialize-list">Tips 4: Initialize List</a>
+<ul>
+<li><a href="#general">General</a></li>
+<li><a href="#good-2">Good</a></li>
+<li><a href="#trap-shallow-copy">Trap: Shallow copy</a></li>
+</ul></li>
+<li><a href="#tips-5-string-access">Tips 5: String Access</a>
+<ul>
+<li><a href="#bad-2">Bad</a></li>
+<li><a href="#good-3">Good</a></li>
+</ul></li>
+<li><a href="#tips-6-return-tuples">Tips 6: Return tuples</a>
+<ul>
+<li><a href="#bad-3">Bad</a></li>
+<li><a href="#good-4">Good</a></li>
+</ul></li>
+<li><a href="#tips-7-get-the-value-of-dict-by-dict-get-with-default-value">Tips 7: Get the value of Dict by dict.get() with default value.</a>
+<ul>
+<li><a href="#not-good">Not Good</a></li>
+<li><a href="#good-5">Good</a></li>
+</ul></li>
+<li><a href="#tips-8-list-slice">Tips 8: List Slice</a>
+<ul>
+<li><a href="#取前-5-個元素">取前 5 個元素</a></li>
+<li><a href="#取後-5-個元素">取後 5 個元素</a></li>
+<li><a href="#每隔-2-個取一個元素">每隔 2 個取一個元素</a></li>
+<li><a href="#從後頭數過來取元素">從後頭數過來取元素</a></li>
+</ul></li>
+</ul>
+</nav>
+</details>
+
+
+  <div class='container entry-content'>
+  
+
+<p>原帖: <a href="http://www.codeceo.com/article/python-10-tips.html" target="_blank">Python开发的10个小贴士</a></p>
+
+<h1 id="tips-1-list-comprehension">Tips 1: List Comprehension</h1>
+
+<p><a href="/python/comprehension_01_0930/" target="_blank">[Python] Comprehensions Concepts</a></p>
+
+<h1 id="tips-2-directly-get-value-of-list-object">Tips 2: Directly Get Value of List object</h1>
+
+<h2 id="bad">Bad</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">bag <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(bag)):
+    <span style="color:#66d9ef">print</span>(bag[i])</code></pre></div>
+<h2 id="good">Good</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">bag <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> bag:
+    <span style="color:#66d9ef">print</span>(i)</code></pre></div>
+<h2 id="get-the-index-of-list-itme-if-you-need">Get the index of list itme if you need</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">bag <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+<span style="color:#66d9ef">for</span> index, element <span style="color:#f92672">in</span> enumerate(bag):
+    <span style="color:#66d9ef">print</span>(index, element)</code></pre></div>
+<h1 id="tips-3-exchange-the-value-of-variables">Tips 3: Exchange the value of variables</h1>
+
+<h2 id="bad-1">Bad</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+b <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+
+tmp <span style="color:#f92672">=</span> a
+a <span style="color:#f92672">=</span> b
+b <span style="color:#f92672">=</span> tmp</code></pre></div>
+<h2 id="good-1">Good</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+b <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+a, b <span style="color:#f92672">=</span> b, a</code></pre></div>
+<h1 id="tips-4-initialize-list">Tips 4: Initialize List</h1>
+
+<h2 id="general">General</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">bag <span style="color:#f92672">=</span> []
+<span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
+    bag<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">0</span>)</code></pre></div>
+<h2 id="good-2">Good</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">bag <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>]<span style="color:#f92672">*</span><span style="color:#ae81ff">10</span></code></pre></div>
+<h2 id="trap-shallow-copy">Trap: Shallow copy</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">bag <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span></code></pre></div>
+<p>The result is NOT what we want.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">bag[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span></code></pre></div>
+<p>The result of bag will be <code>[[1],[1],[1],[1],[1]]</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">bag <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>)]
+bag[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span></code></pre></div>
+<p>The result of bag will be <code>[[1],[0],[0],[0],[0]]</code></p>
+
+<h1 id="tips-5-string-access">Tips 5: String Access</h1>
+
+<h2 id="bad-2">Bad</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Raymond&#34;</span>
+age <span style="color:#f92672">=</span> <span style="color:#ae81ff">22</span>
+born_in <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Oakland, CA&#34;</span>
+string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello my name is &#34;</span> <span style="color:#f92672">+</span> name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;and I&#39;m &#34;</span> <span style="color:#f92672">+</span> str(age) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; years old. I was born in &#34;</span> <span style="color:#f92672">+</span> born_in <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;.&#34;</span>
+<span style="color:#66d9ef">print</span>(string)</code></pre></div>
+<h2 id="good-3">Good</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Raymond&#34;</span>
+age <span style="color:#f92672">=</span> <span style="color:#ae81ff">22</span>
+born_in <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Oakland, CA&#34;</span>
+string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello my name is {0} and I&#39;m {1} years old. I was born in {2}.&#34;</span><span style="color:#f92672">.</span>format(name, age, born_in)
+<span style="color:#66d9ef">print</span>(string)</code></pre></div>
+<h1 id="tips-6-return-tuples">Tips 6: Return tuples</h1>
+
+<h2 id="bad-3">Bad</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">binary</span>():
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>
+
+result <span style="color:#f92672">=</span> binary()
+zero <span style="color:#f92672">=</span> result[<span style="color:#ae81ff">0</span>]
+one <span style="color:#f92672">=</span> zero[<span style="color:#ae81ff">1</span>]</code></pre></div>
+<h2 id="good-4">Good</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zero, one <span style="color:#f92672">=</span> binary()</code></pre></div>
+<p>or</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">zero, _ <span style="color:#f92672">=</span> binary()</code></pre></div>
+<h1 id="tips-7-get-the-value-of-dict-by-dict-get-with-default-value">Tips 7: Get the value of Dict by dict.get() with default value.</h1>
+
+<h2 id="not-good">Not Good</h2>
+
+<p>一般對於不存在的 dictionary key/value, 為了避免 <code>KeyError</code>, 會用如下的寫法完成 error handling.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">countr <span style="color:#f92672">=</span> {}
+bag <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">7</span>]
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> bag:
+    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">in</span> countr:
+        countr[i] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">else</span>:
+        countr[i] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
+    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">in</span> countr:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Count of {}: {}&#34;</span><span style="color:#f92672">.</span>format(i, countr[i]))
+    <span style="color:#66d9ef">else</span>:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Count of {}: {}&#34;</span><span style="color:#f92672">.</span>format(i, <span style="color:#ae81ff">0</span>))</code></pre></div>
+<h2 id="good-5">Good</h2>
+
+<p>可以使用 <code>dict.get(key, defaultValue)</code> 來完成避免 <code>KeyError</code> 的 error handling.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">countr <span style="color:#f92672">=</span> {}
+bag <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">7</span>]
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> bag:
+    countr[i] <span style="color:#f92672">=</span> countr<span style="color:#f92672">.</span>get(i, <span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Count of {}: {}&#34;</span><span style="color:#f92672">.</span>format(i, countr<span style="color:#f92672">.</span>get(i, <span style="color:#ae81ff">0</span>)))</code></pre></div>
+<h1 id="tips-8-list-slice">Tips 8: List Slice</h1>
+
+<p><strong>List [ Start: Stop: Step ]</strong></p>
+
+<h2 id="取前-5-個元素">取前 5 個元素</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">bag <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>]
+<span style="color:#66d9ef">for</span> elem <span style="color:#f92672">in</span> bag[:<span style="color:#ae81ff">5</span>]:
+    <span style="color:#66d9ef">print</span>(elem)</code></pre></div>
+<h2 id="取後-5-個元素">取後 5 個元素</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">bag <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>]
+<span style="color:#66d9ef">for</span> elem <span style="color:#f92672">in</span> bag[<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>:]:
+    <span style="color:#66d9ef">print</span>(elem)</code></pre></div>
+<h2 id="每隔-2-個取一個元素">每隔 2 個取一個元素</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">bag <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>]
+<span style="color:#66d9ef">for</span> elem <span style="color:#f92672">in</span> bag[::<span style="color:#ae81ff">2</span>]:
+    <span style="color:#66d9ef">print</span>(elem)</code></pre></div>
+<h2 id="從後頭數過來取元素">從後頭數過來取元素</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">bag <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>]
+<span style="color:#66d9ef">for</span> elem <span style="color:#f92672">in</span> bag[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]:
+    <span style="color:#66d9ef">print</span>(elem)</code></pre></div>
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  <div class='categories'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/python'>Python</a></div>
+<div class='tags'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/pythontips'>PythonTips</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/python/pipenv_0918/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>[Python] virtualenv, virtualenvwrapper, pyenv, and pipenv</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/python/comprehension_01_0930/'>
+        <span class='screen-reader-text'>Next post: </span>[Python] Comprehensions Concepts<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/bradleetw' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/BradLeeTW' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:brad.lee.tw@outlook.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/brad-lee-77224542' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://www.youtube.com/channel/UCRtY7h5MSH4zMw-fhOSh64Q' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Youtube account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2018 bradlee </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='https:\/\/bradleetw.github.io\/assets\/js\/'</script>
+
+<script src='https://bradleetw.github.io/assets/js/main.68cb493a.js'></script><script src='/js/custom.js'></script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
