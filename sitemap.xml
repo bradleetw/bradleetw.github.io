@@ -14,7 +14,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/machinelearning/</loc>
-    <lastmod>2018-08-26T21:56:50+08:00</lastmod>
+    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
   </url>
   
   <url>
@@ -40,6 +40,11 @@
   <url>
     <loc>https://bradleetw.github.io/usefulurl/</loc>
     <lastmod>2018-08-14T11:37:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</loc>
+    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
   </url>
   
   <url>
@@ -231,7 +236,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/authors/bradlee/</loc>
-    <lastmod>2018-09-30T10:42:24+08:00</lastmod>
+    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -243,6 +248,12 @@
   <url>
     <loc>https://bradleetw.github.io/tags/deployment/</loc>
     <lastmod>2018-07-19T14:31:14+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/tags/eda/</loc>
+    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -338,7 +349,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/categories/machine-learning/</loc>
-    <lastmod>2018-08-26T21:56:50+08:00</lastmod>
+    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -410,6 +421,12 @@
   <url>
     <loc>https://bradleetw.github.io/categories/shell-script/</loc>
     <lastmod>2018-08-19T16:24:52+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/tags/tbf/</loc>
+    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
