@@ -5,10 +5,23 @@
     <link>https://bradleetw.github.io/machinelearning/</link>
     <description>Recent content in A.I. on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 10 Oct 2018 09:24:33 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 15 Oct 2018 14:22:02 +0800</lastBuildDate>
     
 	<atom:link href="https://bradleetw.github.io/machinelearning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[TakeNotes] In demand Skills for Data Scientists</title>
+      <link>https://bradleetw.github.io/machinelearning/takenotestfromweb/00_themostindemandskillsfordatascientists_1015/</link>
+      <pubDate>Mon, 15 Oct 2018 14:22:02 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/machinelearning/takenotestfromweb/00_themostindemandskillsfordatascientists_1015/</guid>
+      <description>Original Post: https://towardsdatascience.com/the-most-in-demand-skills-for-data-scientists-4a4a8db896db
+https://www.kaggle.com/discdiver/the-most-in-demand-skills-for-data-scientists/
+The Most in Demand Skills for Data Scientists Data scientists are expected to know a lot,
+ Machine Learning Computer Science Statistics Mathematics Data Visualization communication Deep Learning.  How should data scientists who want to be in demand by employers spend their learning budget?
+The related data from (2018, Oct)  LinkedIn Indeed: https://www.indeed.com SimplyHired: https://www.simplyhired.com Monster: https://angel.co/jobs AngelList: https://angel.co/jobs Glassdoor: https://www.glassdoor.com/index.htm  Compare with as below information:  Data Scientist Personas: What Skills Do They Have and How Much Do They Make?</description>
+    </item>
     
     <item>
       <title>[Data Visualization] Exploratory data analysis</title>

@@ -14,7 +14,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/machinelearning/</loc>
-    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
+    <lastmod>2018-10-15T14:22:02+08:00</lastmod>
   </url>
   
   <url>
@@ -40,6 +40,11 @@
   <url>
     <loc>https://bradleetw.github.io/usefulurl/</loc>
     <lastmod>2018-08-14T11:37:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/machinelearning/takenotestfromweb/00_themostindemandskillsfordatascientists_1015/</loc>
+    <lastmod>2018-10-15T14:22:02+08:00</lastmod>
   </url>
   
   <url>
@@ -236,7 +241,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/authors/bradlee/</loc>
-    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
+    <lastmod>2018-10-15T14:22:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -425,6 +430,12 @@
   </url>
   
   <url>
+    <loc>https://bradleetw.github.io/tags/studyresource/</loc>
+    <lastmod>2018-10-15T14:22:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bradleetw.github.io/tags/tbf/</loc>
     <lastmod>2018-10-10T09:24:33+08:00</lastmod>
     <priority>0</priority>
@@ -433,6 +444,12 @@
   <url>
     <loc>https://bradleetw.github.io/tags/</loc>
     <lastmod>2018-09-18T12:17:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/tags/takenotes/</loc>
+    <lastmod>2018-10-15T14:22:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
