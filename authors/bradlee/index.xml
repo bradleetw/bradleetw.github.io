@@ -5,10 +5,22 @@
     <link>https://bradleetw.github.io/authors/bradlee/</link>
     <description>Recent content in Bradlee on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Oct 2018 14:22:02 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 16 Oct 2018 12:59:33 +0800</lastBuildDate>
     
 	<atom:link href="https://bradleetw.github.io/authors/bradlee/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[DataScience][TreeBasedMethod] Random Forests (1)</title>
+      <link>https://bradleetw.github.io/machinelearning/algorithm/tb_randomforest_01_1016/</link>
+      <pubDate>Tue, 16 Oct 2018 12:59:33 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/machinelearning/algorithm/tb_randomforest_01_1016/</guid>
+      <description>Random Forests explained intuitively Original Post:https://www.datasciencecentral.com/profiles/blogs/random-forests-explained-intuitively
+What is the Random Forest Forest Random forest is a collection of many decision trees. Instead of relying on a single decision tree, you build many decision trees say 100 of them. And you know what a collection of trees is called - forest.
+Random There are two levels of randomness in this alforithm:
+ At row level: Each of these decision trees get a random sample of the training data (say 10%) each of these trees will be trained independently on 10% randomlyy chosen rows out of all rows of data.</description>
+    </item>
     
     <item>
       <title>[TakeNotes] In demand Skills for Data Scientists</title>
