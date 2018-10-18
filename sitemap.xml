@@ -14,7 +14,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/machinelearning/</loc>
-    <lastmod>2018-10-16T12:59:33+08:00</lastmod>
+    <lastmod>2018-10-18T21:43:19+08:00</lastmod>
   </url>
   
   <url>
@@ -40,6 +40,11 @@
   <url>
     <loc>https://bradleetw.github.io/usefulurl/</loc>
     <lastmod>2018-08-14T11:37:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/machinelearning/google_ml_concepts/01_framing_1018/</loc>
+    <lastmod>2018-10-18T21:43:19+08:00</lastmod>
   </url>
   
   <url>
@@ -252,7 +257,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/authors/bradlee/</loc>
-    <lastmod>2018-10-16T12:59:33+08:00</lastmod>
+    <lastmod>2018-10-18T21:43:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -324,6 +329,18 @@
   <url>
     <loc>https://bradleetw.github.io/tags/github/</loc>
     <lastmod>2018-07-19T14:31:14+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/tags/googlemachinelearning/</loc>
+    <lastmod>2018-10-18T21:43:19+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/categories/googleresource/</loc>
+    <lastmod>2018-10-18T21:43:19+08:00</lastmod>
     <priority>0</priority>
   </url>
   
