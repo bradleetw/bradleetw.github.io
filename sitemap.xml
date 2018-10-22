@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/python/</loc>
-    <lastmod>2018-09-30T10:42:24+08:00</lastmod>
+    <lastmod>2018-10-22T09:54:35+08:00</lastmod>
   </url>
   
   <url>
@@ -40,6 +40,11 @@
   <url>
     <loc>https://bradleetw.github.io/usefulurl/</loc>
     <lastmod>2018-08-14T11:37:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/python/class_usage/str_repr_difference_1022/</loc>
+    <lastmod>2018-10-22T09:54:35+08:00</lastmod>
   </url>
   
   <url>
@@ -257,7 +262,7 @@
   
   <url>
     <loc>https://bradleetw.github.io/authors/bradlee/</loc>
-    <lastmod>2018-10-18T21:43:19+08:00</lastmod>
+    <lastmod>2018-10-22T09:54:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -436,7 +441,13 @@
   
   <url>
     <loc>https://bradleetw.github.io/categories/python/</loc>
-    <lastmod>2018-09-30T10:42:24+08:00</lastmod>
+    <lastmod>2018-10-22T09:54:35+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bradleetw.github.io/tags/pythonclass/</loc>
+    <lastmod>2018-10-22T09:54:35+08:00</lastmod>
     <priority>0</priority>
   </url>
   
