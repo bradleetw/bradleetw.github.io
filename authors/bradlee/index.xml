@@ -5,10 +5,23 @@
     <link>https://bradleetw.github.io/authors/bradlee/</link>
     <description>Recent content in Bradlee on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Oct 2018 09:54:35 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Oct 2018 20:32:35 +0800</lastBuildDate>
     
 	<atom:link href="https://bradleetw.github.io/authors/bradlee/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[GoogleResoure][ML Concepts] 02 Descending Into ML</title>
+      <link>https://bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/</link>
+      <pubDate>Tue, 23 Oct 2018 20:32:35 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/</guid>
+      <description>Source: https://developers.google.com/machine-learning/crash-course/descending-into-ml/video-lecture
+Descending into ML Linear regression is a method for finding the straight line or hyperplane that best fits a set of points. This module explores linear regression intuitively before laying the groundwork for a machine learning approach to linear regression.
+Learning Objectives  Refresh your memory on line fitting.
+ Relate weights and biases in machine learning to slope and offset in line fitting.
+ Understand &amp;ldquo;loss&amp;rdquo; in general and squared loss in particular.</description>
+    </item>
     
     <item>
       <title>[Python][Class] __str__ v.s. __repr__</title>

@@ -4,21 +4,27 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='從 0 出發'>
+<meta name='description' content='Source: https://developers.google.com/machine-learning/crash-course/descending-into-ml/video-lecture
+Descending into ML Linear regression is a method for finding the straight line or hyperplane that best fits a set of points. This module explores linear regression intuitively before laying the groundwork for a machine learning approach to linear regression.
+Learning Objectives  Refresh your memory on line fitting.
+ Relate weights and biases in machine learning to slope and offset in line fitting.
+ Understand &ldquo;loss&rdquo; in general and squared loss in particular.'>
 <meta name='theme-color' content='#44ccff'>
 
-<meta property='og:title' content='Author: Brad Lee • 布萊德的學習網站'>
-<meta property='og:description' content='從 0 出發'>
-<meta property='og:url' content='https://bradleetw.github.io/authors/bradlee/'>
+<meta property='og:title' content='[GoogleResoure][ML Concepts] 02 Descending Into ML • Brad Lee'>
+<meta property='og:description' content='Source: https://developers.google.com/machine-learning/crash-course/descending-into-ml/video-lecture
+Descending into ML Linear regression is a method for finding the straight line or hyperplane that best fits a set of points. This module explores linear regression intuitively before laying the groundwork for a machine learning approach to linear regression.
+Learning Objectives  Refresh your memory on line fitting.
+ Relate weights and biases in machine learning to slope and offset in line fitting.
+ Understand &ldquo;loss&rdquo; in general and squared loss in particular.'>
+<meta property='og:url' content='https://bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/'>
 <meta property='og:site_name' content='布萊德的學習網站'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content='2018-10-23T20:32:35&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@BradLeeTW'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/4d48e2d674da46d68bd6c7fe2925cb5d?s=256'><meta property='article:author' content='https://facebook.com/brad.lee.tw'><meta property='article:section' content='Machinelearning'><meta property='article:tag' content='GoogleMachineLearning'><meta property='article:published_time' content='2018-10-23T20:32:35&#43;08:00'/><meta property='article:modified_time' content='2018-10-23T20:32:35&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@BradLeeTW'><meta name='twitter:creator' content='@BradLeeTW'>
 
 <meta name="generator" content="Hugo 0.46" />
 
-  <title>Author: Brad Lee • 布萊德的學習網站</title>
-  <link rel='canonical' href='https://bradleetw.github.io/authors/bradlee/'>
-  
-    <link href="https://bradleetw.github.io/authors/bradlee/index.xml" rel="alternate" type="application/rss+xml" title="布萊德的學習網站" />
+  <title>[GoogleResoure][ML Concepts] 02 Descending Into ML • Brad Lee</title>
+  <link rel='canonical' href='https://bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/'>
   
   
   <link rel='icon' href='/favicon.ico'>
@@ -31,7 +37,7 @@
 </head>
 
 
-<body class='taxonomy type-authors taxonomy-author has-sidebar'>
+<body class='page type-machinelearning has-sidebar'>
 
   <div class='site'>
 
@@ -201,134 +207,189 @@
       <main id='content'>
 
 
-<header class='header'>
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
   <div class='container sep-after'>
     <div class='header-info'>
-      <h1 class='title'><span class='taxonomy-name'>Author: </span>Brad Lee</h1>
-
+      <h1 class='title'>[GoogleResoure][ML Concepts] 02 Descending Into ML</h1>
       
 
     </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-10-23T20:32:35&#43;08:00'>2018, Oct 23</time>
+</span>
+
+  <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M21,21V20c0-2.76-4-5-9-5s-9,2.24-9,5v1"/>
+  <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
+  
+</svg>
+<span class='screen-reader-text'> by </span><a href='/authors/bradlee'>Brad Lee</a></span>
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+2 mins read
+</span>
+
+
+  
+  
+</div>
+
+
   </div>
 </header>
 
+  
+  
 
+  <div class='container entry-content'>
+  
 
+<p>Source: <a href="https://developers.google.com/machine-learning/crash-course/descending-into-ml/video-lecture" target="_blank">https://developers.google.com/machine-learning/crash-course/descending-into-ml/video-lecture</a></p>
 
-<div class='container list-container'>
-  <ul class='list'>
-    
-      <li class='item'>
-  <div class='meta'>
-    <span>
-  <span class='screen-reader-text'>Posted on </span>
-  <time datetime='2018-07-19T14:31:14&#43;08:00'>2018, Jul 19</time>
-</span>
+<h1 id="descending-into-ml">Descending into ML</h1>
 
-  </div>
-  <header class='item-header'>
-    <h3 class='item-title'>
-      <a href='/web/deployment/githubblog/usegithub_1/'>如何利用 GitHub Pages 建立博客?
-      </a>
-    </h3>
-  </header>
-</li>
+<p><strong>Linear regression</strong> is a method for finding the <strong>straight line</strong> or <strong>hyperplane</strong> that best fits a set of points. This module explores linear regression intuitively before laying the groundwork for a machine learning approach to linear regression.</p>
 
-    
-      <li class='item'>
-  <div class='meta'>
-    <span>
-  <span class='screen-reader-text'>Posted on </span>
-  <time datetime='2018-07-17T15:10:22&#43;08:00'>2018, Jul 17</time>
-</span>
+<h2 id="learning-objectives">Learning Objectives</h2>
 
-  </div>
-  <header class='item-header'>
-    <h3 class='item-title'>
-      <a href='/web/staticsitegenerator/hugo/usehugo_2/'>透過調整 config.toml 設定 Hugo 網站(1)
-      </a>
-    </h3>
-  </header>
-</li>
+<ul>
+<li><p>Refresh your memory on line fitting.</p></li>
 
-    
-      <li class='item'>
-  <div class='meta'>
-    <span>
-  <span class='screen-reader-text'>Posted on </span>
-  <time datetime='2018-07-17T12:00:00&#43;08:00'>2018, Jul 17</time>
-</span>
+<li><p>Relate weights and biases in machine learning to slope and offset in line fitting.</p></li>
 
-  </div>
-  <header class='item-header'>
-    <h3 class='item-title'>
-      <a href='/web/staticsitegenerator/hugo/usehugo_1/'>使用Hugo產生靜態網頁
-      </a>
-    </h3>
-  </header>
-</li>
+<li><p>Understand &ldquo;loss&rdquo; in general and squared loss in particular.</p></li>
+</ul>
 
-    
-  </ul>
+<h2 id="descending-into-ml-linear-regression">Descending into ML: Linear Regression</h2>
+
+<p>The equation for a linear regression model.</p>
+
+<p><strong>$y&rsquo; = b + w_1x_1 $</strong></p>
+
+<p>where:</p>
+
+<ul>
+<li><p>$y&rsquo;$: The predicted label (a desired output).</p></li>
+
+<li><p>$b$: The <strong>bias</strong>, sometimes referred to as $w_0$.</p></li>
+
+<li><p>$w_1$: The weight of feature 1.</p></li>
+
+<li><p>$x_1$: a feature (a known input).</p></li>
+</ul>
+
+<p>A more sophisticated model might rely on multiple features, each having a separate weight ($w_1, w_2$, etc.)</p>
+
+<p><strong>$y&rsquo; = b + w_1x_1 + w_2x_2 + w_3x_3$</strong></p>
+
+<h2 id="descending-into-ml-training-and-loss">Descending into ML: Training and Loss</h2>
+
+<p><strong>Training a model</strong> simply means learning(determining) good values for all the weights and the bias from labeled examples.</p>
+
+<p>In supervised learning, a machine learning algorithm builds a model by examining many examples and attempting to find a model that <strong>minimizes loss</strong>; this is called <strong>empirical risk minimization</strong>.</p>
+
+<p>Loss is the penalty for a bad prediction. That is, <strong>loss is a number indicating how bad the model&rsquo;s prediction was on a single example.</strong> If the model&rsquo;s prediction is <strong>perfect</strong>, the loss is <strong>zero</strong>; otherwise, the loss is greater.</p>
+
+<p>The goal of training a model is to find a set of weights and biases that have <strong>low loss</strong>, on average, across all examples.</p>
+
+<h3 id="squared-loss-a-popular-loss-function">Squared Loss: a popular loss function</h3>
+
+<p>The linear regression models we&rsquo;ll examine here use a loss function called <strong>squared loss</strong> (also known as <strong>L$_2$ loss</strong>).</p>
+
+<p>= Square of the difference between prediction and label</p>
+
+<p>= (Observation - prediction($x$))$^2$</p>
+
+<p>= $(y-y&rsquo;)^2$</p>
+
+<h3 id="mean-square-error-mse">Mean square error (MSE)</h3>
+
+<p>MSE is the average squared loss per example over the whole dataset.</p>
+
+<p>$$MSE = \frac{1}{N}\sum_{(x,y)\in D}(y-prediction(x))^2$$</p>
+
+<p>where:</p>
+
+<ul>
+<li><p>$(x,y)$ is an example in which</p>
+
+<ul>
+<li><p>$x$ is the set of features that the model uses to make predictions.</p></li>
+
+<li><p>$y$ is the example&rsquo;s label.</p></li>
+</ul></li>
+
+<li><p>$prediction(x)$ is a function of the weights and bias in combination with the set of features $x$.</p></li>
+
+<li><p>$D$ is a data set containing many labeled examples, which are $(x,y)$ pairs.</p></li>
+
+<li><p>$N$ is the number of examples in $D$</p></li>
+</ul>
+
+<p>Although MSE is commonly-used in machine learning, it is neither the only practical loss function nor the best loss function for all circumstances.</p>
+
+</div>
 
   
-<nav id='pagination'>
-  <div class='page-links'>
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  <div class='categories'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/googleresource'>GoogleResource</a></div>
+<div class='tags'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/googlemachinelearning'>GoogleMachineLearning</a></div>
 
-    
-    <a class='page-link prev' href='/authors/bradlee/page/7/'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/machinelearning/google_ml_concepts/01_framing_1018/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <line x1="20" y1="12" x2="4" y2="12"/>
   <polyline points="10 18 4 12 10 6"/>
   
 </svg>
-<span class='screen-reader-text'>Previous page</span>
-    </a>
-    
-      
-      <a class='page-link' href='/authors/bradlee/'>
-        <span class='screen-reader-text'>Page: </span>1</a>
-      
-    
-      
-        <span class='page-link dots'>&hellip;</span>
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-      <a class='page-link' href='/authors/bradlee/page/7/'>
-        <span class='screen-reader-text'>Page: </span>7</a>
-      
-    
-      
-      <span aria-current='page' class='page-link current'>
-        <span class='screen-reader-text'>Current page: </span>8</span>
-      
-    
-
-    
-
-  </div>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>[GoogleResoure][ML Concepts] 01 Fundamental Machine Learning Terminology</a>
+    </div></div>
 </nav>
 
 
-</div>
+
 
       </main>
 
@@ -390,11 +451,36 @@
     </div>
   </div><script>window.__public_path__='https:\/\/bradleetw.github.io\/assets\/js\/'</script>
 
-<script src='https://bradleetw.github.io/assets/js/main.68cb493a.js'></script><script src='/js/custom.js'></script>
+<script src='https://bradleetw.github.io/assets/js/main.68cb493a.js'></script><script src='/js/custom.js'></script><script type='text/x-mathjax-config'>
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"processEscapes":true}})
+</script>
+
+<script type='text/javascript' async src='//unpkg.com/mathjax/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 
 
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
