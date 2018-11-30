@@ -5,10 +5,24 @@
     <link>https://bradleetw.github.io/python/</link>
     <description>Recent content in Python on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Oct 2018 09:54:35 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 30 Nov 2018 10:01:10 +0800</lastBuildDate>
     
 	<atom:link href="https://bradleetw.github.io/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[Python] Exceptions: An introductions</title>
+      <link>https://bradleetw.github.io/python/exceptions_1130/</link>
+      <pubDate>Fri, 30 Nov 2018 10:01:10 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/python/exceptions_1130/</guid>
+      <description>Refer to https://realpython.com/python-exceptions/
+Raising an Exception Example
+x = 10 if x &amp;gt; 5: raise Exception(&amp;#39;x should not exceed 5.&amp;#39;) The AssertionError Exception refer to https://dbader.org/blog/python-assert-tutorial
+Python’s assertions are a powerful debugging tool that’s frequently underused by Python developers.
+What is the assert If the condition is True, it does nothing and your program just continues to execute.
+But if the assert condition evaluates to False, it raises an AssertionError exception with an optional error message.</description>
+    </item>
     
     <item>
       <title>[Python][Class] __str__ v.s. __repr__</title>
