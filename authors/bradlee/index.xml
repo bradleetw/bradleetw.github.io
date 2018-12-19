@@ -5,10 +5,25 @@
     <link>https://bradleetw.github.io/authors/bradlee/</link>
     <description>Recent content in Bradlee on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 30 Nov 2018 10:01:10 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 18 Dec 2018 10:01:29 +0800</lastBuildDate>
     
 	<atom:link href="https://bradleetw.github.io/authors/bradlee/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[GitHub]如何在同一台 mac 中建立兩個不同的 GitHub account ?</title>
+      <link>https://bradleetw.github.io/developmenttools/multigithubaccount/</link>
+      <pubDate>Tue, 18 Dec 2018 10:01:29 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/developmenttools/multigithubaccount/</guid>
+      <description>Why need 2 or more Git(Hub) accounts in the same mac? 我現在的目的就只是為了能熟悉 Git 操作, 利用多個 Git accounts 來觀察實驗結果, 而遠端的服務選擇的是 GitHub.
+在設定多個帳戶過程中遇到了一些困難, 藉由此篇記錄相關知識.
+網路上很多使用者是利用多個 Git accounts 來使得開發者的環境, 可以同時存在個人以及公司的 Source Version Control, 這才是真正的使用場景.
+2 Major Domain knowledge need to understand SSH and Git Configuration 是兩個基礎知識, 本篇記錄這兩個部分.
+SSH (Secure SHell protocol) 目前利用這種密鑰的登入服務是主流方法(因為設定成功後, 使用者就可以不用 type 密碼.), 利用開發者產生的私鑰和公開密鑰, 將公開密鑰放到遠端服務上, 來做匹配帳號的事.
+現在我的 mac 上是用 OpenSSH 這個實作 SSH 的 Open Source, 應該是 macOS 的標準配備.
+ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密鑰, 還可以管理 /.</description>
+    </item>
     
     <item>
       <title>[Python] Exceptions: An introductions</title>

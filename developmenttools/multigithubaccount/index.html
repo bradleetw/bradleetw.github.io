@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Why need 2 or more Git(Hub) accounts in the same mac? 我現在的目的就只是為了能熟悉 Git 操作, 利用多個 Git accounts 來觀察實驗結果, 而遠端的服務選擇的是 GitHub.
+在設定多個帳戶過程中遇到了一些困難, 藉由此篇記錄相關知識.
+網路上很多使用者是利用多個 Git accounts 來使得開發者的環境, 可以同時存在個人以及公司的 Source Version Control, 這才是真正的使用場景.
+2 Major Domain knowledge need to understand SSH and Git Configuration 是兩個基礎知識, 本篇記錄這兩個部分.
+SSH (Secure SHell protocol) 目前利用這種密鑰的登入服務是主流方法(因為設定成功後, 使用者就可以不用 type 密碼.), 利用開發者產生的私鑰和公開密鑰, 將公開密鑰放到遠端服務上, 來做匹配帳號的事.
+現在我的 mac 上是用 OpenSSH 這個實作 SSH 的 Open Source, 應該是 macOS 的標準配備.
+ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密鑰, 還可以管理 /.'>
+<meta name='theme-color' content='#44ccff'>
+
+<meta property='og:title' content='[GitHub]如何在同一台 mac 中建立兩個不同的 GitHub account ? • Brad Lee'>
+<meta property='og:description' content='Why need 2 or more Git(Hub) accounts in the same mac? 我現在的目的就只是為了能熟悉 Git 操作, 利用多個 Git accounts 來觀察實驗結果, 而遠端的服務選擇的是 GitHub.
+在設定多個帳戶過程中遇到了一些困難, 藉由此篇記錄相關知識.
+網路上很多使用者是利用多個 Git accounts 來使得開發者的環境, 可以同時存在個人以及公司的 Source Version Control, 這才是真正的使用場景.
+2 Major Domain knowledge need to understand SSH and Git Configuration 是兩個基礎知識, 本篇記錄這兩個部分.
+SSH (Secure SHell protocol) 目前利用這種密鑰的登入服務是主流方法(因為設定成功後, 使用者就可以不用 type 密碼.), 利用開發者產生的私鑰和公開密鑰, 將公開密鑰放到遠端服務上, 來做匹配帳號的事.
+現在我的 mac 上是用 OpenSSH 這個實作 SSH 的 Open Source, 應該是 macOS 的標準配備.
+ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密鑰, 還可以管理 /.'>
+<meta property='og:url' content='https://bradleetw.github.io/developmenttools/multigithubaccount/'>
+<meta property='og:site_name' content='布萊德的學習網站'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/4d48e2d674da46d68bd6c7fe2925cb5d?s=256'><meta property='article:author' content='https://facebook.com/brad.lee.tw'><meta property='article:section' content='DevelopmentTools'><meta property='article:tag' content='Git'><meta property='article:tag' content='GitHub'><meta property='article:tag' content='SSH'><meta property='article:published_time' content='2018-12-18T10:01:29&#43;08:00'/><meta property='article:modified_time' content='2018-12-18T10:01:29&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@BradLeeTW'><meta name='twitter:creator' content='@BradLeeTW'>
+
+<meta name="generator" content="Hugo 0.46" />
+
+  <title>[GitHub]如何在同一台 mac 中建立兩個不同的 GitHub account ? • Brad Lee</title>
+  <link rel='canonical' href='https://bradleetw.github.io/developmenttools/multigithubaccount/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.809149b6.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#44ccff;}
+</style>
+
+  
+
+</head>
+
+
+<body class='page type-DevelopmentTools has-sidebar'>
+
+  <div class='site'>
+
+    <div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/test.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    布萊德
+    </h2>
+    <div class='desc'>
+    抽空看看 Julia
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-sidebar_menu sep-after'><header>
+    <h4 class='title widget-title'>Menu</h4>
+  </header><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
+    <div class='container'>
+      <ul><li class='item'>
+  <a href='/python/'>Python</a></li><li class='item'>
+  <a href='/julia/'>Julia</a></li><li class='item'>
+  <a href='/web/'>Web</a></li><li class='item'>
+  <a href='/developmenttools/'>Tools</a></li><li class='item'>
+  <a href='/usefulurl/'>Useful URL</a></li></ul>
+    </div>
+  </nav>
+
+</section><section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud no-shuffle'><li>
+        <a href='/tags/algorithm' style='font-size:1em'>Algorithm</a>
+      </li><li>
+        <a href='/tags/bbc_news' style='font-size:1em'>BBC_News</a>
+      </li><li>
+        <a href='/tags/eda' style='font-size:1em'>EDA</a>
+      </li><li>
+        <a href='/tags/economist' style='font-size:1em'>Economist</a>
+      </li><li>
+        <a href='/tags/education' style='font-size:1em'>Education</a>
+      </li><li>
+        <a href='/tags/git' style='font-size:1.3333333333333333em'>Git</a>
+      </li><li>
+        <a href='/tags/github' style='font-size:1.3333333333333333em'>GitHub</a>
+      </li><li>
+        <a href='/tags/googlemachinelearning' style='font-size:1.3333333333333333em'>GoogleMachineLearning</a>
+      </li><li>
+        <a href='/tags/guardian' style='font-size:1.3333333333333333em'>Guardian</a>
+      </li><li>
+        <a href='/tags/health' style='font-size:1.6666666666666665em'>Health</a>
+      </li><li>
+        <a href='/tags/julia' style='font-size:1em'>Julia</a>
+      </li><li>
+        <a href='/tags/mit' style='font-size:1.3333333333333333em'>MIT</a>
+      </li><li>
+        <a href='/tags/nature' style='font-size:1em'>Nature</a>
+      </li><li>
+        <a href='/tags/newyorktimes' style='font-size:1.3333333333333333em'>NewYorkTimes</a>
+      </li><li>
+        <a href='/tags/nutrition' style='font-size:1em'>Nutrition</a>
+      </li><li>
+        <a href='/tags/pythonclass' style='font-size:1em'>PythonClass</a>
+      </li><li>
+        <a href='/tags/pythoncomprehension' style='font-size:1em'>PythonComprehension</a>
+      </li><li>
+        <a href='/tags/pythongeneral' style='font-size:1em'>PythonGeneral</a>
+      </li><li>
+        <a href='/tags/pythontips' style='font-size:1em'>PythonTips</a>
+      </li><li>
+        <a href='/tags/reuters' style='font-size:1.6666666666666665em'>Reuters</a>
+      </li><li>
+        <a href='/tags/ssh' style='font-size:1em'>SSH</a>
+      </li><li>
+        <a href='/tags/studyresource' style='font-size:1em'>StudyResource</a>
+      </li><li>
+        <a href='/tags/tbf' style='font-size:1em'>TBF</a>
+      </li><li>
+        <a href='/tags/takenotes' style='font-size:1em'>TakeNotes</a>
+      </li><li>
+        <a href='/tags/treebasedmethod' style='font-size:1em'>TreeBasedMethod</a>
+      </li><li>
+        <a href='/tags/washingtonpost' style='font-size:2em'>WashingtonPost</a>
+      </li><li>
+        <a href='/tags/autoenv' style='font-size:1em'>Autoenv</a>
+      </li><li>
+        <a href='/tags/awk' style='font-size:1em'>Awk</a>
+      </li><li>
+        <a href='/tags/deployment' style='font-size:1em'>Deployment</a>
+      </li><li>
+        <a href='/tags/hugo' style='font-size:1.6666666666666665em'>Hugo</a>
+      </li><li>
+        <a href='/tags/iterm2' style='font-size:1em'>ITerm2</a>
+      </li><li>
+        <a href='/tags/pipenv' style='font-size:1em'>Pipenv</a>
+      </li><li>
+        <a href='/tags/pyenv' style='font-size:1em'>Pyenv</a>
+      </li><li>
+        <a href='/tags/virtualenv' style='font-size:1em'>Virtualenv</a>
+      </li><li>
+        <a href='/tags/virtualenvwrapper' style='font-size:1em'>Virtualenvwrapper</a>
+      </li><li>
+        <a href='/tags/zsh' style='font-size:1em'>Zsh</a>
+      </li><li>
+        <a href='/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81' style='font-size:1.6666666666666665em'>靜態網頁</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='/' class="">
+          <span>Home</span>
+        </a>
+      </li><li class='item'>
+        <a href='/englishnews/' class="">
+          <span>English</span>
+        </a>
+      </li><li class='item'>
+        <a href='/machinelearning/' class="">
+          <span>A.I.</span>
+        </a>
+      </li><li class='item'>
+        <a href='https://github.com/bradleetw/hello-world' class="repository">
+          <span>Repo</span>
+        </a>
+      </li></ul>
+  </div>
+</nav>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>布萊德的學習網站</p><p class='desc site-desc'>從 0 出發</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>[GitHub]如何在同一台 mac 中建立兩個不同的 GitHub account ?</h1>
+      
+
+    </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-12-18T10:01:29&#43;08:00'>2018, Dec 18</time>
+</span>
+
+  <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M21,21V20c0-2.76-4-5-9-5s-9,2.24-9,5v1"/>
+  <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
+  
+</svg>
+<span class='screen-reader-text'> by </span><a href='/authors/bradlee'>Brad Lee</a></span>
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+3 mins read
+</span>
+
+
+  
+  
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+<details class='container entry-toc'>
+  <summary class='title'>
+    <span>Table of Contents</span>
+  </summary>
+  <nav id="TableOfContents">
+<ul>
+<li><a href="#why-need-2-or-more-git-hub-accounts-in-the-same-mac">Why need 2 or more Git(Hub) accounts in the same mac?</a></li>
+<li><a href="#2-major-domain-knowledge-need-to-understand">2 Major Domain knowledge need to understand</a>
+<ul>
+<li><a href="#ssh-secure-shell-protocol">SSH (Secure SHell protocol)</a>
+<ul>
+<li><a href="#ssh-keygen">ssh-keygen</a>
+<ul>
+<li><a href="#generate-key-ssh-keygen">Generate Key - <code>ssh-keygen</code></a></li>
+<li><a href="#display-public-key-on-stdout-by-inputing-private-key">Display public key on stdout by inputing private key</a></li>
+<li><a href="#manage-ssh-known-hosts">Manage .ssh/known_hosts</a>
+<ul>
+<li><a href="#clear-public-key-in-ssh-known-hosts">Clear public key in .ssh/known_hosts</a></li>
+<li><a href="#find-specific-hostname-from-ssh-known-hosts">Find specific hostname from .ssh/known_hosts</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#ssh-agent-ssh-add">ssh-agent, ssh-add</a>
+<ul>
+<li><a href="#what-is-the-ssh-agent">What is the ssh-agent</a></li>
+<li><a href="#ssh-add">ssh-add</a></li>
+<li><a href="#list-all-of-private-key-from-agent">List all of private key from agent</a></li>
+<li><a href="#move-out-specific-private-key-from-agent">Move out specific private key from agent</a></li>
+<li><a href="#move-out-all-of-private-key-from-agent">Move out all of private key from agent</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#git-configuration">Git Configuration</a>
+<ul>
+<li><a href="#設定使用者">設定使用者</a></li>
+<li><a href="#git-clone-new-repository">Git clone new repository</a></li>
+<li><a href="#ssh-config-設定遠端服務器資料">.ssh/config, 設定遠端服務器資料</a></li>
+<li><a href="#verify-whether-is-workable">Verify whether is workable</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#how-to-enable-second-git-account-in-the-same-mac">How to enable second git account in the same mac</a>
+<ul>
+<li><a href="#push-failed">Push failed</a></li>
+<li><a href="#set-an-organization-repository">Set an organization repository</a></li>
+</ul></li>
+<li><a href="#reference">Reference</a></li>
+</ul>
+</nav>
+</details>
+
+
+  <div class='container entry-content'>
+  
+
+<h1 id="why-need-2-or-more-git-hub-accounts-in-the-same-mac">Why need 2 or more Git(Hub) accounts in the same mac?</h1>
+
+<p>我現在的目的就只是為了能熟悉 Git 操作, 利用多個 Git accounts 來觀察實驗結果, 而遠端的服務選擇的是 GitHub.</p>
+
+<p>在設定多個帳戶過程中遇到了一些困難, 藉由此篇記錄相關知識.</p>
+
+<p>網路上很多使用者是利用多個 Git accounts 來使得開發者的環境, 可以同時存在個人以及公司的 Source Version Control, 這才是真正的使用場景.</p>
+
+<h1 id="2-major-domain-knowledge-need-to-understand">2 Major Domain knowledge need to understand</h1>
+
+<p><code>SSH</code> and <code>Git Configuration</code> 是兩個基礎知識, 本篇記錄這兩個部分.</p>
+
+<h2 id="ssh-secure-shell-protocol">SSH (Secure SHell protocol)</h2>
+
+<p>目前利用這種密鑰的登入服務是主流方法(因為設定成功後, 使用者就可以不用 type 密碼.), 利用開發者產生的私鑰和公開密鑰, 將公開密鑰放到遠端服務上, 來做匹配帳號的事.</p>
+
+<p>現在我的 mac 上是用 OpenSSH 這個實作 SSH 的 Open Source, 應該是 macOS 的標準配備.</p>
+
+<h3 id="ssh-keygen">ssh-keygen</h3>
+
+<p>利用 <code>ssh-keygen</code> 除了可以產生公鑰和私鑰之外, 呈現密鑰, 還可以管理 <code>/.ssh/known_hosts</code> - 一個記錄著你透過 ssh 方式登入過遠端服務器的列表檔案.</p>
+
+<h4 id="generate-key-ssh-keygen">Generate Key - <code>ssh-keygen</code></h4>
+
+<p>底下是常用的生成密鑰命令:</p>
+
+<pre><code>ssh-keygen -t rsa -b 4096 -C &quot;Developer Key Note&quot; -f ~/.ssh/brad_github_id_rsa
+</code></pre>
+
+<p><code>-t</code>: ssh-keygen support 4 types: <code>dsa</code>, <code>ecdsa</code>, <code>ed25519</code>,and <code>rsa</code>. The default value is <code>rsa</code> type(SSH-2).</p>
+
+<pre><code>ssh-keygen -t dsa
+</code></pre>
+
+<p><code>-f</code>: Use <code>-f</code> to give the file name of private key, and public key with <code>.pub</code>. If have no <code>-f</code> parameter, <code>.ssh/id_rsa</code> or <code>.ssh/id_dsa</code> will be the default file name of private key, <code>.ssh/id_rsa.pub</code> or <code>.ssh/id_dsa.pub</code> will for public key.</p>
+
+<p><code>-b</code>: The length of key. For rsa type key, 最小要求768位，默认是2048位。DSA密钥必须恰好是1024位(FIPS 186-2 标准的要求). In the GitHub online doc, they used 4096.</p>
+
+<p><code>-C</code>: This parameter just is a comment for display, 其實很多講到使用 ssh-keygen 都說 <code>-C</code>用 email, 其實不用, 這只是個用來呈現該密鑰是誰或是可以做什麼, 不寫也沒關係, <code>Provides a new comment</code> 是 BSD General Commands Manual 對這參數的說明. 若在建立的過程沒加入, 可以後來再透過 <code>-c</code> 來添加.</p>
+
+<h4 id="display-public-key-on-stdout-by-inputing-private-key">Display public key on stdout by inputing private key</h4>
+
+<pre><code>ssh-keygen -y
+ssh-keygen -y -f privateKeyPath
+</code></pre>
+
+<p>可以利用 <code>-y</code> 後面接著私鑰的檔名, 結果會輸出公鑰到螢幕.</p>
+
+<p>其實使用者可以直接 <code>cat</code> 公鑰的也可以看到.</p>
+
+<h4 id="manage-ssh-known-hosts">Manage .ssh/known_hosts</h4>
+
+<p>當第一次透過 ssh 登入遠端服務器時, 本地端會在 <code>~/.ssh/known_hosts</code> 中存放這些遠端服務器的公鑰. 而 <code>ssh-keygen</code> 也提供一些方式來管理查看這些遠端服務器的公鑰. 其實使用者可以直接打開 <code>known_hosts</code> 觀察.</p>
+
+<h5 id="clear-public-key-in-ssh-known-hosts">Clear public key in .ssh/known_hosts</h5>
+
+<pre><code>ssh-keygen -R HostName
+</code></pre>
+
+<h5 id="find-specific-hostname-from-ssh-known-hosts">Find specific hostname from .ssh/known_hosts</h5>
+
+<pre><code>ssh-keygen -F HostName
+ssh-keygen -F HostName -l
+</code></pre>
+
+<h3 id="ssh-agent-ssh-add">ssh-agent, ssh-add</h3>
+
+<p><a href="http://www.zsythink.net/archives/2407" target="_blank">http://www.zsythink.net/archives/2407</a></p>
+
+<h4 id="what-is-the-ssh-agent">What is the ssh-agent</h4>
+
+<p><code>ssh-agent</code> 一個幫助管理私鑰的代理程式, 通常是被預設啟動的, 若沒有被啟動, 用如下的命令呼叫:</p>
+
+<pre><code>eval 'ssh-agent'
+</code></pre>
+
+<p>而管理哪些私鑰是透過 <code>ssh-add</code> 來加入.</p>
+
+<h4 id="ssh-add">ssh-add</h4>
+
+<pre><code>ssh-add ~/.ssh/id_rsa_personal
+</code></pre>
+
+<p>將特定私鑰加入 <code>ssh-agent</code> 這個服務.</p>
+
+<h4 id="list-all-of-private-key-from-agent">List all of private key from agent</h4>
+
+<pre><code>ssh-add -l
+</code></pre>
+
+<h4 id="move-out-specific-private-key-from-agent">Move out specific private key from agent</h4>
+
+<pre><code>ssh-add -d '~/.ssh/id_rsa_custom'
+</code></pre>
+
+<h4 id="move-out-all-of-private-key-from-agent">Move out all of private key from agent</h4>
+
+<pre><code>ssh-add -D
+</code></pre>
+
+<h2 id="git-configuration">Git Configuration</h2>
+
+<p>在 <code>~/.gitconfig</code> 中記錄著 git 的 global configuration, 包含了預設編輯器, diff tool, &hellip;等等.</p>
+
+<h3 id="設定使用者">設定使用者</h3>
+
+<pre><code>git config --global user.name &quot;User Name&quot;
+git config --global user.email &quot;UserName@email.address&quot;
+</code></pre>
+
+<p>如果你的電腦環境對不同的遠端服務器(或者公司服務器)所記錄的帳號資料都相同, 可以用 global 來設定.
+這兩個欄位主要會在 commit log 中顯示的名字和郵件.</p>
+
+<p>不過一般來說對公司的環境, 應該是會用公司的郵件資料. 所以建議這兩個欄位是放在 locale, 也就是根據不同的倉庫對應到個別的 user name/ e-mail. 若要同時可以存在對同一個遠端服務器的多個帳號, 也是要用 locale user name/ email.</p>
+
+<p>在個別的倉庫目錄下設定各自的 user name/ email:</p>
+
+<pre><code>git config --local user.name &quot;User Name&quot;
+git config --local user.email &quot;UserName@email.address&quot;
+</code></pre>
+
+<p><code>--local</code> 其實可以省略.</p>
+
+<h3 id="git-clone-new-repository">Git clone new repository</h3>
+
+<p>如果環境設定中將 <code>user.name</code> and <code>user.emial</code> 從 global 設定中移除, 那麼在每一次 <code>git clone git@github.com:someone/some.git</code> 完之後, 要記得 set user.name and user.email locally.</p>
+
+<p>只要在 <code>.zshrc</code> 中添入如下 alias, 之後只要下 <code>gitclone git@github.com:someone/some.git</code>, 就會一起設定 user.name and user.email.</p>
+
+<pre><code>alias gitclone='git clone --config user.name=&quot;your name&quot; --config user.email=&quot;youremail@address.com&quot; $@'
+</code></pre>
+
+<h3 id="ssh-config-設定遠端服務器資料">.ssh/config, 設定遠端服務器資料</h3>
+
+<p>打開 <code>.ssh/config</code> 可以看到如下的資料:</p>
+
+<pre><code>Host github.com-personal
+    HostName ssh.github.com
+    Port 443
+    UseKeychain no
+    User git
+    IdentityFile ~/.ssh/sgithub_id_rsa
+    IdentitiesOnly yes
+</code></pre>
+
+<p>這個檔案裡可以放入多個遠端服務器的資料, 而在 Host 後頭跟著的名稱, 就是當你要決定連到哪一個遠端服務器時, 要填入的名.</p>
+
+<pre><code>git clone git@github.com-personal:someone/some.git
+ssh -T github.com-personal
+</code></pre>
+
+<p>如果要連到同一個遠端服務器, 但是是用不同的帳號時, 要在 <code>.ssh/config</code> 裡在設定一組 Host, 重要的是在新的 Host setting <code>IdentityFile</code> 要設成另一個帳號的私鑰檔案.</p>
+
+<h3 id="verify-whether-is-workable">Verify whether is workable</h3>
+
+<pre><code>ssh -T AliasNameInSSH_Config
+ssh -vT AliasNameInSSH_Config
+</code></pre>
+
+<p>AliasNameInSSH_Config: 就是在 <code>.ssh/config</code> 中每一組遠端服務器設定的 <code>Host</code> 欄位, 跟在後面的名字.</p>
+
+<p>相關設定若是正確, 會有以下的顯示輸出:</p>
+
+<pre><code>Hi accountNameOfRemoteServer! You've successfully authenticated, but GitHub does not provide shell access.
+</code></pre>
+
+<p>若想知道連接過程的細項流程, 加入 <code>-vT</code>.</p>
+
+<p>若失敗就會出現 <code>Permission denied (publickey).</code>.</p>
+
+<h1 id="how-to-enable-second-git-account-in-the-same-mac">How to enable second git account in the same mac</h1>
+
+<ol>
+<li>利用 <code>ssh-keygen</code> 建立另一組新的密鑰.</li>
+<li>將新的公鑰上傳至遠端服務器.</li>
+<li>利用 <code>ssh-add</code> 將新的私鑰放到 <code>ssh-agent</code>.</li>
+<li>在 <code>~/.ssh/config</code> 中增加新的 Host 資料, 並透過 <code>IdentityFile</code> 告知所使用的密鑰.</li>
+<li>透過 <code>ssh -T HostName</code> 檢驗是否設定成功.</li>
+</ol>
+
+<p>設定成功後, 表示你可以用不同帳號下載或 clone, 但不一定可以上傳, 原因就是遠端服務器是否有開上傳權限給你.</p>
+
+<h2 id="push-failed">Push failed</h2>
+
+<p>原先因為我對 GitHub 的一知半解, 已為所有在 GitHub 上的資料, 除了可以任意下載(包含別人), 還可以任意上傳. 上傳的權限是要原倉庫的作者有開放給使用者, 才可以上傳. 就是因為不清楚, 以為前面提的五個步驟設定完成就可以用不同帳號下載上傳, 然後就一直出現以下的 error message.</p>
+
+<pre><code>ERROR: Permission to userA/Scripts.git denied to UserB.
+fatal: 无法读取远程仓库。
+
+请确认您有正确的访问权限并且仓库存在。
+</code></pre>
+
+<p><a href="https://help.github.com/articles/error-permission-to-user-repo-denied-to-user-other-repo/" target="_blank">https://help.github.com/articles/error-permission-to-user-repo-denied-to-user-other-repo/</a></p>
+
+<h2 id="set-an-organization-repository">Set an organization repository</h2>
+
+<p>參考以下鏈結設定合作開發專案:</p>
+
+<p><a href="https://help.github.com/articles/adding-outside-collaborators-to-repositories-in-your-organization/" target="_blank">https://help.github.com/articles/adding-outside-collaborators-to-repositories-in-your-organization/</a></p>
+
+<p>設定成功後, 在透過 invite other user 來將第二個帳號加入同一個開發專案. 第二個帳號只要接受了邀請, 並可以 push commit.</p>
+
+<h1 id="reference">Reference</h1>
+
+<p><a href="https://blog.alantsai.net/posts/2015/09/use-ssh-in-windows-for-github" target="_blank">https://blog.alantsai.net/posts/2015/09/use-ssh-in-windows-for-github</a></p>
+
+<p><a href="https://kuanyui.github.io/2016/08/01/git-multiple-ssh-key/" target="_blank">https://kuanyui.github.io/2016/08/01/git-multiple-ssh-key/</a></p>
+
+<p><a href="http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html" target="_blank">http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html</a></p>
+
+<p><a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/" target="_blank">https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/</a></p>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  <div class='categories'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/tools'>Tools</a></div>
+<div class='tags'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/git'>Git</a>, <a class='tag' href='/tags/github'>GitHub</a>, <a class='tag' href='/tags/ssh'>SSH</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/developmenttools/awk_study/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>[Shell Script] AWK 的介紹</a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/bradleetw' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/BradLeeTW' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:brad.lee.tw@outlook.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/brad-lee-77224542' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://www.youtube.com/channel/UCRtY7h5MSH4zMw-fhOSh64Q' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Youtube account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2018 bradlee </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='https:\/\/bradleetw.github.io\/assets\/js\/'</script>
+
+<script src='https://bradleetw.github.io/assets/js/main.68cb493a.js'></script><script src='/js/custom.js'></script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
