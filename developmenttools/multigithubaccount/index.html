@@ -299,8 +299,8 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
 <li><a href="#what-is-the-ssh-agent">What is the ssh-agent</a></li>
 <li><a href="#ssh-add">ssh-add</a></li>
 <li><a href="#list-all-of-private-key-from-agent">List all of private key from agent</a></li>
-<li><a href="#move-out-specific-private-key-from-agent">Move out specific private key from agent</a></li>
-<li><a href="#move-out-all-of-private-key-from-agent">Move out all of private key from agent</a></li>
+<li><a href="#move-out-specific-private-key-from-ssh-agent">Move out specific private key from ssh_agent</a></li>
+<li><a href="#move-out-all-of-private-key-from-ssh-agent">Move out all of private key from ssh_agent</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#git-configuration">Git Configuration</a>
@@ -349,12 +349,12 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
 
 <h4 id="generate-key-ssh-keygen">Generate Key - <code>ssh-keygen</code></h4>
 
-<p>底下是常用的生成密鑰命令:</p>
+<p>底下是常用的生成密鑰命令, 執行成功後會在你設定的路徑(跟在 <code>-f</code> 之後)產生私鑰和公鑰(副檔名為 <code>.pub</code> )兩個檔案:</p>
 
 <pre><code>ssh-keygen -t rsa -b 4096 -C &quot;Developer Key Note&quot; -f ~/.ssh/brad_github_id_rsa
 </code></pre>
 
-<p><code>-t</code>: ssh-keygen support 4 types: <code>dsa</code>, <code>ecdsa</code>, <code>ed25519</code>,and <code>rsa</code>. The default value is <code>rsa</code> type(SSH-2).</p>
+<p><code>-t</code>: ssh-keygen support 4 types &ndash; <code>dsa</code>, <code>ecdsa</code>, <code>ed25519</code>,and <code>rsa</code>. The default value is <code>rsa</code> type(SSH-2).</p>
 
 <pre><code>ssh-keygen -t dsa
 </code></pre>
@@ -412,15 +412,15 @@ ssh-keygen -F HostName -l
 
 <h4 id="list-all-of-private-key-from-agent">List all of private key from agent</h4>
 
-<pre><code>ssh-add -l
+<pre><code>ssh-add -l -E md5
 </code></pre>
 
-<h4 id="move-out-specific-private-key-from-agent">Move out specific private key from agent</h4>
+<h4 id="move-out-specific-private-key-from-ssh-agent">Move out specific private key from ssh_agent</h4>
 
 <pre><code>ssh-add -d '~/.ssh/id_rsa_custom'
 </code></pre>
 
-<h4 id="move-out-all-of-private-key-from-agent">Move out all of private key from agent</h4>
+<h4 id="move-out-all-of-private-key-from-ssh-agent">Move out all of private key from ssh_agent</h4>
 
 <pre><code>ssh-add -D
 </code></pre>
@@ -435,10 +435,11 @@ ssh-keygen -F HostName -l
 git config --global user.email &quot;UserName@email.address&quot;
 </code></pre>
 
-<p>如果你的電腦環境對不同的遠端服務器(或者公司服務器)所記錄的帳號資料都相同, 可以用 global 來設定.
-這兩個欄位主要會在 commit log 中顯示的名字和郵件.</p>
+<p>如果你的電腦環境對不同的遠端服務器(或者公司服務器)所記錄的帳號資料都相同, 可以設定成全域值.</p>
 
-<p>不過一般來說對公司的環境, 應該是會用公司的郵件資料. 所以建議這兩個欄位是放在 locale, 也就是根據不同的倉庫對應到個別的 user name/ e-mail. 若要同時可以存在對同一個遠端服務器的多個帳號, 也是要用 locale user name/ email.</p>
+<p>這兩個欄位主要是會在 commit log 中顯示的名字和郵件.</p>
+
+<p>不過一般來說對公司的環境, 應該是會用公司的郵件資料. 所以建議這兩個欄位是放在 locale, 也就是根據不同的倉庫對應到個別的 user name/ e-mail. 若要同時可以存在對同一個遠端服務器的多個帳號, 也建議用 locale user name/ email.</p>
 
 <p>在個別的倉庫目錄下設定各自的 user name/ email:</p>
 
@@ -450,9 +451,9 @@ git config --local user.email &quot;UserName@email.address&quot;
 
 <h3 id="git-clone-new-repository">Git clone new repository</h3>
 
-<p>如果環境設定中將 <code>user.name</code> and <code>user.emial</code> 從 global 設定中移除, 那麼在每一次 <code>git clone git@github.com:someone/some.git</code> 完之後, 要記得 set user.name and user.email locally.</p>
+<p>如果環境設定中將 <code>user.name</code> and <code>user.emial</code> 從 global 設定中移除, 那麼在每一次 <code>git clone git@github.com:someone/some.git</code> 完之後, 會比較麻煩要額外設定 user.name and user.email locally.</p>
 
-<p>只要在 <code>.zshrc</code> 中添入如下 alias, 之後只要下 <code>gitclone git@github.com:someone/some.git</code>, 就會一起設定 user.name and user.email.</p>
+<p>所以只要在 <code>.zshrc</code> 中添入如下 alias, 之後只要執行 <code>gitclone git@github.com:someone/some.git</code>, 就會一起設定 user.name and user.email.</p>
 
 <pre><code>alias gitclone='git clone --config user.name=&quot;your name&quot; --config user.email=&quot;youremail@address.com&quot; $@'
 </code></pre>
@@ -495,6 +496,8 @@ ssh -vT AliasNameInSSH_Config
 
 <p>若失敗就會出現 <code>Permission denied (publickey).</code>.</p>
 
+<p>原則上若是單一帳戶的使用場景, 這些設定其實就可以了.</p>
+
 <h1 id="how-to-enable-second-git-account-in-the-same-mac">How to enable second git account in the same mac</h1>
 
 <ol>
@@ -509,7 +512,7 @@ ssh -vT AliasNameInSSH_Config
 
 <h2 id="push-failed">Push failed</h2>
 
-<p>原先因為我對 GitHub 的一知半解, 已為所有在 GitHub 上的資料, 除了可以任意下載(包含別人), 還可以任意上傳. 上傳的權限是要原倉庫的作者有開放給使用者, 才可以上傳. 就是因為不清楚, 以為前面提的五個步驟設定完成就可以用不同帳號下載上傳, 然後就一直出現以下的 error message.</p>
+<p>原先因為我對 GitHub 的一知半解, 以為所有在 GitHub 上的資料, 除了可以任意下載, 還可以任意上傳. 這樣的觀點只對一半, 若是下載上傳的倉庫都是你自己的單一帳號, 那是沒問題的. 但若是別人的帳號, 上傳的權限就要原倉庫擁有者開放給你, 之後才可以上傳. 就是因為不清楚, 以為前面提的五個步驟設定完成就可以用不同帳號下載上傳, 然後就一直出現以下的 error message.</p>
 
 <pre><code>ERROR: Permission to userA/Scripts.git denied to UserB.
 fatal: 无法读取远程仓库。
@@ -517,15 +520,16 @@ fatal: 无法读取远程仓库。
 请确认您有正确的访问权限并且仓库存在。
 </code></pre>
 
-<p><a href="https://help.github.com/articles/error-permission-to-user-repo-denied-to-user-other-repo/" target="_blank">https://help.github.com/articles/error-permission-to-user-repo-denied-to-user-other-repo/</a></p>
+<p>GitHub Help reference:
+<a href="https://help.github.com/articles/error-permission-to-user-repo-denied-to-user-other-repo/" target="_blank">https://help.github.com/articles/error-permission-to-user-repo-denied-to-user-other-repo/</a></p>
 
 <h2 id="set-an-organization-repository">Set an organization repository</h2>
 
-<p>參考以下鏈結設定合作開發專案:</p>
+<p>參考以下 GitHub Help 設定合作開發專案:</p>
 
 <p><a href="https://help.github.com/articles/adding-outside-collaborators-to-repositories-in-your-organization/" target="_blank">https://help.github.com/articles/adding-outside-collaborators-to-repositories-in-your-organization/</a></p>
 
-<p>設定成功後, 在透過 invite other user 來將第二個帳號加入同一個開發專案. 第二個帳號只要接受了邀請, 並可以 push commit.</p>
+<p>設定成功後, 在透過 invite other user 來將第二個帳號加入同一個開發專案. 第二個帳號只要接受了邀請, 就可以 push commit.</p>
 
 <h1 id="reference">Reference</h1>
 
