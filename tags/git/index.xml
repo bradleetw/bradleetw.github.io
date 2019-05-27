@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on 布萊德的學習網站</title>
-    <link>https://bradleetw.github.io/tags/git/</link>
+    <link>https: //bradleetw.github.io/tags/git/</link>
     <description>Recent content in Git on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 18 Dec 2018 10:01:29 +0800</lastBuildDate>
     
-	<atom:link href="https://bradleetw.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https: //bradleetw.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[GitHub]如何在同一台 mac 中建立兩個不同的 GitHub account ?</title>
-      <link>https://bradleetw.github.io/developmenttools/multigithubaccount/</link>
+      <link>https: //bradleetw.github.io/developmenttools/multigithubaccount/</link>
       <pubDate>Tue, 18 Dec 2018 10:01:29 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/developmenttools/multigithubaccount/</guid>
+      <guid>https: //bradleetw.github.io/developmenttools/multigithubaccount/</guid>
       <description>Why need 2 or more Git(Hub) accounts in the same mac? 我現在的目的就只是為了能熟悉 Git 操作, 利用多個 Git accounts 來觀察實驗結果, 而遠端的服務選擇的是 GitHub.
 在設定多個帳戶過程中遇到了一些困難, 藉由此篇記錄相關知識.
 網路上很多使用者是利用多個 Git accounts 來使得開發者的環境, 可以同時存在個人以及公司的 Source Version Control, 這才是真正的使用場景.
@@ -27,10 +27,10 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
     
     <item>
       <title>[Git]如何忽略追蹤特定檔案或目錄?</title>
-      <link>https://bradleetw.github.io/developmenttools/gitstudy/gitrelated_1/</link>
+      <link>https: //bradleetw.github.io/developmenttools/gitstudy/gitrelated_1/</link>
       <pubDate>Wed, 08 Aug 2018 11:49:49 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/developmenttools/gitstudy/gitrelated_1/</guid>
+      <guid>https: //bradleetw.github.io/developmenttools/gitstudy/gitrelated_1/</guid>
       <description>只要編輯以下三個檔案(忽略清單)其中一個就可以忽略追蹤特定檔案或目錄:
  $HOME/.config/git/ignore: 開發者電腦中的所有倉庫都可以讀取該忽略清單. .gitignore: 每個倉庫都有自己一份的忽略清單放在該倉庫根目錄下, 而且該忽略清單可以被分享追蹤管理. .git/info/exclude: 該忽略清單無法被追蹤管理.  $HOME/.config/git/ignore 有時候系統或者一些第三方應用為了讓其運作的效果更好, 會在目錄底下產生一些額外的檔案, 列如: .DS_Store, 而這些對開發者本身而言這類無關開發的資料都是不必要去追蹤紀錄, 這時可以透過編輯 $HOME/.config/git/ignore 來寫下要忽略的檔案, 而這個是對系統內的所有倉庫都有用. 以下是該檔案內的一些範例:
 # General .DS_Store .AppleDouble .LSOverride # Files that might appear in the root of a volume .DocumentRevisions-V100 .fseventsd .Spotlight-V100 .TemporaryItems .Trashes .VolumeIcon.icns .com.apple.timemachine.donotpresent  .gitignore 在開發的環境中會因為編譯產生執行檔案, 連結檔, 某些檔案或是某些目錄開發者根本不必追蹤, 但是這個忽略清單卻是可以分享給其他開發者或者需要版本管控忽略清單 (有可能在經過一段的開發時間, 開發環境導入了新的機制或是功能, 而產生新的不必追蹤檔案) 這時只要在開發項目的根目錄下放入 .gitignore, 在該檔案中寫入你要忽略上傳的特定檔案或目錄:

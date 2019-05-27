@@ -2,344 +2,353 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 布萊德的學習網站</title>
-    <link>https://bradleetw.github.io/tags/</link>
+    <link>https: //bradleetw.github.io/tags/</link>
     <description>Recent content in Tags on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 16 Oct 2018 12:59:33 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 Mar 2019 17:52:02 +0800</lastBuildDate>
     
-	<atom:link href="https://bradleetw.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https: //bradleetw.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Algorithm</title>
-      <link>https://bradleetw.github.io/tags/algorithm/</link>
-      <pubDate>Tue, 16 Oct 2018 12:59:33 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/algorithm/</guid>
-      <description></description>
-    </item>
     
     <item>
-      <title>Autoenv</title>
-      <link>https://bradleetw.github.io/tags/autoenv/</link>
-      <pubDate>Tue, 18 Sep 2018 12:17:10 +0800</pubDate>
+      <title>Datasets</title>
+      <link>https: //bradleetw.github.io/tags/datasets/</link>
+      <pubDate>Mon, 04 Mar 2019 17:52:02 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/autoenv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Awk</title>
-      <link>https://bradleetw.github.io/tags/awk/</link>
-      <pubDate>Sun, 19 Aug 2018 16:24:52 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/awk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>BBC_News</title>
-      <link>https://bradleetw.github.io/tags/bbc_news/</link>
-      <pubDate>Fri, 24 Aug 2018 14:52:34 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/bbc_news/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deployment</title>
-      <link>https://bradleetw.github.io/tags/deployment/</link>
-      <pubDate>Thu, 19 Jul 2018 14:31:14 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/deployment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EDA</title>
-      <link>https://bradleetw.github.io/tags/eda/</link>
-      <pubDate>Wed, 10 Oct 2018 09:24:33 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/eda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Economist</title>
-      <link>https://bradleetw.github.io/tags/economist/</link>
-      <pubDate>Tue, 21 Aug 2018 13:23:12 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/economist/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Education</title>
-      <link>https://bradleetw.github.io/tags/education/</link>
-      <pubDate>Thu, 06 Sep 2018 09:45:24 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/education/</guid>
+      <guid>https: //bradleetw.github.io/tags/datasets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://bradleetw.github.io/tags/git/</link>
+      <link>https: //bradleetw.github.io/tags/git/</link>
       <pubDate>Tue, 18 Dec 2018 10:01:29 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/git/</guid>
+      <guid>https: //bradleetw.github.io/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GitHub</title>
-      <link>https://bradleetw.github.io/tags/github/</link>
+      <link>https: //bradleetw.github.io/tags/github/</link>
       <pubDate>Tue, 18 Dec 2018 10:01:29 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GoogleMachineLearning</title>
-      <link>https://bradleetw.github.io/tags/googlemachinelearning/</link>
-      <pubDate>Tue, 23 Oct 2018 20:32:35 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/googlemachinelearning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Guardian</title>
-      <link>https://bradleetw.github.io/tags/guardian/</link>
-      <pubDate>Wed, 29 Aug 2018 20:31:07 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/guardian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Health</title>
-      <link>https://bradleetw.github.io/tags/health/</link>
-      <pubDate>Wed, 19 Sep 2018 10:56:31 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/health/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://bradleetw.github.io/tags/hugo/</link>
-      <pubDate>Wed, 01 Aug 2018 13:09:33 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ITerm2</title>
-      <link>https://bradleetw.github.io/tags/iterm2/</link>
-      <pubDate>Sun, 29 Jul 2018 17:41:05 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/iterm2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Julia</title>
-      <link>https://bradleetw.github.io/tags/julia/</link>
-      <pubDate>Tue, 21 Aug 2018 16:27:25 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/julia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MIT</title>
-      <link>https://bradleetw.github.io/tags/mit/</link>
-      <pubDate>Tue, 14 Aug 2018 14:10:30 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/mit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nature</title>
-      <link>https://bradleetw.github.io/tags/nature/</link>
-      <pubDate>Thu, 13 Sep 2018 09:58:33 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/nature/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NewYorkTimes</title>
-      <link>https://bradleetw.github.io/tags/newyorktimes/</link>
-      <pubDate>Sat, 25 Aug 2018 12:00:49 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/newyorktimes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nutrition</title>
-      <link>https://bradleetw.github.io/tags/nutrition/</link>
-      <pubDate>Fri, 07 Sep 2018 19:20:43 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/nutrition/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pipenv</title>
-      <link>https://bradleetw.github.io/tags/pipenv/</link>
-      <pubDate>Tue, 18 Sep 2018 12:17:10 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/pipenv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pyenv</title>
-      <link>https://bradleetw.github.io/tags/pyenv/</link>
-      <pubDate>Tue, 18 Sep 2018 12:17:10 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/pyenv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PythonClass</title>
-      <link>https://bradleetw.github.io/tags/pythonclass/</link>
-      <pubDate>Mon, 22 Oct 2018 09:54:35 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/pythonclass/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PythonComprehension</title>
-      <link>https://bradleetw.github.io/tags/pythoncomprehension/</link>
-      <pubDate>Sun, 30 Sep 2018 10:42:24 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/pythoncomprehension/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PythonGeneral</title>
-      <link>https://bradleetw.github.io/tags/pythongeneral/</link>
-      <pubDate>Fri, 30 Nov 2018 10:01:10 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/pythongeneral/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PythonTips</title>
-      <link>https://bradleetw.github.io/tags/pythontips/</link>
-      <pubDate>Sun, 30 Sep 2018 09:30:57 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/pythontips/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reuters</title>
-      <link>https://bradleetw.github.io/tags/reuters/</link>
-      <pubDate>Sun, 02 Sep 2018 16:16:21 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/tags/reuters/</guid>
+      <guid>https: //bradleetw.github.io/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SSH</title>
-      <link>https://bradleetw.github.io/tags/ssh/</link>
+      <link>https: //bradleetw.github.io/tags/ssh/</link>
       <pubDate>Tue, 18 Dec 2018 10:01:29 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/ssh/</guid>
+      <guid>https: //bradleetw.github.io/tags/ssh/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>StudyResource</title>
-      <link>https://bradleetw.github.io/tags/studyresource/</link>
-      <pubDate>Mon, 15 Oct 2018 14:22:02 +0800</pubDate>
+      <title>PythonGeneral</title>
+      <link>https: //bradleetw.github.io/tags/pythongeneral/</link>
+      <pubDate>Fri, 30 Nov 2018 10:01:10 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/studyresource/</guid>
+      <guid>https: //bradleetw.github.io/tags/pythongeneral/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>TBF</title>
-      <link>https://bradleetw.github.io/tags/tbf/</link>
-      <pubDate>Wed, 10 Oct 2018 09:24:33 +0800</pubDate>
+      <title>GoogleMachineLearning</title>
+      <link>https: //bradleetw.github.io/tags/googlemachinelearning/</link>
+      <pubDate>Tue, 23 Oct 2018 20:32:35 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/tbf/</guid>
+      <guid>https: //bradleetw.github.io/tags/googlemachinelearning/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>TakeNotes</title>
-      <link>https://bradleetw.github.io/tags/takenotes/</link>
-      <pubDate>Mon, 15 Oct 2018 14:22:02 +0800</pubDate>
+      <title>PythonClass</title>
+      <link>https: //bradleetw.github.io/tags/pythonclass/</link>
+      <pubDate>Mon, 22 Oct 2018 09:54:35 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/takenotes/</guid>
+      <guid>https: //bradleetw.github.io/tags/pythonclass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithm</title>
+      <link>https: //bradleetw.github.io/tags/algorithm/</link>
+      <pubDate>Tue, 16 Oct 2018 12:59:33 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TreeBasedMethod</title>
-      <link>https://bradleetw.github.io/tags/treebasedmethod/</link>
+      <link>https: //bradleetw.github.io/tags/treebasedmethod/</link>
       <pubDate>Tue, 16 Oct 2018 12:59:33 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/treebasedmethod/</guid>
+      <guid>https: //bradleetw.github.io/tags/treebasedmethod/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Virtualenv</title>
-      <link>https://bradleetw.github.io/tags/virtualenv/</link>
-      <pubDate>Tue, 18 Sep 2018 12:17:10 +0800</pubDate>
+      <title>StudyResource</title>
+      <link>https: //bradleetw.github.io/tags/studyresource/</link>
+      <pubDate>Mon, 15 Oct 2018 14:22:02 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/virtualenv/</guid>
+      <guid>https: //bradleetw.github.io/tags/studyresource/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Virtualenvwrapper</title>
-      <link>https://bradleetw.github.io/tags/virtualenvwrapper/</link>
+      <title>TakeNotes</title>
+      <link>https: //bradleetw.github.io/tags/takenotes/</link>
+      <pubDate>Mon, 15 Oct 2018 14:22:02 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/takenotes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EDA</title>
+      <link>https: //bradleetw.github.io/tags/eda/</link>
+      <pubDate>Wed, 10 Oct 2018 09:24:33 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/eda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TBF</title>
+      <link>https: //bradleetw.github.io/tags/tbf/</link>
+      <pubDate>Wed, 10 Oct 2018 09:24:33 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/tbf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PythonComprehension</title>
+      <link>https: //bradleetw.github.io/tags/pythoncomprehension/</link>
+      <pubDate>Sun, 30 Sep 2018 10:42:24 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/pythoncomprehension/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PythonTips</title>
+      <link>https: //bradleetw.github.io/tags/pythontips/</link>
+      <pubDate>Sun, 30 Sep 2018 09:30:57 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/pythontips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Health</title>
+      <link>https: //bradleetw.github.io/tags/health/</link>
+      <pubDate>Wed, 19 Sep 2018 10:56:31 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>autoenv</title>
+      <link>https: //bradleetw.github.io/tags/autoenv/</link>
       <pubDate>Tue, 18 Sep 2018 12:17:10 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/virtualenvwrapper/</guid>
+      <guid>https: //bradleetw.github.io/tags/autoenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pipenv</title>
+      <link>https: //bradleetw.github.io/tags/pipenv/</link>
+      <pubDate>Tue, 18 Sep 2018 12:17:10 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/pipenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pyenv</title>
+      <link>https: //bradleetw.github.io/tags/pyenv/</link>
+      <pubDate>Tue, 18 Sep 2018 12:17:10 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/pyenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtualenv</title>
+      <link>https: //bradleetw.github.io/tags/virtualenv/</link>
+      <pubDate>Tue, 18 Sep 2018 12:17:10 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/virtualenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtualenvwrapper</title>
+      <link>https: //bradleetw.github.io/tags/virtualenvwrapper/</link>
+      <pubDate>Tue, 18 Sep 2018 12:17:10 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/virtualenvwrapper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nature</title>
+      <link>https: //bradleetw.github.io/tags/nature/</link>
+      <pubDate>Thu, 13 Sep 2018 09:58:33 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/nature/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nutrition</title>
+      <link>https: //bradleetw.github.io/tags/nutrition/</link>
+      <pubDate>Fri, 07 Sep 2018 19:20:43 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/nutrition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Education</title>
+      <link>https: //bradleetw.github.io/tags/education/</link>
+      <pubDate>Thu, 06 Sep 2018 09:45:24 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reuters</title>
+      <link>https: //bradleetw.github.io/tags/reuters/</link>
+      <pubDate>Sun, 02 Sep 2018 16:16:21 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/reuters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Guardian</title>
+      <link>https: //bradleetw.github.io/tags/guardian/</link>
+      <pubDate>Wed, 29 Aug 2018 20:31:07 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/guardian/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WashingtonPost</title>
-      <link>https://bradleetw.github.io/tags/washingtonpost/</link>
+      <link>https: //bradleetw.github.io/tags/washingtonpost/</link>
       <pubDate>Tue, 28 Aug 2018 21:04:02 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/washingtonpost/</guid>
+      <guid>https: //bradleetw.github.io/tags/washingtonpost/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Zsh</title>
-      <link>https://bradleetw.github.io/tags/zsh/</link>
-      <pubDate>Sun, 29 Jul 2018 17:41:05 +0800</pubDate>
+      <title>NewYorkTimes</title>
+      <link>https: //bradleetw.github.io/tags/newyorktimes/</link>
+      <pubDate>Sat, 25 Aug 2018 12:00:49 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/zsh/</guid>
+      <guid>https: //bradleetw.github.io/tags/newyorktimes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BBC_News</title>
+      <link>https: //bradleetw.github.io/tags/bbc_news/</link>
+      <pubDate>Fri, 24 Aug 2018 14:52:34 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/bbc_news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Julia</title>
+      <link>https: //bradleetw.github.io/tags/julia/</link>
+      <pubDate>Tue, 21 Aug 2018 16:27:25 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/julia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Economist</title>
+      <link>https: //bradleetw.github.io/tags/economist/</link>
+      <pubDate>Tue, 21 Aug 2018 13:23:12 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/economist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>awk</title>
+      <link>https: //bradleetw.github.io/tags/awk/</link>
+      <pubDate>Sun, 19 Aug 2018 16:24:52 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/awk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MIT</title>
+      <link>https: //bradleetw.github.io/tags/mit/</link>
+      <pubDate>Tue, 14 Aug 2018 14:10:30 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/mit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https: //bradleetw.github.io/tags/hugo/</link>
+      <pubDate>Wed, 01 Aug 2018 13:09:33 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>靜態網頁</title>
-      <link>https://bradleetw.github.io/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81/</link>
+      <link>https: //bradleetw.github.io/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81/</link>
       <pubDate>Wed, 01 Aug 2018 13:09:33 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81/</guid>
+      <guid>https: //bradleetw.github.io/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iTerm2</title>
+      <link>https: //bradleetw.github.io/tags/iterm2/</link>
+      <pubDate>Sun, 29 Jul 2018 17:41:05 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/iterm2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zsh</title>
+      <link>https: //bradleetw.github.io/tags/zsh/</link>
+      <pubDate>Sun, 29 Jul 2018 17:41:05 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/zsh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deployment</title>
+      <link>https: //bradleetw.github.io/tags/deployment/</link>
+      <pubDate>Thu, 19 Jul 2018 14:31:14 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/tags/deployment/</guid>
       <description></description>
     </item>
     

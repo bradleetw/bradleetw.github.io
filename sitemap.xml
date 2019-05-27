@@ -3,579 +3,598 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://bradleetw.github.io/</loc>
-    <lastmod>2018-08-14T11:37:18+08:00</lastmod>
+    <loc>https: //bradleetw.github.io/</loc>
+    <lastmod>2019-03-04T17:52:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/</loc>
+    <loc>https: //bradleetw.github.io/englishnews/</loc>
     <lastmod>2018-09-19T10:56:31+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/machinelearning/</loc>
-    <lastmod>2018-10-23T20:32:35+08:00</lastmod>
+    <loc>https: //bradleetw.github.io/machinelearning/</loc>
+    <lastmod>2019-03-04T17:52:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/python/</loc>
+    <loc>https: //bradleetw.github.io/python/</loc>
     <lastmod>2018-11-30T10:01:10+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/julia/</loc>
+    <loc>https: //bradleetw.github.io/julia/</loc>
     <lastmod>2018-08-21T16:27:25+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/web/</loc>
+    <loc>https: //bradleetw.github.io/web/</loc>
     <lastmod>2018-08-01T13:09:33+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/developmenttools/</loc>
+    <loc>https: //bradleetw.github.io/developmenttools/</loc>
     <lastmod>2018-12-18T10:01:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/usefulurl/</loc>
+    <loc>https: //bradleetw.github.io/usefulurl/</loc>
     <lastmod>2018-08-14T11:37:18+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/developmenttools/multigithubaccount/</loc>
+    <loc>https: //bradleetw.github.io/authors/</loc>
+    <lastmod>2019-03-04T17:52:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/categories/</loc>
+    <lastmod>2019-03-04T17:52:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/datasets/</loc>
+    <lastmod>2019-03-04T17:52:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/</loc>
+    <lastmod>2019-03-04T17:52:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/categories/tensorflow/</loc>
+    <lastmod>2019-03-04T17:52:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/machinelearning/tensorflow/02_how_to_use_dataset_0304/</loc>
+    <lastmod>2019-03-04T17:52:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/authors/bradlee/</loc>
+    <lastmod>2019-03-04T17:52:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/git/</loc>
+    <lastmod>2018-12-18T10:01:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/github/</loc>
+    <lastmod>2018-12-18T10:01:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/ssh/</loc>
+    <lastmod>2018-12-18T10:01:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/categories/tools/</loc>
+    <lastmod>2018-12-18T10:01:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/developmenttools/multigithubaccount/</loc>
     <lastmod>2018-12-18T10:01:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/python/exceptions_1130/</loc>
+    <loc>https: //bradleetw.github.io/categories/python/</loc>
+    <lastmod>2018-11-30T10:01:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/pythongeneral/</loc>
+    <lastmod>2018-11-30T10:01:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/python/exceptions_1130/</loc>
     <lastmod>2018-11-30T10:01:10+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/</loc>
+    <loc>https: //bradleetw.github.io/tags/googlemachinelearning/</loc>
+    <lastmod>2018-10-23T20:32:35+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/categories/googleresource/</loc>
+    <lastmod>2018-10-23T20:32:35+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/</loc>
     <lastmod>2018-10-23T20:32:35+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/python/class_usage/str_repr_difference_1022/</loc>
+    <loc>https: //bradleetw.github.io/tags/pythonclass/</loc>
+    <lastmod>2018-10-22T09:54:35+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/python/class_usage/str_repr_difference_1022/</loc>
     <lastmod>2018-10-22T09:54:35+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/machinelearning/google_ml_concepts/01_framing_1018/</loc>
+    <loc>https: //bradleetw.github.io/machinelearning/google_ml_concepts/01_framing_1018/</loc>
     <lastmod>2018-10-18T21:43:19+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/machinelearning/algorithm/tb_randomforest_01_1016/</loc>
+    <loc>https: //bradleetw.github.io/tags/algorithm/</loc>
+    <lastmod>2018-10-16T12:59:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/categories/datascience/</loc>
+    <lastmod>2018-10-16T12:59:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/categories/machinelearning/</loc>
+    <lastmod>2018-10-16T12:59:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/treebasedmethod/</loc>
+    <lastmod>2018-10-16T12:59:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/machinelearning/algorithm/tb_randomforest_01_1016/</loc>
     <lastmod>2018-10-16T12:59:33+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/machinelearning/takenotestfromweb/00_themostindemandskillsfordatascientists_1015/</loc>
+    <loc>https: //bradleetw.github.io/tags/studyresource/</loc>
+    <lastmod>2018-10-15T14:22:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/takenotes/</loc>
+    <lastmod>2018-10-15T14:22:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/machinelearning/takenotestfromweb/00_themostindemandskillsfordatascientists_1015/</loc>
     <lastmod>2018-10-15T14:22:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</loc>
+    <loc>https: //bradleetw.github.io/tags/eda/</loc>
+    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/categories/machine-learning/</loc>
+    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/tbf/</loc>
+    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</loc>
     <lastmod>2018-10-10T09:24:33+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/python/comprehension_01_0930/</loc>
+    <loc>https: //bradleetw.github.io/tags/pythoncomprehension/</loc>
+    <lastmod>2018-09-30T10:42:24+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/python/comprehension_01_0930/</loc>
     <lastmod>2018-09-30T10:42:24+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/python/tips_01_0930/</loc>
+    <loc>https: //bradleetw.github.io/tags/pythontips/</loc>
+    <lastmod>2018-09-30T09:30:57+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/python/tips_01_0930/</loc>
     <lastmod>2018-09-30T09:30:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/washingtonpost/nopainnogain_0919/</loc>
+    <loc>https: //bradleetw.github.io/categories/english-washingtonpost/</loc>
+    <lastmod>2018-09-19T10:56:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/health/</loc>
+    <lastmod>2018-09-19T10:56:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/englishnews/washingtonpost/nopainnogain_0919/</loc>
     <lastmod>2018-09-19T10:56:31+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/python/pipenv_0918/</loc>
+    <loc>https: //bradleetw.github.io/python/pipenv_0918/</loc>
     <lastmod>2018-09-18T12:17:10+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/theguardian/banningallcats_0912/</loc>
+    <loc>https: //bradleetw.github.io/tags/autoenv/</loc>
+    <lastmod>2018-09-18T12:17:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/pipenv/</loc>
+    <lastmod>2018-09-18T12:17:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/pyenv/</loc>
+    <lastmod>2018-09-18T12:17:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/virtualenv/</loc>
+    <lastmod>2018-09-18T12:17:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/virtualenvwrapper/</loc>
+    <lastmod>2018-09-18T12:17:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/categories/english-guardian/</loc>
+    <lastmod>2018-09-13T09:58:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/nature/</loc>
+    <lastmod>2018-09-13T09:58:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/englishnews/theguardian/banningallcats_0912/</loc>
     <lastmod>2018-09-13T09:58:33+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/reuters/frenchbaguette_0911/</loc>
+    <loc>https: //bradleetw.github.io/categories/english-reuters/</loc>
+    <lastmod>2018-09-12T11:01:36+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/englishnews/reuters/frenchbaguette_0911/</loc>
     <lastmod>2018-09-12T11:01:36+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/theguardian/alcohol_0910/</loc>
+    <loc>https: //bradleetw.github.io/englishnews/theguardian/alcohol_0910/</loc>
     <lastmod>2018-09-10T19:02:58+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/theguardian/vanillaicecreams_0907/</loc>
+    <loc>https: //bradleetw.github.io/tags/nutrition/</loc>
+    <lastmod>2018-09-07T19:20:43+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/englishnews/theguardian/vanillaicecreams_0907/</loc>
     <lastmod>2018-09-07T19:20:43+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/theguardian/freesanitary_0906/</loc>
+    <loc>https: //bradleetw.github.io/tags/education/</loc>
+    <lastmod>2018-09-06T09:45:24+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/englishnews/theguardian/freesanitary_0906/</loc>
     <lastmod>2018-09-06T09:45:24+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/reuters/murderofdidi_0902/</loc>
+    <loc>https: //bradleetw.github.io/categories/english/</loc>
+    <lastmod>2018-09-02T16:16:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/reuters/</loc>
+    <lastmod>2018-09-02T16:16:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/englishnews/reuters/murderofdidi_0902/</loc>
     <lastmod>2018-09-02T16:16:21+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/theguardian/hackeraustralian_0829/</loc>
+    <loc>https: //bradleetw.github.io/tags/guardian/</loc>
+    <lastmod>2018-08-29T20:31:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/englishnews/theguardian/hackeraustralian_0829/</loc>
     <lastmod>2018-08-29T20:31:07+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/washingtonpost/bestfilms_0828/</loc>
+    <loc>https: //bradleetw.github.io/tags/washingtonpost/</loc>
+    <lastmod>2018-08-28T21:04:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/englishnews/washingtonpost/bestfilms_0828/</loc>
     <lastmod>2018-08-28T21:04:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/washingtonpost/robot_news_0827/</loc>
+    <loc>https: //bradleetw.github.io/englishnews/washingtonpost/robot_news_0827/</loc>
     <lastmod>2018-08-27T20:29:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</loc>
+    <loc>https: //bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</loc>
     <lastmod>2018-08-26T21:56:50+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/reuters/alaskaairlines_0826/</loc>
+    <loc>https: //bradleetw.github.io/englishnews/reuters/alaskaairlines_0826/</loc>
     <lastmod>2018-08-26T12:02:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/newyorktimes/naipaul_0825/</loc>
+    <loc>https: //bradleetw.github.io/tags/newyorktimes/</loc>
+    <lastmod>2018-08-25T12:00:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/englishnews/newyorktimes/naipaul_0825/</loc>
     <lastmod>2018-08-25T12:00:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/bbcnews/elonmusk_0824/</loc>
+    <loc>https: //bradleetw.github.io/tags/bbc_news/</loc>
+    <lastmod>2018-08-24T14:52:34+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/englishnews/bbcnews/elonmusk_0824/</loc>
     <lastmod>2018-08-24T14:52:34+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/washingtonpost/trollaccount_0823/</loc>
+    <loc>https: //bradleetw.github.io/englishnews/washingtonpost/trollaccount_0823/</loc>
     <lastmod>2018-08-23T10:12:29+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/julia/julia_0812/</loc>
+    <loc>https: //bradleetw.github.io/tags/julia/</loc>
+    <lastmod>2018-08-21T16:27:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/julia/julia_0812/</loc>
     <lastmod>2018-08-21T16:27:25+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/theeconomist/japanesediscrimination_0821/</loc>
+    <loc>https: //bradleetw.github.io/categories/julialang/</loc>
+    <lastmod>2018-08-21T16:27:25+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/economist/</loc>
+    <lastmod>2018-08-21T13:23:12+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/englishnews/theeconomist/japanesediscrimination_0821/</loc>
     <lastmod>2018-08-21T13:23:12+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/washingtonpost/spaceforce_0820/</loc>
+    <loc>https: //bradleetw.github.io/englishnews/washingtonpost/spaceforce_0820/</loc>
     <lastmod>2018-08-20T14:18:53+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/developmenttools/awk_study/</loc>
+    <loc>https: //bradleetw.github.io/categories/shell-script/</loc>
+    <lastmod>2018-08-19T16:24:52+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/developmenttools/awk_study/</loc>
     <lastmod>2018-08-19T16:24:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/reuters/applebreachesonetrillion_0816/</loc>
+    <loc>https: //bradleetw.github.io/tags/awk/</loc>
+    <lastmod>2018-08-19T16:24:52+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/englishnews/reuters/applebreachesonetrillion_0816/</loc>
     <lastmod>2018-08-16T13:55:12+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/newyorktimes/chinaintroverts_0815/</loc>
+    <loc>https: //bradleetw.github.io/englishnews/newyorktimes/chinaintroverts_0815/</loc>
     <lastmod>2018-08-15T13:20:32+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/englishnews/mit/geneticgenealory_0814/</loc>
-    <lastmod>2018-08-14T14:10:30+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/englishnews/mit/therapistswithvr_0808/</loc>
-    <lastmod>2018-08-09T12:41:59+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/developmenttools/gitstudy/gitrelated_1/</loc>
-    <lastmod>2018-08-08T11:49:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/englishnews/theguardian/trumpnews_0807/</loc>
-    <lastmod>2018-08-07T14:19:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/web/staticsitegenerator/hugo/posttemplate/</loc>
-    <lastmod>2018-08-01T13:09:33+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/developmenttools/iterm2setting/</loc>
-    <lastmod>2018-07-29T17:41:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/web/deployment/githubblog/usegithub_1/</loc>
-    <lastmod>2018-07-19T14:31:14+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/web/staticsitegenerator/hugo/usehugo_2/</loc>
-    <lastmod>2018-07-17T15:10:22+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/web/staticsitegenerator/hugo/usehugo_1/</loc>
-    <lastmod>2018-07-17T12:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/algorithm/</loc>
-    <lastmod>2018-10-16T12:59:33+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/authors/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/autoenv/</loc>
-    <lastmod>2018-09-18T12:17:10+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/awk/</loc>
-    <lastmod>2018-08-19T16:24:52+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/bbc_news/</loc>
-    <lastmod>2018-08-24T14:52:34+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/authors/bradlee/</loc>
-    <lastmod>2018-12-18T10:01:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/categories/datascience/</loc>
-    <lastmod>2018-10-16T12:59:33+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/deployment/</loc>
-    <lastmod>2018-07-19T14:31:14+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/eda/</loc>
-    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/economist/</loc>
-    <lastmod>2018-08-21T13:23:12+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/education/</loc>
-    <lastmod>2018-09-06T09:45:24+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/categories/english/</loc>
-    <lastmod>2018-09-02T16:16:21+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/categories/english-guardian/</loc>
-    <lastmod>2018-09-13T09:58:33+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/categories/english-reuters/</loc>
-    <lastmod>2018-09-12T11:01:36+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/categories/english-washingtonpost/</loc>
-    <lastmod>2018-09-19T10:56:31+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/git/</loc>
-    <lastmod>2018-12-18T10:01:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/github/</loc>
-    <lastmod>2018-12-18T10:01:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/googlemachinelearning/</loc>
-    <lastmod>2018-10-23T20:32:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/categories/googleresource/</loc>
-    <lastmod>2018-10-23T20:32:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/guardian/</loc>
-    <lastmod>2018-08-29T20:31:07+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/health/</loc>
-    <lastmod>2018-09-19T10:56:31+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/hugo/</loc>
-    <lastmod>2018-08-01T13:09:33+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/iterm2/</loc>
-    <lastmod>2018-07-29T17:41:05+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/julia/</loc>
-    <lastmod>2018-08-21T16:27:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/categories/julialang/</loc>
-    <lastmod>2018-08-21T16:27:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/mit/</loc>
+    <loc>https: //bradleetw.github.io/tags/mit/</loc>
     <lastmod>2018-08-14T14:10:30+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/categories/machine-learning/</loc>
-    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
-    <priority>0</priority>
+    <loc>https: //bradleetw.github.io/englishnews/mit/geneticgenealory_0814/</loc>
+    <lastmod>2018-08-14T14:10:30+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/categories/machinelearning/</loc>
-    <lastmod>2018-10-16T12:59:33+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/nature/</loc>
-    <lastmod>2018-09-13T09:58:33+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/newyorktimes/</loc>
-    <lastmod>2018-08-25T12:00:49+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/nutrition/</loc>
-    <lastmod>2018-09-07T19:20:43+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/page/</loc>
+    <loc>https: //bradleetw.github.io/page/</loc>
     <lastmod>2018-08-14T11:37:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/tags/pipenv/</loc>
-    <lastmod>2018-09-18T12:17:10+08:00</lastmod>
-    <priority>0</priority>
+    <loc>https: //bradleetw.github.io/englishnews/mit/therapistswithvr_0808/</loc>
+    <lastmod>2018-08-09T12:41:59+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/tags/pyenv/</loc>
-    <lastmod>2018-09-18T12:17:10+08:00</lastmod>
-    <priority>0</priority>
+    <loc>https: //bradleetw.github.io/developmenttools/gitstudy/gitrelated_1/</loc>
+    <lastmod>2018-08-08T11:49:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/categories/python/</loc>
-    <lastmod>2018-11-30T10:01:10+08:00</lastmod>
-    <priority>0</priority>
+    <loc>https: //bradleetw.github.io/englishnews/theguardian/trumpnews_0807/</loc>
+    <lastmod>2018-08-07T14:19:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/tags/pythonclass/</loc>
-    <lastmod>2018-10-22T09:54:35+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/pythoncomprehension/</loc>
-    <lastmod>2018-09-30T10:42:24+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/pythongeneral/</loc>
-    <lastmod>2018-11-30T10:01:10+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/pythontips/</loc>
-    <lastmod>2018-09-30T09:30:57+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/reuters/</loc>
-    <lastmod>2018-09-02T16:16:21+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/ssh/</loc>
-    <lastmod>2018-12-18T10:01:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/series/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/categories/shell-script/</loc>
-    <lastmod>2018-08-19T16:24:52+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/studyresource/</loc>
-    <lastmod>2018-10-15T14:22:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/tbf/</loc>
-    <lastmod>2018-10-10T09:24:33+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/</loc>
-    <lastmod>2018-10-16T12:59:33+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/takenotes/</loc>
-    <lastmod>2018-10-15T14:22:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/categories/tools/</loc>
-    <lastmod>2018-12-18T10:01:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/treebasedmethod/</loc>
-    <lastmod>2018-10-16T12:59:33+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/virtualenv/</loc>
-    <lastmod>2018-09-18T12:17:10+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/virtualenvwrapper/</loc>
-    <lastmod>2018-09-18T12:17:10+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/tags/washingtonpost/</loc>
-    <lastmod>2018-08-28T21:04:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bradleetw.github.io/categories/web/</loc>
+    <loc>https: //bradleetw.github.io/categories/web/</loc>
     <lastmod>2018-08-01T13:09:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/tags/zsh/</loc>
+    <loc>https: //bradleetw.github.io/web/staticsitegenerator/hugo/posttemplate/</loc>
+    <lastmod>2018-08-01T13:09:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/hugo/</loc>
+    <lastmod>2018-08-01T13:09:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81/</loc>
+    <lastmod>2018-08-01T13:09:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/iterm2/</loc>
     <lastmod>2018-07-29T17:41:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bradleetw.github.io/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81/</loc>
-    <lastmod>2018-08-01T13:09:33+08:00</lastmod>
+    <loc>https: //bradleetw.github.io/tags/zsh/</loc>
+    <lastmod>2018-07-29T17:41:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/developmenttools/iterm2setting/</loc>
+    <lastmod>2018-07-29T17:41:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/tags/deployment/</loc>
+    <lastmod>2018-07-19T14:31:14+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/web/deployment/githubblog/usegithub_1/</loc>
+    <lastmod>2018-07-19T14:31:14+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/web/staticsitegenerator/hugo/usehugo_2/</loc>
+    <lastmod>2018-07-17T15:10:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/web/staticsitegenerator/hugo/usehugo_1/</loc>
+    <lastmod>2018-07-17T12:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https: //bradleetw.github.io/series/</loc>
     <priority>0</priority>
   </url>
   

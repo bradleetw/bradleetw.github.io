@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
-
-<head>
+<html lang='en'><head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='Why need 2 or more Git(Hub) accounts in the same mac? 我現在的目的就只是為了能熟悉 Git 操作, 利用多個 Git accounts 來觀察實驗結果, 而遠端的服務選擇的是 GitHub.
@@ -21,31 +19,27 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
 SSH (Secure SHell protocol) 目前利用這種密鑰的登入服務是主流方法(因為設定成功後, 使用者就可以不用 type 密碼.), 利用開發者產生的私鑰和公開密鑰, 將公開密鑰放到遠端服務上, 來做匹配帳號的事.
 現在我的 mac 上是用 OpenSSH 這個實作 SSH 的 Open Source, 應該是 macOS 的標準配備.
 ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密鑰, 還可以管理 /.'>
-<meta property='og:url' content='https://bradleetw.github.io/developmenttools/multigithubaccount/'>
+<meta property='og:url' content='https: //bradleetw.github.io/developmenttools/multigithubaccount/'>
 <meta property='og:site_name' content='布萊德的學習網站'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/4d48e2d674da46d68bd6c7fe2925cb5d?s=256'><meta property='article:author' content='https://facebook.com/brad.lee.tw'><meta property='article:section' content='DevelopmentTools'><meta property='article:tag' content='Git'><meta property='article:tag' content='GitHub'><meta property='article:tag' content='SSH'><meta property='article:published_time' content='2018-12-18T10:01:29&#43;08:00'/><meta property='article:modified_time' content='2018-12-18T10:01:29&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@BradLeeTW'><meta name='twitter:creator' content='@BradLeeTW'>
 
-<meta name="generator" content="Hugo 0.46" />
+<meta name="generator" content="Hugo 0.55.6" />
 
   <title>[GitHub]如何在同一台 mac 中建立兩個不同的 GitHub account ? • Brad Lee</title>
-  <link rel='canonical' href='https://bradleetw.github.io/developmenttools/multigithubaccount/'>
+  <link rel='canonical' href='https:%20//bradleetw.github.io/developmenttools/multigithubaccount/'>
   
   
   <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.809149b6.css'><link rel='stylesheet' href='/css/custom.css'><style>
+<link rel='stylesheet' href='/assets/css/main.fb20af92.css'><link rel='stylesheet' href='/css/custom.css'><style>
 :root{--color-accent:#44ccff;}
 </style>
 
   
 
 </head>
-
-
 <body class='page type-DevelopmentTools has-sidebar'>
 
-  <div class='site'>
-
-    <div id='sidebar' class='sidebar'>
+  <div class='site'><div id='sidebar' class='sidebar'>
   <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
 
   <div class='container'><section class='widget widget-about sep-after'>
@@ -58,7 +52,9 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
     </div>
     
     <h2 class='title site-title '>
-    布萊德
+      <a href='/'>
+      布萊德
+      </a>
     </h2>
     <div class='desc'>
     抽空看看 Julia
@@ -86,79 +82,81 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
 
   <div class='container list-container'>
   <ul class='list taxonomy-cloud no-shuffle'><li>
-        <a href='/tags/algorithm' style='font-size:1em'>Algorithm</a>
+        <a href='/tags/algorithm/' style='font-size:1em'>Algorithm</a>
       </li><li>
-        <a href='/tags/bbc_news' style='font-size:1em'>BBC_News</a>
+        <a href='/tags/autoenv/' style='font-size:1em'>autoenv</a>
       </li><li>
-        <a href='/tags/eda' style='font-size:1em'>EDA</a>
+        <a href='/tags/awk/' style='font-size:1em'>awk</a>
       </li><li>
-        <a href='/tags/economist' style='font-size:1em'>Economist</a>
+        <a href='/tags/bbc_news/' style='font-size:1em'>BBC_News</a>
       </li><li>
-        <a href='/tags/education' style='font-size:1em'>Education</a>
+        <a href='/tags/datasets/' style='font-size:1em'>Datasets</a>
       </li><li>
-        <a href='/tags/git' style='font-size:1.3333333333333333em'>Git</a>
+        <a href='/tags/deployment/' style='font-size:1em'>deployment</a>
       </li><li>
-        <a href='/tags/github' style='font-size:1.3333333333333333em'>GitHub</a>
+        <a href='/tags/economist/' style='font-size:1em'>Economist</a>
       </li><li>
-        <a href='/tags/googlemachinelearning' style='font-size:1.3333333333333333em'>GoogleMachineLearning</a>
+        <a href='/tags/eda/' style='font-size:1em'>EDA</a>
       </li><li>
-        <a href='/tags/guardian' style='font-size:1.3333333333333333em'>Guardian</a>
+        <a href='/tags/education/' style='font-size:1em'>Education</a>
       </li><li>
-        <a href='/tags/health' style='font-size:1.6666666666666665em'>Health</a>
+        <a href='/tags/git/' style='font-size:1.3333333333333333em'>Git</a>
       </li><li>
-        <a href='/tags/julia' style='font-size:1em'>Julia</a>
+        <a href='/tags/github/' style='font-size:1.3333333333333333em'>GitHub</a>
       </li><li>
-        <a href='/tags/mit' style='font-size:1.3333333333333333em'>MIT</a>
+        <a href='/tags/googlemachinelearning/' style='font-size:1.3333333333333333em'>GoogleMachineLearning</a>
       </li><li>
-        <a href='/tags/nature' style='font-size:1em'>Nature</a>
+        <a href='/tags/guardian/' style='font-size:1.3333333333333333em'>Guardian</a>
       </li><li>
-        <a href='/tags/newyorktimes' style='font-size:1.3333333333333333em'>NewYorkTimes</a>
+        <a href='/tags/health/' style='font-size:1.6666666666666665em'>Health</a>
       </li><li>
-        <a href='/tags/nutrition' style='font-size:1em'>Nutrition</a>
+        <a href='/tags/hugo/' style='font-size:1.6666666666666665em'>hugo</a>
       </li><li>
-        <a href='/tags/pythonclass' style='font-size:1em'>PythonClass</a>
+        <a href='/tags/iterm2/' style='font-size:1em'>iTerm2</a>
       </li><li>
-        <a href='/tags/pythoncomprehension' style='font-size:1em'>PythonComprehension</a>
+        <a href='/tags/julia/' style='font-size:1em'>Julia</a>
       </li><li>
-        <a href='/tags/pythongeneral' style='font-size:1em'>PythonGeneral</a>
+        <a href='/tags/mit/' style='font-size:1.3333333333333333em'>MIT</a>
       </li><li>
-        <a href='/tags/pythontips' style='font-size:1em'>PythonTips</a>
+        <a href='/tags/nature/' style='font-size:1em'>Nature</a>
       </li><li>
-        <a href='/tags/reuters' style='font-size:1.6666666666666665em'>Reuters</a>
+        <a href='/tags/newyorktimes/' style='font-size:1.3333333333333333em'>NewYorkTimes</a>
       </li><li>
-        <a href='/tags/ssh' style='font-size:1em'>SSH</a>
+        <a href='/tags/nutrition/' style='font-size:1em'>Nutrition</a>
       </li><li>
-        <a href='/tags/studyresource' style='font-size:1em'>StudyResource</a>
+        <a href='/tags/pipenv/' style='font-size:1em'>pipenv</a>
       </li><li>
-        <a href='/tags/tbf' style='font-size:1em'>TBF</a>
+        <a href='/tags/pyenv/' style='font-size:1em'>pyenv</a>
       </li><li>
-        <a href='/tags/takenotes' style='font-size:1em'>TakeNotes</a>
+        <a href='/tags/pythonclass/' style='font-size:1em'>PythonClass</a>
       </li><li>
-        <a href='/tags/treebasedmethod' style='font-size:1em'>TreeBasedMethod</a>
+        <a href='/tags/pythoncomprehension/' style='font-size:1em'>PythonComprehension</a>
       </li><li>
-        <a href='/tags/washingtonpost' style='font-size:2em'>WashingtonPost</a>
+        <a href='/tags/pythongeneral/' style='font-size:1em'>PythonGeneral</a>
       </li><li>
-        <a href='/tags/autoenv' style='font-size:1em'>Autoenv</a>
+        <a href='/tags/pythontips/' style='font-size:1em'>PythonTips</a>
       </li><li>
-        <a href='/tags/awk' style='font-size:1em'>Awk</a>
+        <a href='/tags/reuters/' style='font-size:1.6666666666666665em'>Reuters</a>
       </li><li>
-        <a href='/tags/deployment' style='font-size:1em'>Deployment</a>
+        <a href='/tags/ssh/' style='font-size:1em'>SSH</a>
       </li><li>
-        <a href='/tags/hugo' style='font-size:1.6666666666666665em'>Hugo</a>
+        <a href='/tags/studyresource/' style='font-size:1em'>StudyResource</a>
       </li><li>
-        <a href='/tags/iterm2' style='font-size:1em'>ITerm2</a>
+        <a href='/tags/takenotes/' style='font-size:1em'>TakeNotes</a>
       </li><li>
-        <a href='/tags/pipenv' style='font-size:1em'>Pipenv</a>
+        <a href='/tags/tbf/' style='font-size:1em'>TBF</a>
       </li><li>
-        <a href='/tags/pyenv' style='font-size:1em'>Pyenv</a>
+        <a href='/tags/treebasedmethod/' style='font-size:1em'>TreeBasedMethod</a>
       </li><li>
-        <a href='/tags/virtualenv' style='font-size:1em'>Virtualenv</a>
+        <a href='/tags/virtualenv/' style='font-size:1em'>virtualenv</a>
       </li><li>
-        <a href='/tags/virtualenvwrapper' style='font-size:1em'>Virtualenvwrapper</a>
+        <a href='/tags/virtualenvwrapper/' style='font-size:1em'>virtualenvwrapper</a>
       </li><li>
-        <a href='/tags/zsh' style='font-size:1em'>Zsh</a>
+        <a href='/tags/washingtonpost/' style='font-size:2em'>WashingtonPost</a>
       </li><li>
-        <a href='/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81' style='font-size:1.6666666666666665em'>靜態網頁</a>
+        <a href='/tags/zsh/' style='font-size:1em'>zsh</a>
+      </li><li>
+        <a href='/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81/' style='font-size:1.6666666666666665em'>靜態網頁</a>
       </li></ul>
 </div>
 
@@ -167,11 +165,7 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
 </div>
 
   <div class='sidebar-overlay'></div>
-</div>
-
-    <div class='main'>
-
-      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
   <div class='container'>
     <a class='screen-reader-text' href='#content'>Skip to Content</a>
 
@@ -211,7 +205,9 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
         </a>
       </li></ul>
   </div>
-</nav>
+</nav><div class='header-widgets'>
+        <div class='container'></div>
+      </div>
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
@@ -231,8 +227,7 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
       
 
     </div>
-    
-<div class='entry-meta'>
+    <div class='entry-meta'>
   <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
@@ -259,7 +254,7 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
   <polyline points="12 6 12 12 15 15"/>
   
 </svg>
-3 mins read
+4 mins read
 </span>
 
 
@@ -306,7 +301,10 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
 <li><a href="#git-configuration">Git Configuration</a>
 <ul>
 <li><a href="#設定使用者">設定使用者</a></li>
-<li><a href="#git-clone-new-repository">Git clone new repository</a></li>
+<li><a href="#git-clone-new-repository">Git clone new repository</a>
+<ul>
+<li><a href="#利用-alias-可能遇到的問題">利用 alias 可能遇到的問題</a></li>
+</ul></li>
 <li><a href="#ssh-config-設定遠端服務器資料">.ssh/config, 設定遠端服務器資料</a></li>
 <li><a href="#verify-whether-is-workable">Verify whether is workable</a></li>
 </ul></li>
@@ -315,6 +313,7 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
 <ul>
 <li><a href="#push-failed">Push failed</a></li>
 <li><a href="#set-an-organization-repository">Set an organization repository</a></li>
+<li><a href="#第二個帳號上傳失敗的可能原因">第二個帳號上傳失敗的可能原因</a></li>
 </ul></li>
 <li><a href="#reference">Reference</a></li>
 </ul>
@@ -350,15 +349,9 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
 <h4 id="generate-key-ssh-keygen">Generate Key - <code>ssh-keygen</code></h4>
 
 <p>底下是常用的生成密鑰命令, 執行成功後會在你設定的路徑(跟在 <code>-f</code> 之後)產生私鑰和公鑰(副檔名為 <code>.pub</code> )兩個檔案:</p>
-
-<pre><code>ssh-keygen -t rsa -b 4096 -C &quot;Developer Key Note&quot; -f ~/.ssh/brad_github_id_rsa
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ssh-keygen -t rsa -b 4096 -C <span style="color:#e6db74">&#34;Developer Key Note&#34;</span> -f ~/.ssh/brad_github_id_rsa</code></pre></div>
 <p><code>-t</code>: ssh-keygen support 4 types &ndash; <code>dsa</code>, <code>ecdsa</code>, <code>ed25519</code>,and <code>rsa</code>. The default value is <code>rsa</code> type(SSH-2).</p>
-
-<pre><code>ssh-keygen -t dsa
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ssh-keygen -t dsa</code></pre></div>
 <p><code>-f</code>: Use <code>-f</code> to give the file name of private key, and public key with <code>.pub</code>. If have no <code>-f</code> parameter, <code>.ssh/id_rsa</code> or <code>.ssh/id_dsa</code> will be the default file name of private key, <code>.ssh/id_rsa.pub</code> or <code>.ssh/id_dsa.pub</code> will for public key.</p>
 
 <p><code>-b</code>: The length of key. For rsa type key, 最小要求768位，默认是2048位。DSA密钥必须恰好是1024位(FIPS 186-2 标准的要求). In the GitHub online doc, they used 4096.</p>
@@ -366,11 +359,8 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
 <p><code>-C</code>: This parameter just is a comment for display, 其實很多講到使用 ssh-keygen 都說 <code>-C</code>用 email, 其實不用, 這只是個用來呈現該密鑰是誰或是可以做什麼, 不寫也沒關係, <code>Provides a new comment</code> 是 BSD General Commands Manual 對這參數的說明. 若在建立的過程沒加入, 可以後來再透過 <code>-c</code> 來添加.</p>
 
 <h4 id="display-public-key-on-stdout-by-inputing-private-key">Display public key on stdout by inputing private key</h4>
-
-<pre><code>ssh-keygen -y
-ssh-keygen -y -f privateKeyPath
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ssh-keygen -y
+ssh-keygen -y -f privateKeyPath</code></pre></div>
 <p>可以利用 <code>-y</code> 後面接著私鑰的檔名, 結果會輸出公鑰到螢幕.</p>
 
 <p>其實使用者可以直接 <code>cat</code> 公鑰的也可以看到.</p>
@@ -380,16 +370,10 @@ ssh-keygen -y -f privateKeyPath
 <p>當第一次透過 ssh 登入遠端服務器時, 本地端會在 <code>~/.ssh/known_hosts</code> 中存放這些遠端服務器的公鑰. 而 <code>ssh-keygen</code> 也提供一些方式來管理查看這些遠端服務器的公鑰. 其實使用者可以直接打開 <code>known_hosts</code> 觀察.</p>
 
 <h5 id="clear-public-key-in-ssh-known-hosts">Clear public key in .ssh/known_hosts</h5>
-
-<pre><code>ssh-keygen -R HostName
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ssh-keygen -R HostName</code></pre></div>
 <h5 id="find-specific-hostname-from-ssh-known-hosts">Find specific hostname from .ssh/known_hosts</h5>
-
-<pre><code>ssh-keygen -F HostName
-ssh-keygen -F HostName -l
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ssh-keygen -F HostName
+ssh-keygen -F HostName -l</code></pre></div>
 <h3 id="ssh-agent-ssh-add">ssh-agent, ssh-add</h3>
 
 <p><a href="http://www.zsythink.net/archives/2407" target="_blank">http://www.zsythink.net/archives/2407</a></p>
@@ -397,44 +381,26 @@ ssh-keygen -F HostName -l
 <h4 id="what-is-the-ssh-agent">What is the ssh-agent</h4>
 
 <p><code>ssh-agent</code> 一個幫助管理私鑰的代理程式, 通常是被預設啟動的, 若沒有被啟動, 用如下的命令呼叫:</p>
-
-<pre><code>eval 'ssh-agent'
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">eval &#39;ssh-agent&#39;</code></pre></div>
 <p>而管理哪些私鑰是透過 <code>ssh-add</code> 來加入.</p>
 
 <h4 id="ssh-add">ssh-add</h4>
-
-<pre><code>ssh-add ~/.ssh/id_rsa_personal
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ssh-add ~/.ssh/id_rsa_personal</code></pre></div>
 <p>將特定私鑰加入 <code>ssh-agent</code> 這個服務.</p>
 
 <h4 id="list-all-of-private-key-from-agent">List all of private key from agent</h4>
-
-<pre><code>ssh-add -l -E md5
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ssh-add -l -E md5</code></pre></div>
 <h4 id="move-out-specific-private-key-from-ssh-agent">Move out specific private key from ssh_agent</h4>
-
-<pre><code>ssh-add -d '~/.ssh/id_rsa_custom'
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ssh-add -d &#39;~/.ssh/id_rsa_custom&#39;</code></pre></div>
 <h4 id="move-out-all-of-private-key-from-ssh-agent">Move out all of private key from ssh_agent</h4>
-
-<pre><code>ssh-add -D
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ssh-add -D</code></pre></div>
 <h2 id="git-configuration">Git Configuration</h2>
 
 <p>在 <code>~/.gitconfig</code> 中記錄著 git 的 global configuration, 包含了預設編輯器, diff tool, &hellip;等等.</p>
 
 <h3 id="設定使用者">設定使用者</h3>
-
-<pre><code>git config --global user.name &quot;User Name&quot;
-git config --global user.email &quot;UserName@email.address&quot;
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git config --global user.name <span style="color:#e6db74">&#34;User Name&#34;</span>
+git config --global user.email <span style="color:#e6db74">&#34;UserName@email.address&#34;</span></code></pre></div>
 <p>如果你的電腦環境對不同的遠端服務器(或者公司服務器)所記錄的帳號資料都相同, 可以設定成全域值.</p>
 
 <p>這兩個欄位主要是會在 commit log 中顯示的名字和郵件.</p>
@@ -442,11 +408,8 @@ git config --global user.email &quot;UserName@email.address&quot;
 <p>不過一般來說對公司的環境, 應該是會用公司的郵件資料. 所以建議這兩個欄位是放在 locale, 也就是根據不同的倉庫對應到個別的 user name/ e-mail. 若要同時可以存在對同一個遠端服務器的多個帳號, 也建議用 locale user name/ email.</p>
 
 <p>在個別的倉庫目錄下設定各自的 user name/ email:</p>
-
-<pre><code>git config --local user.name &quot;User Name&quot;
-git config --local user.email &quot;UserName@email.address&quot;
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git config --local user.name <span style="color:#e6db74">&#34;User Name&#34;</span>
+git config --local user.email <span style="color:#e6db74">&#34;UserName@email.address&#34;</span></code></pre></div>
 <p><code>--local</code> 其實可以省略.</p>
 
 <h3 id="git-clone-new-repository">Git clone new repository</h3>
@@ -454,44 +417,39 @@ git config --local user.email &quot;UserName@email.address&quot;
 <p>如果環境設定中將 <code>user.name</code> and <code>user.emial</code> 從 global 設定中移除, 那麼在每一次 <code>git clone git@github.com:someone/some.git</code> 完之後, 會比較麻煩要額外設定 user.name and user.email locally.</p>
 
 <p>所以只要在 <code>.zshrc</code> 中添入如下 alias, 之後只要執行 <code>gitclone git@github.com:someone/some.git</code>, 就會一起設定 user.name and user.email.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">alias gitclone=&#39;git clone --config user.name=<span style="color:#e6db74">&#34;your name&#34;</span> --config user.email=<span style="color:#e6db74">&#34;youremail@address.com&#34;</span> $@&#39;</code></pre></div>
+<h4 id="利用-alias-可能遇到的問題">利用 alias 可能遇到的問題</h4>
 
-<pre><code>alias gitclone='git clone --config user.name=&quot;your name&quot; --config user.email=&quot;youremail@address.com&quot; $@'
-</code></pre>
+<p>在實際的操作會有多個 alias 來對應不同帳號, 以方便輕易的填入 name, email 等資料. 但常常會遇到一個情況:</p>
+
+<p>輸入完所要的 gitclone alias 之後, 後面直接貼上從 github 複製過來的 github path.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">gitclone git@github.com:bradleetw/flask-tutorial.git</code></pre></div>
+<p>單一帳號都沒問題, 但多個帳號就會有狀況, 你可能選了不同的 gitclone alis command, 然後直接複製貼上 github path, 如下:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">gitclone2 git@github.com:bradleetw/flask-tutorial.git</code></pre></div>
+<p>問題就發生在 <code>github.com</code>, 這個要改成不同帳號的相對 ssh remote host name, 也就是下一節的內容, 一般都會忘了改, 導至 clone 成功後, 卻因為 ssh key 不對而無法上傳.</p>
 
 <h3 id="ssh-config-設定遠端服務器資料">.ssh/config, 設定遠端服務器資料</h3>
 
 <p>打開 <code>.ssh/config</code> 可以看到如下的資料:</p>
-
-<pre><code>Host github.com-personal
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Host github.com-personal
     HostName ssh.github.com
     Port 443
     UseKeychain no
     User git
     IdentityFile ~/.ssh/sgithub_id_rsa
-    IdentitiesOnly yes
-</code></pre>
-
+    IdentitiesOnly yes</code></pre></div>
 <p>這個檔案裡可以放入多個遠端服務器的資料, 而在 Host 後頭跟著的名稱, 就是當你要決定連到哪一個遠端服務器時, 要填入的名.</p>
-
-<pre><code>git clone git@github.com-personal:someone/some.git
-ssh -T github.com-personal
-</code></pre>
-
-<p>如果要連到同一個遠端服務器, 但是是用不同的帳號時, 要在 <code>.ssh/config</code> 裡在設定一組 Host, 重要的是在新的 Host setting <code>IdentityFile</code> 要設成另一個帳號的私鑰檔案.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git clone git@github.com-personal:someone/some.git
+ssh -T github.com-personal</code></pre></div>
+<p>如果要連到同一個遠端服務器, 但是是用不同的帳號時, 要在 <code>.ssh/config</code> 裡在設定一組 Host, 重要的是在新的 Host setting 的 <code>IdentityFile</code> 欄位要設成另一個帳號的私鑰檔案.</p>
 
 <h3 id="verify-whether-is-workable">Verify whether is workable</h3>
-
-<pre><code>ssh -T AliasNameInSSH_Config
-ssh -vT AliasNameInSSH_Config
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ssh -T AliasNameInSSH_Config
+ssh -vT AliasNameInSSH_Config</code></pre></div>
 <p>AliasNameInSSH_Config: 就是在 <code>.ssh/config</code> 中每一組遠端服務器設定的 <code>Host</code> 欄位, 跟在後面的名字.</p>
 
 <p>相關設定若是正確, 會有以下的顯示輸出:</p>
-
-<pre><code>Hi accountNameOfRemoteServer! You've successfully authenticated, but GitHub does not provide shell access.
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Hi accountNameOfRemoteServer! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code></pre></div>
 <p>若想知道連接過程的細項流程, 加入 <code>-vT</code>.</p>
 
 <p>若失敗就會出現 <code>Permission denied (publickey).</code>.</p>
@@ -513,13 +471,10 @@ ssh -vT AliasNameInSSH_Config
 <h2 id="push-failed">Push failed</h2>
 
 <p>原先因為我對 GitHub 的一知半解, 以為所有在 GitHub 上的資料, 除了可以任意下載, 還可以任意上傳. 這樣的觀點只對一半, 若是下載上傳的倉庫都是你自己的單一帳號, 那是沒問題的. 但若是別人的帳號, 上傳的權限就要原倉庫擁有者開放給你, 之後才可以上傳. 就是因為不清楚, 以為前面提的五個步驟設定完成就可以用不同帳號下載上傳, 然後就一直出現以下的 error message.</p>
-
-<pre><code>ERROR: Permission to userA/Scripts.git denied to UserB.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">ERROR: Permission to userA/Scripts.git denied to UserB.
 fatal: 无法读取远程仓库。
 
-请确认您有正确的访问权限并且仓库存在。
-</code></pre>
-
+请确认您有正确的访问权限并且仓库存在。</code></pre></div>
 <p>GitHub Help reference:
 <a href="https://help.github.com/articles/error-permission-to-user-repo-denied-to-user-other-repo/" target="_blank">https://help.github.com/articles/error-permission-to-user-repo-denied-to-user-other-repo/</a></p>
 
@@ -530,6 +485,8 @@ fatal: 无法读取远程仓库。
 <p><a href="https://help.github.com/articles/adding-outside-collaborators-to-repositories-in-your-organization/" target="_blank">https://help.github.com/articles/adding-outside-collaborators-to-repositories-in-your-organization/</a></p>
 
 <p>設定成功後, 在透過 invite other user 來將第二個帳號加入同一個開發專案. 第二個帳號只要接受了邀請, 就可以 push commit.</p>
+
+<h2 id="第二個帳號上傳失敗的可能原因">第二個帳號上傳失敗的可能原因</h2>
 
 <h1 id="reference">Reference</h1>
 
@@ -545,24 +502,19 @@ fatal: 无法读取远程仓库。
 
   
 <footer class='entry-footer'>
-  <div class='container sep-before'>
-  <div class='categories'>
-  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
   
 </svg>
-</span>
-  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/tools'>Tools</a></div>
-<div class='tags'>
-  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/tools/'>Tools</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
   <line x1="7" y1="7" x2="7" y2="7"/>
   
 </svg>
-</span>
-  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/git'>Git</a>, <a class='tag' href='/tags/github'>GitHub</a>, <a class='tag' href='/tags/ssh'>SSH</a></div>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/git/'>Git</a>, <a class='tag' href='/tags/github/'>GitHub</a>, <a class='tag' href='/tags/ssh/'>SSH</a></div>
 
   </div>
 </footer>
@@ -638,19 +590,16 @@ fatal: 无法读取远程仓库。
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2018 bradlee </p>
+  <p> &copy; 2018-2019 bradlee </p>
 </div>
 
         </div>
       </footer>
 
     </div>
-  </div><script>window.__public_path__='https:\/\/bradleetw.github.io\/assets\/js\/'</script>
+  </div><script>window.__assets_js_src ="/assets/js/"</script>
 
-<script src='https://bradleetw.github.io/assets/js/main.68cb493a.js'></script><script src='/js/custom.js'></script>
-
-
-
+<script src='https:%20//bradleetw.github.io/'></script><script src='/js/custom.js'></script>
 </body>
 
 </html>

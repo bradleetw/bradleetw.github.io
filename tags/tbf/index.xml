@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TBF on 布萊德的學習網站</title>
-    <link>https://bradleetw.github.io/tags/tbf/</link>
+    <link>https: //bradleetw.github.io/tags/tbf/</link>
     <description>Recent content in TBF on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 10 Oct 2018 09:24:33 +0800</lastBuildDate>
     
-	<atom:link href="https://bradleetw.github.io/tags/tbf/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https: //bradleetw.github.io/tags/tbf/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[Data Visualization] Exploratory data analysis</title>
-      <link>https://bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</link>
+      <link>https: //bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</link>
       <pubDate>Wed, 10 Oct 2018 09:24:33 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</guid>
+      <guid>https: //bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</guid>
       <description>Exploratory data analysis(EDA) In statistics, exploratory data analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods.
 The objectives of EDA are to:
  Suggest hypotheses about the causes of observed phenomena

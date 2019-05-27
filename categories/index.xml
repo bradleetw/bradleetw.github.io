@@ -2,127 +2,137 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 布萊德的學習網站</title>
-    <link>https://bradleetw.github.io/categories/</link>
+    <link>https: //bradleetw.github.io/categories/</link>
     <description>Recent content in Categories on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 04 Mar 2019 17:52:02 +0800</lastBuildDate>
     
-	<atom:link href="https://bradleetw.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https: //bradleetw.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>DataScience</title>
-      <link>https://bradleetw.github.io/categories/datascience/</link>
-      <pubDate>Tue, 16 Oct 2018 12:59:33 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/categories/datascience/</guid>
-      <description></description>
-    </item>
     
     <item>
-      <title>English</title>
-      <link>https://bradleetw.github.io/categories/english/</link>
-      <pubDate>Sun, 02 Sep 2018 16:16:21 +0800</pubDate>
+      <title>TensorFlow</title>
+      <link>https: //bradleetw.github.io/categories/tensorflow/</link>
+      <pubDate>Mon, 04 Mar 2019 17:52:02 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/categories/english/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>English, Guardian</title>
-      <link>https://bradleetw.github.io/categories/english-guardian/</link>
-      <pubDate>Thu, 13 Sep 2018 09:58:33 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/categories/english-guardian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>English, Reuters</title>
-      <link>https://bradleetw.github.io/categories/english-reuters/</link>
-      <pubDate>Wed, 12 Sep 2018 11:01:36 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/categories/english-reuters/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>English, WashingtonPost</title>
-      <link>https://bradleetw.github.io/categories/english-washingtonpost/</link>
-      <pubDate>Wed, 19 Sep 2018 10:56:31 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/categories/english-washingtonpost/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GoogleResource</title>
-      <link>https://bradleetw.github.io/categories/googleresource/</link>
-      <pubDate>Tue, 23 Oct 2018 20:32:35 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/categories/googleresource/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JuliaLang</title>
-      <link>https://bradleetw.github.io/categories/julialang/</link>
-      <pubDate>Tue, 21 Aug 2018 16:27:25 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/categories/julialang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine-Learning</title>
-      <link>https://bradleetw.github.io/categories/machine-learning/</link>
-      <pubDate>Wed, 10 Oct 2018 09:24:33 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/categories/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MachineLearning</title>
-      <link>https://bradleetw.github.io/categories/machinelearning/</link>
-      <pubDate>Tue, 16 Oct 2018 12:59:33 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/categories/machinelearning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://bradleetw.github.io/categories/python/</link>
-      <pubDate>Fri, 30 Nov 2018 10:01:10 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/categories/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shell Script</title>
-      <link>https://bradleetw.github.io/categories/shell-script/</link>
-      <pubDate>Sun, 19 Aug 2018 16:24:52 +0800</pubDate>
-      
-      <guid>https://bradleetw.github.io/categories/shell-script/</guid>
+      <guid>https: //bradleetw.github.io/categories/tensorflow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tools</title>
-      <link>https://bradleetw.github.io/categories/tools/</link>
+      <link>https: //bradleetw.github.io/categories/tools/</link>
       <pubDate>Tue, 18 Dec 2018 10:01:29 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/categories/tools/</guid>
+      <guid>https: //bradleetw.github.io/categories/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https: //bradleetw.github.io/categories/python/</link>
+      <pubDate>Fri, 30 Nov 2018 10:01:10 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GoogleResource</title>
+      <link>https: //bradleetw.github.io/categories/googleresource/</link>
+      <pubDate>Tue, 23 Oct 2018 20:32:35 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/categories/googleresource/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DataScience</title>
+      <link>https: //bradleetw.github.io/categories/datascience/</link>
+      <pubDate>Tue, 16 Oct 2018 12:59:33 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/categories/datascience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MachineLearning</title>
+      <link>https: //bradleetw.github.io/categories/machinelearning/</link>
+      <pubDate>Tue, 16 Oct 2018 12:59:33 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/categories/machinelearning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine-Learning</title>
+      <link>https: //bradleetw.github.io/categories/machine-learning/</link>
+      <pubDate>Wed, 10 Oct 2018 09:24:33 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/categories/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>English, WashingtonPost</title>
+      <link>https: //bradleetw.github.io/categories/english-washingtonpost/</link>
+      <pubDate>Wed, 19 Sep 2018 10:56:31 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/categories/english-washingtonpost/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>English, Guardian</title>
+      <link>https: //bradleetw.github.io/categories/english-guardian/</link>
+      <pubDate>Thu, 13 Sep 2018 09:58:33 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/categories/english-guardian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>English, Reuters</title>
+      <link>https: //bradleetw.github.io/categories/english-reuters/</link>
+      <pubDate>Wed, 12 Sep 2018 11:01:36 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/categories/english-reuters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>English</title>
+      <link>https: //bradleetw.github.io/categories/english/</link>
+      <pubDate>Sun, 02 Sep 2018 16:16:21 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/categories/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JuliaLang</title>
+      <link>https: //bradleetw.github.io/categories/julialang/</link>
+      <pubDate>Tue, 21 Aug 2018 16:27:25 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/categories/julialang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shell Script</title>
+      <link>https: //bradleetw.github.io/categories/shell-script/</link>
+      <pubDate>Sun, 19 Aug 2018 16:24:52 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/categories/shell-script/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web</title>
-      <link>https://bradleetw.github.io/categories/web/</link>
+      <link>https: //bradleetw.github.io/categories/web/</link>
       <pubDate>Wed, 01 Aug 2018 13:09:33 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/categories/web/</guid>
+      <guid>https: //bradleetw.github.io/categories/web/</guid>
       <description></description>
     </item>
     

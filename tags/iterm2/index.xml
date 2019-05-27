@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ITerm2 on 布萊德的學習網站</title>
-    <link>https://bradleetw.github.io/tags/iterm2/</link>
-    <description>Recent content in ITerm2 on 布萊德的學習網站</description>
+    <title>iTerm2 on 布萊德的學習網站</title>
+    <link>https: //bradleetw.github.io/tags/iterm2/</link>
+    <description>Recent content in iTerm2 on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 29 Jul 2018 17:41:05 +0800</lastBuildDate>
     
-	<atom:link href="https://bradleetw.github.io/tags/iterm2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https: //bradleetw.github.io/tags/iterm2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>讓 iTerm2 有很酷炫的外表!</title>
-      <link>https://bradleetw.github.io/developmenttools/iterm2setting/</link>
+      <link>https: //bradleetw.github.io/developmenttools/iterm2setting/</link>
       <pubDate>Sun, 29 Jul 2018 17:41:05 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/developmenttools/iterm2setting/</guid>
+      <guid>https: //bradleetw.github.io/developmenttools/iterm2setting/</guid>
       <description>常看到電影裡的駭客在操作電腦時所用的 command line 都是那麼的酷, 今天就來速記一下參考網路上別人分享設定的步驟. 參考的來源: 超簡單！十分鐘打造漂亮又好用的 zsh command line 環境
 iTerm2 的安裝就沒記錄, 因為早就安裝過, 安裝流程也不難.
 安裝 zsh + oh-my-zsh zsh 是類似 bash, 在一般的使用上兩者差不多, 而 zsh 要再搭配上 oh-my-zsh(它是基於 zsh 的一個擴展工具集, 提供了豐富的擴展功能), 就可以設置有趣的主題風格(Themes), 而 oh-my-zsh 本身就提供了很多主題可以讓你挑選.

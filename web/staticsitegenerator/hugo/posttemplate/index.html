@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
-
-<head>
+<html lang='en'><head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='創建固定欄位的 Markdown 檔案 當使用者在一般的文書編輯器要開始創立 Markdown 新文章時, 除了透過該編輯器的 new file 外, 好像就沒有其他方法, 而這種方式只能產生一個空的檔案. 所以我們目前只能用 command line 來透過 $ hugo new newPostFile.md 的命令來產生新的 markdown 文章, 而且該文章會自動生成固定的欄位, 方便使用者寫作.
@@ -15,31 +13,27 @@
 為什麼要透過這種方式來創建 Markdown 文章 透過這種方式, 使用者可以事先將 Markdown 文章常用到的 metadata 的欄位或者該欄位的值放到特定檔案, 在創建新 Markdown 文章時就能預設有這些欄位, 節省使用者寫作時間.
 修改 default.md 當使用者透過 $ hugo new newPostFile.md 時, Hugo 會到該 Hugo project 底下的 archetypes 目錄找尋 default.md, 依據其內容而在新的 Markdown 檔案產生相對的欄位. 一般來說在 GitHub 上所公開的模板可能也會附上相對的 default.md (其實很多也都沒附上), 使用者只要下載該模板後, 到該模板的目錄下找 archetypes 就可以發現.
 透過 $ hugo new site newProject 產生網站時, 會生成 default.'>
-<meta property='og:url' content='https://bradleetw.github.io/web/staticsitegenerator/hugo/posttemplate/'>
+<meta property='og:url' content='https: //bradleetw.github.io/web/staticsitegenerator/hugo/posttemplate/'>
 <meta property='og:site_name' content='布萊德的學習網站'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://bradleetw.github.io/images/paper-3042645_1920.jpg'><meta property='article:author' content='https://facebook.com/brad.lee.tw'><meta property='article:section' content='Web'><meta property='article:tag' content='靜態網頁'><meta property='article:tag' content='hugo'><meta property='article:published_time' content='2018-08-01T13:09:33&#43;08:00'/><meta property='article:modified_time' content='2018-08-01T13:09:33&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary_large_image'><meta name='twitter:site' content='@BradLeeTW'><meta name='twitter:creator' content='@BradLeeTW'><meta property='twitter:image' content='https://bradleetw.github.io/images/paper-3042645_1920.jpg'>
+<meta property='og:type' content='article'><meta property='og:image' content='https: //bradleetw.github.io/'><meta property='article:author' content='https://facebook.com/brad.lee.tw'><meta property='article:section' content='Web'><meta property='article:tag' content='靜態網頁'><meta property='article:tag' content='hugo'><meta property='article:published_time' content='2018-08-01T13:09:33&#43;08:00'/><meta property='article:modified_time' content='2018-08-01T13:09:33&#43;08:00'/><meta property='fb:admins' content=''><meta name='twitter:card' content='summary_large_image'><meta name='twitter:site' content='@BradLeeTW'><meta name='twitter:creator' content='@BradLeeTW'><meta property='twitter:image' content='https: //bradleetw.github.io/'>
 
-<meta name="generator" content="Hugo 0.46" />
+<meta name="generator" content="Hugo 0.55.6" />
 
   <title>[Hugo]建立固定格式的新帖子 • Brad Lee</title>
-  <link rel='canonical' href='https://bradleetw.github.io/web/staticsitegenerator/hugo/posttemplate/'>
+  <link rel='canonical' href='https:%20//bradleetw.github.io/web/staticsitegenerator/hugo/posttemplate/'>
   
   
   <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.809149b6.css'><link rel='stylesheet' href='/css/custom.css'><style>
+<link rel='stylesheet' href='/assets/css/main.fb20af92.css'><link rel='stylesheet' href='/css/custom.css'><style>
 :root{--color-accent:#44ccff;}
 </style>
 
   
 
 </head>
-
-
 <body class='page type-Web has-cover has-sidebar'>
 
-  <div class='site'>
-
-    <div id='sidebar' class='sidebar'>
+  <div class='site'><div id='sidebar' class='sidebar'>
   <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
 
   <div class='container'><section class='widget widget-about sep-after'>
@@ -52,7 +46,9 @@
     </div>
     
     <h2 class='title site-title '>
-    布萊德
+      <a href='/'>
+      布萊德
+      </a>
     </h2>
     <div class='desc'>
     抽空看看 Julia
@@ -80,79 +76,81 @@
 
   <div class='container list-container'>
   <ul class='list taxonomy-cloud no-shuffle'><li>
-        <a href='/tags/algorithm' style='font-size:1em'>Algorithm</a>
+        <a href='/tags/algorithm/' style='font-size:1em'>Algorithm</a>
       </li><li>
-        <a href='/tags/bbc_news' style='font-size:1em'>BBC_News</a>
+        <a href='/tags/autoenv/' style='font-size:1em'>autoenv</a>
       </li><li>
-        <a href='/tags/eda' style='font-size:1em'>EDA</a>
+        <a href='/tags/awk/' style='font-size:1em'>awk</a>
       </li><li>
-        <a href='/tags/economist' style='font-size:1em'>Economist</a>
+        <a href='/tags/bbc_news/' style='font-size:1em'>BBC_News</a>
       </li><li>
-        <a href='/tags/education' style='font-size:1em'>Education</a>
+        <a href='/tags/datasets/' style='font-size:1em'>Datasets</a>
       </li><li>
-        <a href='/tags/git' style='font-size:1.3333333333333333em'>Git</a>
+        <a href='/tags/deployment/' style='font-size:1em'>deployment</a>
       </li><li>
-        <a href='/tags/github' style='font-size:1.3333333333333333em'>GitHub</a>
+        <a href='/tags/economist/' style='font-size:1em'>Economist</a>
       </li><li>
-        <a href='/tags/googlemachinelearning' style='font-size:1.3333333333333333em'>GoogleMachineLearning</a>
+        <a href='/tags/eda/' style='font-size:1em'>EDA</a>
       </li><li>
-        <a href='/tags/guardian' style='font-size:1.3333333333333333em'>Guardian</a>
+        <a href='/tags/education/' style='font-size:1em'>Education</a>
       </li><li>
-        <a href='/tags/health' style='font-size:1.6666666666666665em'>Health</a>
+        <a href='/tags/git/' style='font-size:1.3333333333333333em'>Git</a>
       </li><li>
-        <a href='/tags/julia' style='font-size:1em'>Julia</a>
+        <a href='/tags/github/' style='font-size:1.3333333333333333em'>GitHub</a>
       </li><li>
-        <a href='/tags/mit' style='font-size:1.3333333333333333em'>MIT</a>
+        <a href='/tags/googlemachinelearning/' style='font-size:1.3333333333333333em'>GoogleMachineLearning</a>
       </li><li>
-        <a href='/tags/nature' style='font-size:1em'>Nature</a>
+        <a href='/tags/guardian/' style='font-size:1.3333333333333333em'>Guardian</a>
       </li><li>
-        <a href='/tags/newyorktimes' style='font-size:1.3333333333333333em'>NewYorkTimes</a>
+        <a href='/tags/health/' style='font-size:1.6666666666666665em'>Health</a>
       </li><li>
-        <a href='/tags/nutrition' style='font-size:1em'>Nutrition</a>
+        <a href='/tags/hugo/' style='font-size:1.6666666666666665em'>hugo</a>
       </li><li>
-        <a href='/tags/pythonclass' style='font-size:1em'>PythonClass</a>
+        <a href='/tags/iterm2/' style='font-size:1em'>iTerm2</a>
       </li><li>
-        <a href='/tags/pythoncomprehension' style='font-size:1em'>PythonComprehension</a>
+        <a href='/tags/julia/' style='font-size:1em'>Julia</a>
       </li><li>
-        <a href='/tags/pythongeneral' style='font-size:1em'>PythonGeneral</a>
+        <a href='/tags/mit/' style='font-size:1.3333333333333333em'>MIT</a>
       </li><li>
-        <a href='/tags/pythontips' style='font-size:1em'>PythonTips</a>
+        <a href='/tags/nature/' style='font-size:1em'>Nature</a>
       </li><li>
-        <a href='/tags/reuters' style='font-size:1.6666666666666665em'>Reuters</a>
+        <a href='/tags/newyorktimes/' style='font-size:1.3333333333333333em'>NewYorkTimes</a>
       </li><li>
-        <a href='/tags/ssh' style='font-size:1em'>SSH</a>
+        <a href='/tags/nutrition/' style='font-size:1em'>Nutrition</a>
       </li><li>
-        <a href='/tags/studyresource' style='font-size:1em'>StudyResource</a>
+        <a href='/tags/pipenv/' style='font-size:1em'>pipenv</a>
       </li><li>
-        <a href='/tags/tbf' style='font-size:1em'>TBF</a>
+        <a href='/tags/pyenv/' style='font-size:1em'>pyenv</a>
       </li><li>
-        <a href='/tags/takenotes' style='font-size:1em'>TakeNotes</a>
+        <a href='/tags/pythonclass/' style='font-size:1em'>PythonClass</a>
       </li><li>
-        <a href='/tags/treebasedmethod' style='font-size:1em'>TreeBasedMethod</a>
+        <a href='/tags/pythoncomprehension/' style='font-size:1em'>PythonComprehension</a>
       </li><li>
-        <a href='/tags/washingtonpost' style='font-size:2em'>WashingtonPost</a>
+        <a href='/tags/pythongeneral/' style='font-size:1em'>PythonGeneral</a>
       </li><li>
-        <a href='/tags/autoenv' style='font-size:1em'>Autoenv</a>
+        <a href='/tags/pythontips/' style='font-size:1em'>PythonTips</a>
       </li><li>
-        <a href='/tags/awk' style='font-size:1em'>Awk</a>
+        <a href='/tags/reuters/' style='font-size:1.6666666666666665em'>Reuters</a>
       </li><li>
-        <a href='/tags/deployment' style='font-size:1em'>Deployment</a>
+        <a href='/tags/ssh/' style='font-size:1em'>SSH</a>
       </li><li>
-        <a href='/tags/hugo' style='font-size:1.6666666666666665em'>Hugo</a>
+        <a href='/tags/studyresource/' style='font-size:1em'>StudyResource</a>
       </li><li>
-        <a href='/tags/iterm2' style='font-size:1em'>ITerm2</a>
+        <a href='/tags/takenotes/' style='font-size:1em'>TakeNotes</a>
       </li><li>
-        <a href='/tags/pipenv' style='font-size:1em'>Pipenv</a>
+        <a href='/tags/tbf/' style='font-size:1em'>TBF</a>
       </li><li>
-        <a href='/tags/pyenv' style='font-size:1em'>Pyenv</a>
+        <a href='/tags/treebasedmethod/' style='font-size:1em'>TreeBasedMethod</a>
       </li><li>
-        <a href='/tags/virtualenv' style='font-size:1em'>Virtualenv</a>
+        <a href='/tags/virtualenv/' style='font-size:1em'>virtualenv</a>
       </li><li>
-        <a href='/tags/virtualenvwrapper' style='font-size:1em'>Virtualenvwrapper</a>
+        <a href='/tags/virtualenvwrapper/' style='font-size:1em'>virtualenvwrapper</a>
       </li><li>
-        <a href='/tags/zsh' style='font-size:1em'>Zsh</a>
+        <a href='/tags/washingtonpost/' style='font-size:2em'>WashingtonPost</a>
       </li><li>
-        <a href='/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81' style='font-size:1.6666666666666665em'>靜態網頁</a>
+        <a href='/tags/zsh/' style='font-size:1em'>zsh</a>
+      </li><li>
+        <a href='/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81/' style='font-size:1.6666666666666665em'>靜態網頁</a>
       </li></ul>
 </div>
 
@@ -161,11 +159,7 @@
 </div>
 
   <div class='sidebar-overlay'></div>
-</div>
-
-    <div class='main'>
-
-      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
   <div class='container'>
     <a class='screen-reader-text' href='#content'>Skip to Content</a>
 
@@ -205,7 +199,9 @@
         </a>
       </li></ul>
   </div>
-</nav>
+</nav><div class='header-widgets'>
+        <div class='container'></div>
+      </div>
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
@@ -225,8 +221,7 @@
       
 
     </div>
-    
-<div class='entry-meta'>
+    <div class='entry-meta'>
   <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
@@ -368,24 +363,19 @@ author: &quot;Brad Lee&quot;
 
   
 <footer class='entry-footer'>
-  <div class='container sep-before'>
-  <div class='categories'>
-  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
   
 </svg>
-</span>
-  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/web'>Web</a></div>
-<div class='tags'>
-  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/web/'>Web</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
   <line x1="7" y1="7" x2="7" y2="7"/>
   
 </svg>
-</span>
-  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81'>靜態網頁</a>, <a class='tag' href='/tags/hugo'>Hugo</a></div>
+<span class='screen-reader-text'>Tags: </span>, <a class='tag' href='/tags/hugo/'>hugo</a></div>
 
   </div>
 </footer>
@@ -461,19 +451,16 @@ author: &quot;Brad Lee&quot;
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2018 bradlee </p>
+  <p> &copy; 2018-2019 bradlee </p>
 </div>
 
         </div>
       </footer>
 
     </div>
-  </div><script>window.__public_path__='https:\/\/bradleetw.github.io\/assets\/js\/'</script>
+  </div><script>window.__assets_js_src ="/assets/js/"</script>
 
-<script src='https://bradleetw.github.io/assets/js/main.68cb493a.js'></script><script src='/js/custom.js'></script>
-
-
-
+<script src='https:%20//bradleetw.github.io/'></script><script src='/js/custom.js'></script>
 </body>
 
 </html>

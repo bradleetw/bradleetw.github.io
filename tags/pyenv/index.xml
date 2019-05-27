@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pyenv on 布萊德的學習網站</title>
-    <link>https://bradleetw.github.io/tags/pyenv/</link>
-    <description>Recent content in Pyenv on 布萊德的學習網站</description>
+    <title>pyenv on 布萊德的學習網站</title>
+    <link>https: //bradleetw.github.io/tags/pyenv/</link>
+    <description>Recent content in pyenv on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 18 Sep 2018 12:17:10 +0800</lastBuildDate>
     
-	<atom:link href="https://bradleetw.github.io/tags/pyenv/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https: //bradleetw.github.io/tags/pyenv/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[Python] virtualenv, virtualenvwrapper, pyenv, and pipenv</title>
-      <link>https://bradleetw.github.io/python/pipenv_0918/</link>
+      <link>https: //bradleetw.github.io/python/pipenv_0918/</link>
       <pubDate>Tue, 18 Sep 2018 12:17:10 +0800</pubDate>
       
-      <guid>https://bradleetw.github.io/python/pipenv_0918/</guid>
+      <guid>https: //bradleetw.github.io/python/pipenv_0918/</guid>
       <description>Python 為什麼需要虛擬開發環境 開發者的電腦中也許同時存在多個開發項目但需要同一個 package 的不同版本, 所以需要利用像是 virtualenv 這類的工具來建立不同的獨立開發環境.
 利用 virtualenv 建立虛擬開發環境 首先利用 pip 安裝: $ pip install virtualenv.
 建立虛擬環境 先為你要開發的項目建立一個目錄, 然後進入該附錄後, 執行以下命令來建立虛擬開發環境.

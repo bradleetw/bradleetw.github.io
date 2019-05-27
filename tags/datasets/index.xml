@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Datasets on 布萊德的學習網站</title>
+    <link>https: //bradleetw.github.io/tags/datasets/</link>
+    <description>Recent content in Datasets on 布萊德的學習網站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 04 Mar 2019 17:52:02 +0800</lastBuildDate>
+    
+	<atom:link href="https: //bradleetw.github.io/tags/datasets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[Datasets 1]如何使用 tf.data.Dataset ?</title>
+      <link>https: //bradleetw.github.io/machinelearning/tensorflow/02_how_to_use_dataset_0304/</link>
+      <pubDate>Mon, 04 Mar 2019 17:52:02 +0800</pubDate>
+      
+      <guid>https: //bradleetw.github.io/machinelearning/tensorflow/02_how_to_use_dataset_0304/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
