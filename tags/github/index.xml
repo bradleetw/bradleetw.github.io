@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GitHub on 布萊德的學習網站</title>
-    <link>https: //bradleetw.github.io/tags/github/</link>
+    <link>https://bradleetw.github.io/tags/github/</link>
     <description>Recent content in GitHub on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 18 Dec 2018 10:01:29 +0800</lastBuildDate>
     
-	<atom:link href="https: //bradleetw.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bradleetw.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[GitHub]如何在同一台 mac 中建立兩個不同的 GitHub account ?</title>
-      <link>https: //bradleetw.github.io/developmenttools/multigithubaccount/</link>
+      <link>https://bradleetw.github.io/developmenttools/multigithubaccount/</link>
       <pubDate>Tue, 18 Dec 2018 10:01:29 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/developmenttools/multigithubaccount/</guid>
+      <guid>https://bradleetw.github.io/developmenttools/multigithubaccount/</guid>
       <description>Why need 2 or more Git(Hub) accounts in the same mac? 我現在的目的就只是為了能熟悉 Git 操作, 利用多個 Git accounts 來觀察實驗結果, 而遠端的服務選擇的是 GitHub.
 在設定多個帳戶過程中遇到了一些困難, 藉由此篇記錄相關知識.
 網路上很多使用者是利用多個 Git accounts 來使得開發者的環境, 可以同時存在個人以及公司的 Source Version Control, 這才是真正的使用場景.
@@ -27,10 +27,10 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
     
     <item>
       <title>如何利用 GitHub Pages 建立博客?</title>
-      <link>https: //bradleetw.github.io/web/deployment/githubblog/usegithub_1/</link>
+      <link>https://bradleetw.github.io/web/deployment/githubblog/usegithub_1/</link>
       <pubDate>Thu, 19 Jul 2018 14:31:14 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/web/deployment/githubblog/usegithub_1/</guid>
+      <guid>https://bradleetw.github.io/web/deployment/githubblog/usegithub_1/</guid>
       <description>什麼是 GitHub Pages(blog)? 在大家的印象中 GitHub 只是一個利用 git 讓大家免費放代碼, 追蹤 issues , 和各地好手討論的地方. 某天看到ㄧ篇文章的 URL 很特別, 是 https://xxxxxx.github.io/ , 和我平常看 GitHub 的 https://github.com 很像, 後來才知道 GitHub 可以讓使用者在上面放 blog(有空還是要看看人家的 &amp;ldquo;Read the guide&amp;rdquo;), 重點是&amp;rdquo;不用錢&amp;rdquo;(廢話, 不過被微軟買掉後會不會調整, 就不知了).
 refer to: What is GitHub Pages?
 為什麼要使用 GitHub 來架設 blog? 在嘗試 GitHub 架設 blog 之前, 我正在學習使用 Google Cloud platfrom 試著架設 blog 網站, 自己申請域名, 申請 SSL, 突然想起 GitHub 上也有 blog 功能而且我也還沒試過, 查了一下, 還蠻容易設定的, 而且省去申請域名, SSL, 不用擔心服務器防火牆的相關問題, 當然你必須要有 GitHub 帳號(廢話 ~).</description>

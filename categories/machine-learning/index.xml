@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Machine-Learning on 布萊德的學習網站</title>
-    <link>https: //bradleetw.github.io/categories/machine-learning/</link>
+    <link>https://bradleetw.github.io/categories/machine-learning/</link>
     <description>Recent content in Machine-Learning on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 10 Oct 2018 09:24:33 +0800</lastBuildDate>
     
-	<atom:link href="https: //bradleetw.github.io/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bradleetw.github.io/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[Data Visualization] Exploratory data analysis</title>
-      <link>https: //bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</link>
+      <link>https://bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</link>
       <pubDate>Wed, 10 Oct 2018 09:24:33 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</guid>
       <description>Exploratory data analysis(EDA) In statistics, exploratory data analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods.
 The objectives of EDA are to:
  Suggest hypotheses about the causes of observed phenomena
@@ -26,10 +26,10 @@ The objectives of EDA are to:
     
     <item>
       <title>[Machine Learning] Resources for CS229 - Machine Learning</title>
-      <link>https: //bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</link>
+      <link>https://bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</link>
       <pubDate>Sun, 26 Aug 2018 21:56:50 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</guid>
       <description>https://stanford.edu/~shervine/teaching/cs-229.html
 一位使丹佛大學的 Data Science track of the Computational and Mathematical Engineering department 研究生, Shervine, 在 Machine learning 的課程中所準備的相關資料.
 Probabilities and Statistics refresher Linear Algebra and Calculus refresher Deep Learning cheatsheet Supervised Learning cheatsheet Unsupervised Learning cheatsheet Machine Learning tips and tricks cheatsheet https://github.com/afshinea/stanford-cs-229-machine-learning</description>

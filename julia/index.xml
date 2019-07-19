@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Julia on 布萊德的學習網站</title>
-    <link>https: //bradleetw.github.io/julia/</link>
+    <link>https://bradleetw.github.io/julia/</link>
     <description>Recent content in Julia on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 21 Aug 2018 16:27:25 +0800</lastBuildDate>
     
-	<atom:link href="https: //bradleetw.github.io/julia/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bradleetw.github.io/julia/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Julia Language</title>
-      <link>https: //bradleetw.github.io/julia/julia_0812/</link>
+      <link>https://bradleetw.github.io/julia/julia_0812/</link>
       <pubDate>Tue, 21 Aug 2018 16:27:25 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/julia/julia_0812/</guid>
+      <guid>https://bradleetw.github.io/julia/julia_0812/</guid>
       <description>MIT 开发的 Julia 语言是全球热度上升最快的编程语言之一，下载量超过 200 万次，下载者包括谷歌、Facebook、FAA 和美国能源部等各个部门的开发者。近日，MIT CSAIL 实验室正式发布了 Julia 1.0，该语言期望结合 C 的速度、Matlab 的数学表征、Python 的通用编程与 Shell 的胶水命令行，并构建开源、自由与便捷的编程语言。
 Julia 的特點, 參考Julia 1.0, 節錄其中一段:  快速：Julia 一開始就是為高效能設計的。 Julia 可以藉由 LLVM 被編譯成不同平台的高效機器碼。   LLVM: 可參考[LLVM每日谈之一 LLVM是什么]. 節錄其中一段, &amp;ldquo;LLVM 的主要作用是它可以作为多种语言的后端，它可以提供可编程语言无关的优化和针对很多种CPU的代码生成功能&amp;rdquo;.
   泛用：Julia 使用多重分派（multiple dispatch）作為程式典範（paradigm），可以更容易表達物件導向和函數-式的設計模式。標準函式庫提供了非同步 I/O，行程控制，日誌記錄，效能分析，套件管理器等等。

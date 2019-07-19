@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on 布萊德的學習網站</title>
-    <link>https: //bradleetw.github.io/authors/</link>
+    <link>https://bradleetw.github.io/authors/</link>
     <description>Recent content in Authors on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 04 Mar 2019 17:52:02 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2019 23:00:05 +0800</lastBuildDate>
     
-	<atom:link href="https: //bradleetw.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bradleetw.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>bradlee</title>
-      <link>https: //bradleetw.github.io/authors/bradlee/</link>
-      <pubDate>Mon, 04 Mar 2019 17:52:02 +0800</pubDate>
+      <link>https://bradleetw.github.io/authors/bradlee/</link>
+      <pubDate>Fri, 19 Jul 2019 23:00:05 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/authors/bradlee/</guid>
+      <guid>https://bradleetw.github.io/authors/bradlee/</guid>
       <description></description>
     </item>
     

@@ -2,29 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bradlee on 布萊德的學習網站</title>
-    <link>https: //bradleetw.github.io/authors/bradlee/</link>
+    <link>https://bradleetw.github.io/authors/bradlee/</link>
     <description>Recent content in bradlee on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 04 Mar 2019 17:52:02 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2019 23:00:05 +0800</lastBuildDate>
     
-	<atom:link href="https: //bradleetw.github.io/authors/bradlee/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bradleetw.github.io/authors/bradlee/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>讓 iTerm2 也翻牆</title>
+      <link>https://bradleetw.github.io/developmenttools/iterm2ss/</link>
+      <pubDate>Fri, 19 Jul 2019 23:00:05 +0800</pubDate>
+      
+      <guid>https://bradleetw.github.io/developmenttools/iterm2ss/</guid>
+      <description>Reference
+首先環境必須先安裝好 shadowsocks.
+安裝 polipo brew install polipo 設定 polipo polipo 開機自啟動 atom /usr/local/opt/polipo/homebrew.mxcl.polipo.plist 在 homebrew.mxcl.polipo.plist 中加上 socksParentProxy=localhost:1080.
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;#34;-//Apple//DTD PLIST 1.0//EN&amp;#34; &amp;#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;#34;&amp;gt; &amp;lt;plist version=&amp;#34;1.0&amp;#34;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;Label&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;homebrew.mxcl.polipo&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;RunAtLoad&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;KeepAlive&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;ProgramArguments&amp;lt;/key&amp;gt; &amp;lt;array&amp;gt; &amp;lt;string&amp;gt;/usr/local/opt/polipo/bin/polipo&amp;lt;/string&amp;gt; &amp;lt;string&amp;gt;socksParentProxy=localhost:1080&amp;lt;/string&amp;gt; &amp;lt;/array&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt;ln -sfv /usr/local/opt/polipo/*.plist ~/Library/LaunchAgents launchctl load ~/Library/LaunchAgents/homebrew.mxcl.polipo.plist 若要從自啟動中取消 launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.polipo.plist 設置別名 在 .zshrc 中加入以下命令:
+alias proxy=&amp;#34;export http_proxy=http://localhost:8123;export https_proxy=http://localhost:8123&amp;#34; alias unproxy=&amp;#34;unset http_proxy&amp;#34; 使用 啟動, 當然 SS 必須先啟動</description>
+    </item>
+    
+    <item>
       <title>[Datasets 1]如何使用 tf.data.Dataset ?</title>
-      <link>https: //bradleetw.github.io/machinelearning/tensorflow/02_how_to_use_dataset_0304/</link>
+      <link>https://bradleetw.github.io/machinelearning/tensorflow/02_how_to_use_dataset_0304/</link>
       <pubDate>Mon, 04 Mar 2019 17:52:02 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/tensorflow/02_how_to_use_dataset_0304/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/tensorflow/02_how_to_use_dataset_0304/</guid>
       <description></description>
     </item>
     
     <item>
       <title>[GitHub]如何在同一台 mac 中建立兩個不同的 GitHub account ?</title>
-      <link>https: //bradleetw.github.io/developmenttools/multigithubaccount/</link>
+      <link>https://bradleetw.github.io/developmenttools/multigithubaccount/</link>
       <pubDate>Tue, 18 Dec 2018 10:01:29 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/developmenttools/multigithubaccount/</guid>
+      <guid>https://bradleetw.github.io/developmenttools/multigithubaccount/</guid>
       <description>Why need 2 or more Git(Hub) accounts in the same mac? 我現在的目的就只是為了能熟悉 Git 操作, 利用多個 Git accounts 來觀察實驗結果, 而遠端的服務選擇的是 GitHub.
 在設定多個帳戶過程中遇到了一些困難, 藉由此篇記錄相關知識.
 網路上很多使用者是利用多個 Git accounts 來使得開發者的環境, 可以同時存在個人以及公司的 Source Version Control, 這才是真正的使用場景.
@@ -36,10 +49,10 @@ ssh-keygen 利用 ssh-keygen 除了可以產生公鑰和私鑰之外, 呈現密�
     
     <item>
       <title>[Python] Exceptions: An introductions</title>
-      <link>https: //bradleetw.github.io/python/exceptions_1130/</link>
+      <link>https://bradleetw.github.io/python/exceptions_1130/</link>
       <pubDate>Fri, 30 Nov 2018 10:01:10 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/python/exceptions_1130/</guid>
+      <guid>https://bradleetw.github.io/python/exceptions_1130/</guid>
       <description>Refer to https://realpython.com/python-exceptions/
 Raising an Exception Example
 x = 10 if x &amp;gt; 5: raise Exception(&amp;#39;x should not exceed 5.&amp;#39;) The AssertionError Exception refer to https://dbader.org/blog/python-assert-tutorial
@@ -50,10 +63,10 @@ But if the assert condition evaluates to False, it raises an AssertionError exce
     
     <item>
       <title>[GoogleResoure][ML Concepts] 02 Descending Into ML</title>
-      <link>https: //bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/</link>
+      <link>https://bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/</link>
       <pubDate>Tue, 23 Oct 2018 20:32:35 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/</guid>
       <description>Source: https://developers.google.com/machine-learning/crash-course/descending-into-ml/video-lecture
 Descending into ML Linear regression is a method for finding the straight line or hyperplane that best fits a set of points. This module explores linear regression intuitively before laying the groundwork for a machine learning approach to linear regression.
 Learning Objectives  Refresh your memory on line fitting.
@@ -63,10 +76,10 @@ Learning Objectives  Refresh your memory on line fitting.
     
     <item>
       <title>[Python][Class] __str__ v.s. __repr__</title>
-      <link>https: //bradleetw.github.io/python/class_usage/str_repr_difference_1022/</link>
+      <link>https://bradleetw.github.io/python/class_usage/str_repr_difference_1022/</link>
       <pubDate>Mon, 22 Oct 2018 09:54:35 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/python/class_usage/str_repr_difference_1022/</guid>
+      <guid>https://bradleetw.github.io/python/class_usage/str_repr_difference_1022/</guid>
       <description>object._ _ str _ _(self) Purpose[Readability]: return a string which is a more convenient or concise representation can be used.
 object._ _ repr _ _(self) Purpose[Unambiguous]: return a string which should look like a valid Python expression that could be used to recreate an object with the same value (given an appropriate environemnt).
  If _ _ repr _ _ is defined, and _ _ str _ _ is not, the object will behave as though _ _ str _ _= _ _ repr _ _.</description>
@@ -74,10 +87,10 @@ object._ _ repr _ _(self) Purpose[Unambiguous]: return a string which should loo
     
     <item>
       <title>[GoogleResoure][ML Concepts] 01 Fundamental Machine Learning Terminology</title>
-      <link>https: //bradleetw.github.io/machinelearning/google_ml_concepts/01_framing_1018/</link>
+      <link>https://bradleetw.github.io/machinelearning/google_ml_concepts/01_framing_1018/</link>
       <pubDate>Thu, 18 Oct 2018 21:43:19 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/google_ml_concepts/01_framing_1018/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/google_ml_concepts/01_framing_1018/</guid>
       <description>Source: https://developers.google.com/machine-learning/crash-course/framing/ml-terminology
 Framing  How to frame a task as a machine learning problem  Learning Objectives  Refresh the fundamental machine learning terms.
  Explore various uses of machine learning.
@@ -86,10 +99,10 @@ Framing  How to frame a task as a machine learning problem  Learning Objectives 
     
     <item>
       <title>[DataScience][TreeBasedMethod] Random Forests (1)</title>
-      <link>https: //bradleetw.github.io/machinelearning/algorithm/tb_randomforest_01_1016/</link>
+      <link>https://bradleetw.github.io/machinelearning/algorithm/tb_randomforest_01_1016/</link>
       <pubDate>Tue, 16 Oct 2018 12:59:33 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/algorithm/tb_randomforest_01_1016/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/algorithm/tb_randomforest_01_1016/</guid>
       <description>Random Forests explained intuitively Original Post:https://www.datasciencecentral.com/profiles/blogs/random-forests-explained-intuitively
 What is the Random Forest Forest Random forest is a collection of many decision trees. Instead of relying on a single decision tree, you build many decision trees say 100 of them. And you know what a collection of trees is called - forest.
 Random There are two levels of randomness in this alforithm:
@@ -98,10 +111,10 @@ Random There are two levels of randomness in this alforithm:
     
     <item>
       <title>[TakeNotes] In demand Skills for Data Scientists</title>
-      <link>https: //bradleetw.github.io/machinelearning/takenotestfromweb/00_themostindemandskillsfordatascientists_1015/</link>
+      <link>https://bradleetw.github.io/machinelearning/takenotestfromweb/00_themostindemandskillsfordatascientists_1015/</link>
       <pubDate>Mon, 15 Oct 2018 14:22:02 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/takenotestfromweb/00_themostindemandskillsfordatascientists_1015/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/takenotestfromweb/00_themostindemandskillsfordatascientists_1015/</guid>
       <description>Original Post: https://towardsdatascience.com/the-most-in-demand-skills-for-data-scientists-4a4a8db896db
 https://www.kaggle.com/discdiver/the-most-in-demand-skills-for-data-scientists/
 The Most in Demand Skills for Data Scientists Data scientists are expected to know a lot,
@@ -111,10 +124,10 @@ The related data from (2018, Oct)  LinkedIn Indeed: https://www.indeed.com Simpl
     
     <item>
       <title>[Data Visualization] Exploratory data analysis</title>
-      <link>https: //bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</link>
+      <link>https://bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</link>
       <pubDate>Wed, 10 Oct 2018 09:24:33 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</guid>
       <description>Exploratory data analysis(EDA) In statistics, exploratory data analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods.
 The objectives of EDA are to:
  Suggest hypotheses about the causes of observed phenomena
@@ -125,10 +138,10 @@ The objectives of EDA are to:
     
     <item>
       <title>[Python] Comprehensions Concepts</title>
-      <link>https: //bradleetw.github.io/python/comprehension_01_0930/</link>
+      <link>https://bradleetw.github.io/python/comprehension_01_0930/</link>
       <pubDate>Sun, 30 Sep 2018 10:42:24 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/python/comprehension_01_0930/</guid>
+      <guid>https://bradleetw.github.io/python/comprehension_01_0930/</guid>
       <description>What is the Comprehension? 這個 Python 必須懂的高階使用概念, 在官方的資料中並沒有單獨 comprehension 的章節, 而是可以看到如下的詞:
  List Comprehension Set Comprehension Dict Comprehension Asynchronous Comprehension (New syntax features in 3.6)  而線上的資料大都從 List Comprehension 開始介紹這個概念. Python List Comprehensions: Explained Visually, 這篇由 Tery Hunner 邊寫的內容, 是我看到很多人引用來介紹的文章.
 Sometimes a programming design pattern becomes common enough to warrant its own special syntax. Python’s list comprehensions are a prime example of such a syntactic sugar. &amp;ndash; Tery Hunner.</description>
@@ -136,10 +149,10 @@ Sometimes a programming design pattern becomes common enough to warrant its own 
     
     <item>
       <title>[Python] Some Tips</title>
-      <link>https: //bradleetw.github.io/python/tips_01_0930/</link>
+      <link>https://bradleetw.github.io/python/tips_01_0930/</link>
       <pubDate>Sun, 30 Sep 2018 09:30:57 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/python/tips_01_0930/</guid>
+      <guid>https://bradleetw.github.io/python/tips_01_0930/</guid>
       <description>原帖: Python开发的10个小贴士
 Tips 1: List Comprehension [Python] Comprehensions Concepts
 Tips 2: Directly Get Value of List object Bad bag = [1, 2, 3, 4, 5] for i in range(len(bag)): print(bag[i]) Good bag = [1, 2, 3, 4, 5] for i in bag: print(i) Get the index of list itme if you need bag = [1, 2, 3, 4, 5] for index, element in enumerate(bag): print(index, element) Tips 3: Exchange the value of variables Bad a = 5 b = 10 tmp = a a = b b = tmp Good a = 5 b = 10 a, b = b, a Tips 4: Initialize List General bag = [] for _ in range(10): bag.</description>
@@ -147,19 +160,19 @@ Tips 2: Directly Get Value of List object Bad bag = [1, 2, 3, 4, 5] for i in ran
     
     <item>
       <title>[Washington Post] &#39;No pain, no gain&#39; sounds tough, but you may only be hurting yourself</title>
-      <link>https: //bradleetw.github.io/englishnews/washingtonpost/nopainnogain_0919/</link>
+      <link>https://bradleetw.github.io/englishnews/washingtonpost/nopainnogain_0919/</link>
       <pubDate>Wed, 19 Sep 2018 10:56:31 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/washingtonpost/nopainnogain_0919/</guid>
+      <guid>https://bradleetw.github.io/englishnews/washingtonpost/nopainnogain_0919/</guid>
       <description>&amp;lsquo;No pain, no gain&amp;rsquo; sounds tough, but you may only be hurting yourself While training for a half-marathon last fall, Janet Sherman, 57, started noticing pain in her right leg and left foot. A diagnosis of a quadriceps strain and plantar fasciitis led to shoe inserts and cross-training. Before long, the Wyoming-based teacher was &amp;ldquo;just good enough&amp;rdquo; to get back to training, and so she did, although she opted to drop down to a shorter 10K race distance.</description>
     </item>
     
     <item>
       <title>[Python] virtualenv, virtualenvwrapper, pyenv, and pipenv</title>
-      <link>https: //bradleetw.github.io/python/pipenv_0918/</link>
+      <link>https://bradleetw.github.io/python/pipenv_0918/</link>
       <pubDate>Tue, 18 Sep 2018 12:17:10 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/python/pipenv_0918/</guid>
+      <guid>https://bradleetw.github.io/python/pipenv_0918/</guid>
       <description>Python 為什麼需要虛擬開發環境 開發者的電腦中也許同時存在多個開發項目但需要同一個 package 的不同版本, 所以需要利用像是 virtualenv 這類的工具來建立不同的獨立開發環境.
 利用 virtualenv 建立虛擬開發環境 首先利用 pip 安裝: $ pip install virtualenv.
 建立虛擬環境 先為你要開發的項目建立一個目錄, 然後進入該附錄後, 執行以下命令來建立虛擬開發環境.
@@ -173,10 +186,10 @@ $ virtualenv --system-site_packages VenvName  進入虛擬環境 成功後, $ so
     
     <item>
       <title>[The Guardian] Paw outcome? New Zealand council proposes banning all cats</title>
-      <link>https: //bradleetw.github.io/englishnews/theguardian/banningallcats_0912/</link>
+      <link>https://bradleetw.github.io/englishnews/theguardian/banningallcats_0912/</link>
       <pubDate>Thu, 13 Sep 2018 09:58:33 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/theguardian/banningallcats_0912/</guid>
+      <guid>https://bradleetw.github.io/englishnews/theguardian/banningallcats_0912/</guid>
       <description>Paw outcome? New Zealand council proposes banning all cats A regional council in New Zealand has proposed banning all domestic cats in an attempt to protect native animals.
 Environment Southland&amp;rsquo;s &amp;ldquo;pest plan&amp;rdquo; calls for all domestic cats in the region to be neutered, microchipped and registered. Then, when a cat dies, residents would not be permitted to have another.
 Ali Meade, the council&amp;rsquo;s biosecurity operations manager, said that if the move was approved the improvement for the environment and bird life would be vast.</description>
@@ -184,30 +197,30 @@ Ali Meade, the council&amp;rsquo;s biosecurity operations manager, said that if 
     
     <item>
       <title>[Reuters] French baguette faces pinch from anti-salt lawmakers</title>
-      <link>https: //bradleetw.github.io/englishnews/reuters/frenchbaguette_0911/</link>
+      <link>https://bradleetw.github.io/englishnews/reuters/frenchbaguette_0911/</link>
       <pubDate>Wed, 12 Sep 2018 11:01:36 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/reuters/frenchbaguette_0911/</guid>
+      <guid>https://bradleetw.github.io/englishnews/reuters/frenchbaguette_0911/</guid>
       <description>French baguette faces pinch from anti-salt lawmakers France&amp;rsquo;s beloved bread loaf, the baguette, may be about to lose some of its bite, with politicians looking into the health risks of additives set to propose legislation forcing bakers and processed food makers more generally to slash salt content.
 After months of investigation and hearings, a parliamentary committee has come to the conclusion that voluntary agreements on the reduction of high salt levels have not been respected and that it is time to impose healthier norms via legislation.</description>
     </item>
     
     <item>
       <title>[The Guardian] The Guardian view on alcohol: drinking less is good for you</title>
-      <link>https: //bradleetw.github.io/englishnews/theguardian/alcohol_0910/</link>
+      <link>https://bradleetw.github.io/englishnews/theguardian/alcohol_0910/</link>
       <pubDate>Mon, 10 Sep 2018 19:02:58 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/theguardian/alcohol_0910/</guid>
+      <guid>https://bradleetw.github.io/englishnews/theguardian/alcohol_0910/</guid>
       <description>The Guardian view on alcohol: drinking less is good for you Alcohol is physically bad for you in any quantity; and the more you drink, the worse its health effects. The gigantic report on the subject published last week is unequivocal and authoritative. The report was based on enormous amounts of data: 28 million people around the world were examined in 592 studies to estimate the health risks.
 The variety of ways in which alcohol can kill or damage people comes as a shock.</description>
     </item>
     
     <item>
       <title>[The Guardian] One in five vanilla ice-creams has no vanilla, cream or fresh milk</title>
-      <link>https: //bradleetw.github.io/englishnews/theguardian/vanillaicecreams_0907/</link>
+      <link>https://bradleetw.github.io/englishnews/theguardian/vanillaicecreams_0907/</link>
       <pubDate>Fri, 07 Sep 2018 19:20:43 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/theguardian/vanillaicecreams_0907/</guid>
+      <guid>https://bradleetw.github.io/englishnews/theguardian/vanillaicecreams_0907/</guid>
       <description>One in five vanilla ice-creams has no vanilla, cream or fresh milk Britain&amp;rsquo;s longest heatwave since 1976 has seen vanilla ice-cream sales soar, but a survey has revealed that some brands are sold without vanilla, cream or fresh milk.
 Vanilla has traditionally been Britain&amp;rsquo;s favourite flavour but a Which? investigation of supermarket and branded vanilla ice-cream found a number of them were lacking some key ingredients.
 One in five of the ice-creams examined by the consumer watchdog had none of the three ingredients shoppers might reasonably expect to find in vanilla ice-cream.</description>
@@ -215,30 +228,30 @@ One in five of the ice-creams examined by the consumer watchdog had none of the 
     
     <item>
       <title>[The Guardian] Scotland to offer free sanitary products to all students in world first</title>
-      <link>https: //bradleetw.github.io/englishnews/theguardian/freesanitary_0906/</link>
+      <link>https://bradleetw.github.io/englishnews/theguardian/freesanitary_0906/</link>
       <pubDate>Thu, 06 Sep 2018 09:45:24 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/theguardian/freesanitary_0906/</guid>
+      <guid>https://bradleetw.github.io/englishnews/theguardian/freesanitary_0906/</guid>
       <description>Scotland to offer free sanitary products to all students in world first Students at schools, colleges and universities across Scotland will have access to free sanitary products as part of a £5.2m scheme to fight period poverty.
 The Scottish government is the first in the world to make sanitary products available free to all of its 395,000 pupils and students to help &amp;ldquo;banish the scourge of period poverty&amp;rdquo; - when girls and women struggle to pay for basic sanitary products on a monthyly basis, significantly affecting their hygiene, health and wellbeing.</description>
     </item>
     
     <item>
       <title>[Reuters] Murder of Didi passenger prompts China clampdown, outrage</title>
-      <link>https: //bradleetw.github.io/englishnews/reuters/murderofdidi_0902/</link>
+      <link>https://bradleetw.github.io/englishnews/reuters/murderofdidi_0902/</link>
       <pubDate>Sun, 02 Sep 2018 16:16:21 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/reuters/murderofdidi_0902/</guid>
+      <guid>https://bradleetw.github.io/englishnews/reuters/murderofdidi_0902/</guid>
       <description>Murder of Didi passenger prompts China clampdown, outrage China pledged on Monday to tighten oversight of its transport industry and warned that the country did not need ride-hailing firms which compromised on passenger safety, days after a Didi Chuxing passenger was raped and murdered by her driver.
 The killing of a 20-year-old passenger who rode in the Didi vehicle on Friday in the eastern city of Wenzhou is the second such incident since May, denting the image of the Beijing-based company, which is the world&amp;rsquo;s largest ride-hailing firm by number of rides and is expanding globally.</description>
     </item>
     
     <item>
       <title>[The Guardian] Australian boy who hacked into Apple network admired the group</title>
-      <link>https: //bradleetw.github.io/englishnews/theguardian/hackeraustralian_0829/</link>
+      <link>https://bradleetw.github.io/englishnews/theguardian/hackeraustralian_0829/</link>
       <pubDate>Wed, 29 Aug 2018 20:31:07 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/theguardian/hackeraustralian_0829/</guid>
+      <guid>https://bradleetw.github.io/englishnews/theguardian/hackeraustralian_0829/</guid>
       <description>Australian boy who hacked into Apple network admired the group A 16-year-old boy hacked into Apple&amp;rsquo;s mainframe, downloaded internal files and accessed customer accounts because he was a fan of the company and hoped to work there one day, a Melbourne court has heard.
 The boy, who studies in a private school, stored the saved information in a folder titled &amp;ldquo;hacky hack hack&amp;rdquo;, the newspaper said.
 Despite the court being told that the teenager had downloaded 90GB of secure files and accessed customer accounts, Apple - the world&amp;rsquo;s most valuable company - has denied that customers were affected.</description>
@@ -246,29 +259,29 @@ Despite the court being told that the teenager had downloaded 90GB of secure fil
     
     <item>
       <title>[Washington Post] The new Canon: the best films of the 2000s</title>
-      <link>https: //bradleetw.github.io/englishnews/washingtonpost/bestfilms_0828/</link>
+      <link>https://bradleetw.github.io/englishnews/washingtonpost/bestfilms_0828/</link>
       <pubDate>Tue, 28 Aug 2018 21:04:02 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/washingtonpost/bestfilms_0828/</guid>
+      <guid>https://bradleetw.github.io/englishnews/washingtonpost/bestfilms_0828/</guid>
       <description>The new Canon: the best films of the 2000s This list advances the modest proposal that, when it comes to the Canon, we expand our notions of permanence and connoisseurship to include films that are worthy of appreciation - even veneration - despite being so recent. (As for rankings, this collection is unnumbered, reflecting a loose, intuitive collection rather than a strict hierachy.) No one is a prophet in their own hometown; sometimes we need reminding that many of the films we&amp;rsquo;re seeing right now are genuinely timeless.</description>
     </item>
     
     <item>
       <title>[Washington Post] &#39;Please do not switch me off!&#39;: An experiment with a begging robot shows people hesitate to pull the plug</title>
-      <link>https: //bradleetw.github.io/englishnews/washingtonpost/robot_news_0827/</link>
+      <link>https://bradleetw.github.io/englishnews/washingtonpost/robot_news_0827/</link>
       <pubDate>Mon, 27 Aug 2018 20:29:29 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/washingtonpost/robot_news_0827/</guid>
+      <guid>https://bradleetw.github.io/englishnews/washingtonpost/robot_news_0827/</guid>
       <description>&amp;lsquo;Please do not switch me off !&amp;rsquo;: An experiment with a begging robot shows people hesitate to pull the plug If a little humanoid robot begged you not to shut it off, would you show compassion?
 In an experiment designed to investigate how people treat robots when they act like humans, many participants struggled to power down a pleading robot, named Nao, either refusing to shut it off or taking more than twice the amount of time to pull the plug.</description>
     </item>
     
     <item>
       <title>[Machine Learning] Resources for CS229 - Machine Learning</title>
-      <link>https: //bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</link>
+      <link>https://bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</link>
       <pubDate>Sun, 26 Aug 2018 21:56:50 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</guid>
       <description>https://stanford.edu/~shervine/teaching/cs-229.html
 一位使丹佛大學的 Data Science track of the Computational and Mathematical Engineering department 研究生, Shervine, 在 Machine learning 的課程中所準備的相關資料.
 Probabilities and Statistics refresher Linear Algebra and Calculus refresher Deep Learning cheatsheet Supervised Learning cheatsheet Unsupervised Learning cheatsheet Machine Learning tips and tricks cheatsheet https://github.com/afshinea/stanford-cs-229-machine-learning</description>
@@ -276,40 +289,40 @@ Probabilities and Statistics refresher Linear Algebra and Calculus refresher Dee
     
     <item>
       <title>[Reuters] FBI seeks motive after U.S. airline worker steals plane, crashes it</title>
-      <link>https: //bradleetw.github.io/englishnews/reuters/alaskaairlines_0826/</link>
+      <link>https://bradleetw.github.io/englishnews/reuters/alaskaairlines_0826/</link>
       <pubDate>Sun, 26 Aug 2018 12:02:29 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/reuters/alaskaairlines_0826/</guid>
+      <guid>https://bradleetw.github.io/englishnews/reuters/alaskaairlines_0826/</guid>
       <description>FBI seeks motive after U.S. airline worker steals plane, crashes it A Horizon Air ground service agent got into a Bombardier Q400 turboprop aircraft on Friday night in a maintenance area at Seattle-Tacoma International Airport and took off, Horizon sister carrier Alaska Airlines said.
 He flew for about one hour, often erratically with attempts at aerial stunts, before crashing onto sparsely populated Ketron Island in Puget Sound, some 25 miles to the southwest.</description>
     </item>
     
     <item>
       <title>[New York Times] V.S. Naipaul, who explored colonialism through unsparing books, dies at 85</title>
-      <link>https: //bradleetw.github.io/englishnews/newyorktimes/naipaul_0825/</link>
+      <link>https://bradleetw.github.io/englishnews/newyorktimes/naipaul_0825/</link>
       <pubDate>Sat, 25 Aug 2018 12:00:49 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/newyorktimes/naipaul_0825/</guid>
+      <guid>https://bradleetw.github.io/englishnews/newyorktimes/naipaul_0825/</guid>
       <description>V.S. Naipaul, who explored colonialism through unsparing books, dies at 85 V.S. Naipaul, the Nobel laureate who documented the migrations of peoples, the unraveling of the British Empire, the ironies of exile and the clash between belief and unbelief in more than a dozen unsparing novels and as manay works of nonfiction, died Saturday at his home in Londaon. He was 85.
 His family confirmed the death in a statement, The Associated Press reported.</description>
     </item>
     
     <item>
       <title>[BBC News] Elon Musk is playing a dangerous game</title>
-      <link>https: //bradleetw.github.io/englishnews/bbcnews/elonmusk_0824/</link>
+      <link>https://bradleetw.github.io/englishnews/bbcnews/elonmusk_0824/</link>
       <pubDate>Fri, 24 Aug 2018 14:52:34 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/bbcnews/elonmusk_0824/</guid>
+      <guid>https://bradleetw.github.io/englishnews/bbcnews/elonmusk_0824/</guid>
       <description>Elon Musk is playing a dangerous game There is never a dull moment with the mercurial Mr Musk, but he excelled himself on Tuesday, stunning the markets by tweeting that he was considering taking the company private by buying publicly available shares for $420 each - a significant premium to the $340 they were trading at before he dropped his bombshell.
 If it turns out his Twitter promise - that he has secured the tens of billions of dollars he would need to buy out public shareholders - is in any way shaky, then he could find himself accused of price manipulation.</description>
     </item>
     
     <item>
       <title>[Washington Post] The strange birth, death and rebirth of a Russian troll account called &#34;AllForUSA&#34;</title>
-      <link>https: //bradleetw.github.io/englishnews/washingtonpost/trollaccount_0823/</link>
+      <link>https://bradleetw.github.io/englishnews/washingtonpost/trollaccount_0823/</link>
       <pubDate>Thu, 23 Aug 2018 10:12:29 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/washingtonpost/trollaccount_0823/</guid>
+      <guid>https://bradleetw.github.io/englishnews/washingtonpost/trollaccount_0823/</guid>
       <description>The strange birth, death and rebirth of a Russian troll account called &amp;ldquo;AllForUSA&amp;rdquo; An Indiana man named Jesse D. Allen created a website in 2005 with the title AllForUSA.com, apparently to pursue some business interests, but he soon abandoned the site. A decade later, at the age of 80, Allen died.
 But AllForUSA was just getting started.
 As the 2016 presidential campaign heated up, AllForUSA.com suddenly bristled with what appeared to be news articles celebrating Republican presidential nominee Donald Trump and bashing his Democratic rival Hillary Clinton.</description>
@@ -317,10 +330,10 @@ As the 2016 presidential campaign heated up, AllForUSA.com suddenly bristled wit
     
     <item>
       <title>Julia Language</title>
-      <link>https: //bradleetw.github.io/julia/julia_0812/</link>
+      <link>https://bradleetw.github.io/julia/julia_0812/</link>
       <pubDate>Tue, 21 Aug 2018 16:27:25 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/julia/julia_0812/</guid>
+      <guid>https://bradleetw.github.io/julia/julia_0812/</guid>
       <description>MIT 开发的 Julia 语言是全球热度上升最快的编程语言之一，下载量超过 200 万次，下载者包括谷歌、Facebook、FAA 和美国能源部等各个部门的开发者。近日，MIT CSAIL 实验室正式发布了 Julia 1.0，该语言期望结合 C 的速度、Matlab 的数学表征、Python 的通用编程与 Shell 的胶水命令行，并构建开源、自由与便捷的编程语言。
 Julia 的特點, 參考Julia 1.0, 節錄其中一段:  快速：Julia 一開始就是為高效能設計的。 Julia 可以藉由 LLVM 被編譯成不同平台的高效機器碼。   LLVM: 可參考[LLVM每日谈之一 LLVM是什么]. 節錄其中一段, &amp;ldquo;LLVM 的主要作用是它可以作为多种语言的后端，它可以提供可编程语言无关的优化和针对很多种CPU的代码生成功能&amp;rdquo;.
   泛用：Julia 使用多重分派（multiple dispatch）作為程式典範（paradigm），可以更容易表達物件導向和函數-式的設計模式。標準函式庫提供了非同步 I/O，行程控制，日誌記錄，效能分析，套件管理器等等。
@@ -334,29 +347,29 @@ Julia 的特點, 參考Julia 1.0, 節錄其中一段:  快速：Julia 一開始�
     
     <item>
       <title>[The Economist] Test-doctoring to keep Japanese women out of medical school</title>
-      <link>https: //bradleetw.github.io/englishnews/theeconomist/japanesediscrimination_0821/</link>
+      <link>https://bradleetw.github.io/englishnews/theeconomist/japanesediscrimination_0821/</link>
       <pubDate>Tue, 21 Aug 2018 13:23:12 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/theeconomist/japanesediscrimination_0821/</guid>
+      <guid>https://bradleetw.github.io/englishnews/theeconomist/japanesediscrimination_0821/</guid>
       <description>Test-doctoring to keep Japanese women out of medical school Japan has made a lot of noise in recent years about demolishing the traditional view that women should stay at home while men go out to work. So it was shocking when, on August 7th, Tokyo Medical University, a prestigious medical school, confessed to marking down the test scores of female applications to keep the ratio of women in each class below 30%.</description>
     </item>
     
     <item>
       <title>[Washington Post] Pentagon is moving toward estabilishing Trump&#39;s Space Force</title>
-      <link>https: //bradleetw.github.io/englishnews/washingtonpost/spaceforce_0820/</link>
+      <link>https://bradleetw.github.io/englishnews/washingtonpost/spaceforce_0820/</link>
       <pubDate>Mon, 20 Aug 2018 14:18:53 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/washingtonpost/spaceforce_0820/</guid>
+      <guid>https://bradleetw.github.io/englishnews/washingtonpost/spaceforce_0820/</guid>
       <description>Pentagon is moving toward establishing Trump&amp;rsquo;s Space Force The Pentagon is moving toward fulfilling President Donald Trump&amp;rsquo;s request to establish a Space Force, in what would be the first new branch of the military in more than 70 years.
 In a speech at the Pentagon Thursday at 11:15 a.m., Vice President Mike Pence is scheduled to lay out the administration&amp;rsquo;s plan. The Pentagon is also expected to release a Congressionally-mandated report on the issue.</description>
     </item>
     
     <item>
       <title>[Shell Script] AWK 的介紹</title>
-      <link>https: //bradleetw.github.io/developmenttools/awk_study/</link>
+      <link>https://bradleetw.github.io/developmenttools/awk_study/</link>
       <pubDate>Sun, 19 Aug 2018 16:24:52 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/developmenttools/awk_study/</guid>
+      <guid>https://bradleetw.github.io/developmenttools/awk_study/</guid>
       <description>AWK AWK 是一種程式語言, 針對有固定格式的文字檔案或是命令列執行結果進行處理, 可統計, 然後依據其結果來做顯示, 或將結果存入檔案, 或傳輸到&amp;rdquo;標準輸出&amp;rdquo;.
 AWK 可用來對很多有相同格式的文字檔案進行修改, 更新, 或是統計某些文字內容. 而且其 script 的語法借鑒了 C, 所以較容易上手. 很多人在談 AWK 時也都提到 sed, 就初步的了解, sed 是針對 stream text 做處理, 功能比 AWK 弱些, 但我猜是這兩個定位的不同. 之後會再花個時間紀錄一下 sed 的使用方法.
 在人工智能及大數據的需求影響下, 很多語言也都提供能讀取固定格式像 csv 的文字檔案, 來進行統計, 然後畫出漂亮有重點的圖, 有這樣的需求 AWK 就較不適用, 因為 AWK 的強項並不在繪圖, 雖然他也可以, 但會比較單調. 而且沒有像 package management 的功能, 導致一些很多高手完成的有用好用的功能無法容易導入.
@@ -366,20 +379,20 @@ AWK 可用來對很多有相同格式的文字檔案進行修改, 更新, 或是
     
     <item>
       <title>[Reuters] Apple breaches $1 trillion stock market valuation</title>
-      <link>https: //bradleetw.github.io/englishnews/reuters/applebreachesonetrillion_0816/</link>
+      <link>https://bradleetw.github.io/englishnews/reuters/applebreachesonetrillion_0816/</link>
       <pubDate>Thu, 16 Aug 2018 13:55:12 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/reuters/applebreachesonetrillion_0816/</guid>
+      <guid>https://bradleetw.github.io/englishnews/reuters/applebreachesonetrillion_0816/</guid>
       <description>Apple breaches $1 trillion stock market valuation Apple Inc on Thursday became the first $1 trillion publicly listed U.S. company, crowning a decade-long rise fueled by its ubiquitous iPhone that transformed it from a niche player in personal computers into a global powerhouse spanning entertainment and communications.
 &amp;ldquo;Financial returns are simply the result of Apple&amp;rsquo;s innovation, putting our products and customers first, and always staying true to our values,&amp;rdquo; Cook said in a memo to Apple&amp;rsquo;s more than 120,000 employees on Thursday.</description>
     </item>
     
     <item>
       <title>[New York Times] China&#39;s introverts find a kindred spirit: a stick figure from Finland</title>
-      <link>https: //bradleetw.github.io/englishnews/newyorktimes/chinaintroverts_0815/</link>
+      <link>https://bradleetw.github.io/englishnews/newyorktimes/chinaintroverts_0815/</link>
       <pubDate>Wed, 15 Aug 2018 13:20:32 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/newyorktimes/chinaintroverts_0815/</guid>
+      <guid>https://bradleetw.github.io/englishnews/newyorktimes/chinaintroverts_0815/</guid>
       <description>China&amp;rsquo;s introverts find a kindred spirit: a stick figure from Finland People who live in China&amp;rsquo;s crowed cities are used to having their personal space invaded - in schools, malls, restaurants, bus stations, dormitories and even bathrooms. But that doesn&amp;rsquo;t mean they like it.
 Now a growing number of them identify with a Finnish cartoon character who channels their urban anxieties, albeit in a different cultural context.
 The &amp;ldquo;Finnish Nightmares&amp;rdquo; comic series documents the social challenges faced by Matti, a mild-mannered stick figure who abhors small talk.</description>
@@ -387,10 +400,10 @@ The &amp;ldquo;Finnish Nightmares&amp;rdquo; comic series documents the social c
     
     <item>
       <title>[MIT] Genetic genealogy is now solving recent crimes, not just cold cases</title>
-      <link>https: //bradleetw.github.io/englishnews/mit/geneticgenealory_0814/</link>
+      <link>https://bradleetw.github.io/englishnews/mit/geneticgenealory_0814/</link>
       <pubDate>Tue, 14 Aug 2018 14:10:30 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/mit/geneticgenealory_0814/</guid>
+      <guid>https://bradleetw.github.io/englishnews/mit/geneticgenealory_0814/</guid>
       <description>. genetic:(a) [dʒɪ&amp;rsquo;netɪk] 基因的
 . genealogy:(n) [dʒiːnɪ&amp;rsquo;ælədʒɪ; dʒen-] 族譜學; 血統
 . genetic genealogy: 基因族譜學
@@ -403,10 +416,10 @@ What are the implications of these proposals?</description>
     
     <item>
       <title>[MIT] Therapists are augmenting eating-disorder treatment with virtual-reality headsets</title>
-      <link>https: //bradleetw.github.io/englishnews/mit/therapistswithvr_0808/</link>
+      <link>https://bradleetw.github.io/englishnews/mit/therapistswithvr_0808/</link>
       <pubDate>Thu, 09 Aug 2018 12:41:59 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/mit/therapistswithvr_0808/</guid>
+      <guid>https://bradleetw.github.io/englishnews/mit/therapistswithvr_0808/</guid>
       <description>therapists:(n) [&amp;lsquo;θerəpɪst] 心理治療師; 臨床醫學家
  augmenting:(v) [ɔ:g&amp;rsquo;mentiŋ] 增強; 加強
  He has to find work to augment his income.
@@ -419,10 +432,10 @@ What are the implications of these proposals?</description>
     
     <item>
       <title>Trump blasts back after Times publisher decries &#39;enemy of the people&#39; attacks</title>
-      <link>https: //bradleetw.github.io/englishnews/theguardian/trumpnews_0807/</link>
+      <link>https://bradleetw.github.io/englishnews/theguardian/trumpnews_0807/</link>
       <pubDate>Tue, 07 Aug 2018 14:19:00 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/englishnews/theguardian/trumpnews_0807/</guid>
+      <guid>https://bradleetw.github.io/englishnews/theguardian/trumpnews_0807/</guid>
       <description>. blast back:(v) 猛烈回擊 { blast:(v) 爆炸 }
 . decry:(v) 譴責
 Hours after saying he had a &amp;ldquo;very good meeting&amp;rdquo; with the publisher of the New York Times about his labelling the press the &amp;ldquo;enemy of the people&amp;rdquo;, Donald Trump launched a blistering attack on &amp;ldquo;anti-Trump haters in the dying newspaper industry&amp;rdquo;.
@@ -434,10 +447,10 @@ Hours after saying he had a &amp;ldquo;very good meeting&amp;rdquo; with the pub
     
     <item>
       <title>[Hugo]建立固定格式的新帖子</title>
-      <link>https: //bradleetw.github.io/web/staticsitegenerator/hugo/posttemplate/</link>
+      <link>https://bradleetw.github.io/web/staticsitegenerator/hugo/posttemplate/</link>
       <pubDate>Wed, 01 Aug 2018 13:09:33 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/web/staticsitegenerator/hugo/posttemplate/</guid>
+      <guid>https://bradleetw.github.io/web/staticsitegenerator/hugo/posttemplate/</guid>
       <description>創建固定欄位的 Markdown 檔案 當使用者在一般的文書編輯器要開始創立 Markdown 新文章時, 除了透過該編輯器的 new file 外, 好像就沒有其他方法, 而這種方式只能產生一個空的檔案. 所以我們目前只能用 command line 來透過 $ hugo new newPostFile.md 的命令來產生新的 markdown 文章, 而且該文章會自動生成固定的欄位, 方便使用者寫作.
 為什麼要透過這種方式來創建 Markdown 文章 透過這種方式, 使用者可以事先將 Markdown 文章常用到的 metadata 的欄位或者該欄位的值放到特定檔案, 在創建新 Markdown 文章時就能預設有這些欄位, 節省使用者寫作時間.
 修改 default.md 當使用者透過 $ hugo new newPostFile.md 時, Hugo 會到該 Hugo project 底下的 archetypes 目錄找尋 default.md, 依據其內容而在新的 Markdown 檔案產生相對的欄位. 一般來說在 GitHub 上所公開的模板可能也會附上相對的 default.md (其實很多也都沒附上), 使用者只要下載該模板後, 到該模板的目錄下找 archetypes 就可以發現.
@@ -446,10 +459,10 @@ Hours after saying he had a &amp;ldquo;very good meeting&amp;rdquo; with the pub
     
     <item>
       <title>讓 iTerm2 有很酷炫的外表!</title>
-      <link>https: //bradleetw.github.io/developmenttools/iterm2setting/</link>
+      <link>https://bradleetw.github.io/developmenttools/iterm2setting/</link>
       <pubDate>Sun, 29 Jul 2018 17:41:05 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/developmenttools/iterm2setting/</guid>
+      <guid>https://bradleetw.github.io/developmenttools/iterm2setting/</guid>
       <description>常看到電影裡的駭客在操作電腦時所用的 command line 都是那麼的酷, 今天就來速記一下參考網路上別人分享設定的步驟. 參考的來源: 超簡單！十分鐘打造漂亮又好用的 zsh command line 環境
 iTerm2 的安裝就沒記錄, 因為早就安裝過, 安裝流程也不難.
 安裝 zsh + oh-my-zsh zsh 是類似 bash, 在一般的使用上兩者差不多, 而 zsh 要再搭配上 oh-my-zsh(它是基於 zsh 的一個擴展工具集, 提供了豐富的擴展功能), 就可以設置有趣的主題風格(Themes), 而 oh-my-zsh 本身就提供了很多主題可以讓你挑選.
@@ -461,10 +474,10 @@ $ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh $ b
     
     <item>
       <title>如何利用 GitHub Pages 建立博客?</title>
-      <link>https: //bradleetw.github.io/web/deployment/githubblog/usegithub_1/</link>
+      <link>https://bradleetw.github.io/web/deployment/githubblog/usegithub_1/</link>
       <pubDate>Thu, 19 Jul 2018 14:31:14 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/web/deployment/githubblog/usegithub_1/</guid>
+      <guid>https://bradleetw.github.io/web/deployment/githubblog/usegithub_1/</guid>
       <description>什麼是 GitHub Pages(blog)? 在大家的印象中 GitHub 只是一個利用 git 讓大家免費放代碼, 追蹤 issues , 和各地好手討論的地方. 某天看到ㄧ篇文章的 URL 很特別, 是 https://xxxxxx.github.io/ , 和我平常看 GitHub 的 https://github.com 很像, 後來才知道 GitHub 可以讓使用者在上面放 blog(有空還是要看看人家的 &amp;ldquo;Read the guide&amp;rdquo;), 重點是&amp;rdquo;不用錢&amp;rdquo;(廢話, 不過被微軟買掉後會不會調整, 就不知了).
 refer to: What is GitHub Pages?
 為什麼要使用 GitHub 來架設 blog? 在嘗試 GitHub 架設 blog 之前, 我正在學習使用 Google Cloud platfrom 試著架設 blog 網站, 自己申請域名, 申請 SSL, 突然想起 GitHub 上也有 blog 功能而且我也還沒試過, 查了一下, 還蠻容易設定的, 而且省去申請域名, SSL, 不用擔心服務器防火牆的相關問題, 當然你必須要有 GitHub 帳號(廢話 ~).</description>
@@ -472,10 +485,10 @@ refer to: What is GitHub Pages?
     
     <item>
       <title>透過調整 config.toml 設定 Hugo 網站(1)</title>
-      <link>https: //bradleetw.github.io/web/staticsitegenerator/hugo/usehugo_2/</link>
+      <link>https://bradleetw.github.io/web/staticsitegenerator/hugo/usehugo_2/</link>
       <pubDate>Tue, 17 Jul 2018 15:10:22 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/web/staticsitegenerator/hugo/usehugo_2/</guid>
+      <guid>https://bradleetw.github.io/web/staticsitegenerator/hugo/usehugo_2/</guid>
       <description>透過合適的模板來學習調整 Hugo 網站 一般來說在 GitHub 上的每一個模板除了使用說明檔(Readme.md)之外, 也會附上如何使用的範例, 例如你可以在 themes/ananke/exampleSite (ananke 換成你所下載的模板名稱)中看到相關的使用範例, 透過這些也可以很快上手 Hugo 網站的調整設定. 不過我也下載過很多沒附上 exampleSite 的模板, 而且Readme.md 也不是寫給初學者看的, 造成學習上的難度. 所以初學者挑選學習的模板請謹慎. 官方 Quick start 中所用的模板 ananke 就涵蓋這些資料.
 config.toml Hugo 網站主要是透過 config.toml 這個檔案來調控, 當你透過 $ hugo new site YourWebSite 建立空網站時 Hugo 就幫你建立一個 config.toml (也支持 yaml 和 json 格式, 預設是 toml 格式).
 直接先用所下載模板提供的 config.toml, themes/ananke/exampleSite/config.toml 取代原本 config.toml, 了解一下模板的 README.md, 再來更改相關的欄位.
@@ -485,10 +498,10 @@ config.toml Hugo 網站主要是透過 config.toml 這個檔案來調控, 當你
     
     <item>
       <title>使用Hugo產生靜態網頁</title>
-      <link>https: //bradleetw.github.io/web/staticsitegenerator/hugo/usehugo_1/</link>
+      <link>https://bradleetw.github.io/web/staticsitegenerator/hugo/usehugo_1/</link>
       <pubDate>Tue, 17 Jul 2018 12:00:00 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/web/staticsitegenerator/hugo/usehugo_1/</guid>
+      <guid>https://bradleetw.github.io/web/staticsitegenerator/hugo/usehugo_1/</guid>
       <description>為什麼要用靜態網頁產生器(Static Site Generators)? 靜態網頁產生器一般都會有很多現成的模板(template), 只要相關設定正確, 使用者只要專心編寫你的內容即可(但只要你有強迫症, 可能就會想要自己調整更多的細節).
 原本我不知有這類的工具, 是因為在學習別的項目時看到別人的文章, 只用一兩句話描述說可以用Hugo很快產生網頁, 只要上網查找學習就可以, 然後我就上當了&amp;hellip;
 靜態網頁產生器這類工具確實可以很快產生網頁, 只要套一套現成模板, 輸入內容即可, 而且網路上也可以找到學習資源, 但是也可能因為使用這類工具太“簡單”, 相關的學習資源就沒有我預期的易懂, 所以我花了超乎預期的時間來了解使用Hugo.

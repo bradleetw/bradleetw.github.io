@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A.I. on 布萊德的學習網站</title>
-    <link>https: //bradleetw.github.io/machinelearning/</link>
+    <link>https://bradleetw.github.io/machinelearning/</link>
     <description>Recent content in A.I. on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 04 Mar 2019 17:52:02 +0800</lastBuildDate>
     
-	<atom:link href="https: //bradleetw.github.io/machinelearning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bradleetw.github.io/machinelearning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[Datasets 1]如何使用 tf.data.Dataset ?</title>
-      <link>https: //bradleetw.github.io/machinelearning/tensorflow/02_how_to_use_dataset_0304/</link>
+      <link>https://bradleetw.github.io/machinelearning/tensorflow/02_how_to_use_dataset_0304/</link>
       <pubDate>Mon, 04 Mar 2019 17:52:02 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/tensorflow/02_how_to_use_dataset_0304/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/tensorflow/02_how_to_use_dataset_0304/</guid>
       <description></description>
     </item>
     
     <item>
       <title>[GoogleResoure][ML Concepts] 02 Descending Into ML</title>
-      <link>https: //bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/</link>
+      <link>https://bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/</link>
       <pubDate>Tue, 23 Oct 2018 20:32:35 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/google_ml_concepts/02_descendingintoml_1023/</guid>
       <description>Source: https://developers.google.com/machine-learning/crash-course/descending-into-ml/video-lecture
 Descending into ML Linear regression is a method for finding the straight line or hyperplane that best fits a set of points. This module explores linear regression intuitively before laying the groundwork for a machine learning approach to linear regression.
 Learning Objectives  Refresh your memory on line fitting.
@@ -34,10 +34,10 @@ Learning Objectives  Refresh your memory on line fitting.
     
     <item>
       <title>[GoogleResoure][ML Concepts] 01 Fundamental Machine Learning Terminology</title>
-      <link>https: //bradleetw.github.io/machinelearning/google_ml_concepts/01_framing_1018/</link>
+      <link>https://bradleetw.github.io/machinelearning/google_ml_concepts/01_framing_1018/</link>
       <pubDate>Thu, 18 Oct 2018 21:43:19 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/google_ml_concepts/01_framing_1018/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/google_ml_concepts/01_framing_1018/</guid>
       <description>Source: https://developers.google.com/machine-learning/crash-course/framing/ml-terminology
 Framing  How to frame a task as a machine learning problem  Learning Objectives  Refresh the fundamental machine learning terms.
  Explore various uses of machine learning.
@@ -46,10 +46,10 @@ Framing  How to frame a task as a machine learning problem  Learning Objectives 
     
     <item>
       <title>[DataScience][TreeBasedMethod] Random Forests (1)</title>
-      <link>https: //bradleetw.github.io/machinelearning/algorithm/tb_randomforest_01_1016/</link>
+      <link>https://bradleetw.github.io/machinelearning/algorithm/tb_randomforest_01_1016/</link>
       <pubDate>Tue, 16 Oct 2018 12:59:33 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/algorithm/tb_randomforest_01_1016/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/algorithm/tb_randomforest_01_1016/</guid>
       <description>Random Forests explained intuitively Original Post:https://www.datasciencecentral.com/profiles/blogs/random-forests-explained-intuitively
 What is the Random Forest Forest Random forest is a collection of many decision trees. Instead of relying on a single decision tree, you build many decision trees say 100 of them. And you know what a collection of trees is called - forest.
 Random There are two levels of randomness in this alforithm:
@@ -58,10 +58,10 @@ Random There are two levels of randomness in this alforithm:
     
     <item>
       <title>[TakeNotes] In demand Skills for Data Scientists</title>
-      <link>https: //bradleetw.github.io/machinelearning/takenotestfromweb/00_themostindemandskillsfordatascientists_1015/</link>
+      <link>https://bradleetw.github.io/machinelearning/takenotestfromweb/00_themostindemandskillsfordatascientists_1015/</link>
       <pubDate>Mon, 15 Oct 2018 14:22:02 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/takenotestfromweb/00_themostindemandskillsfordatascientists_1015/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/takenotestfromweb/00_themostindemandskillsfordatascientists_1015/</guid>
       <description>Original Post: https://towardsdatascience.com/the-most-in-demand-skills-for-data-scientists-4a4a8db896db
 https://www.kaggle.com/discdiver/the-most-in-demand-skills-for-data-scientists/
 The Most in Demand Skills for Data Scientists Data scientists are expected to know a lot,
@@ -71,10 +71,10 @@ The related data from (2018, Oct)  LinkedIn Indeed: https://www.indeed.com Simpl
     
     <item>
       <title>[Data Visualization] Exploratory data analysis</title>
-      <link>https: //bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</link>
+      <link>https://bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</link>
       <pubDate>Wed, 10 Oct 2018 09:24:33 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/visualtool/00_eda_1010/</guid>
       <description>Exploratory data analysis(EDA) In statistics, exploratory data analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods.
 The objectives of EDA are to:
  Suggest hypotheses about the causes of observed phenomena
@@ -85,10 +85,10 @@ The objectives of EDA are to:
     
     <item>
       <title>[Machine Learning] Resources for CS229 - Machine Learning</title>
-      <link>https: //bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</link>
+      <link>https://bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</link>
       <pubDate>Sun, 26 Aug 2018 21:56:50 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</guid>
+      <guid>https://bradleetw.github.io/machinelearning/stanford_cheatsheet_0826/</guid>
       <description>https://stanford.edu/~shervine/teaching/cs-229.html
 一位使丹佛大學的 Data Science track of the Computational and Mathematical Engineering department 研究生, Shervine, 在 Machine learning 的課程中所準備的相關資料.
 Probabilities and Statistics refresher Linear Algebra and Calculus refresher Deep Learning cheatsheet Supervised Learning cheatsheet Unsupervised Learning cheatsheet Machine Learning tips and tricks cheatsheet https://github.com/afshinea/stanford-cs-229-machine-learning</description>

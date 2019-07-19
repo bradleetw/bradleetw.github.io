@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on 布萊德的學習網站</title>
-    <link>https: //bradleetw.github.io/python/</link>
+    <link>https://bradleetw.github.io/python/</link>
     <description>Recent content in Python on 布萊德的學習網站</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 30 Nov 2018 10:01:10 +0800</lastBuildDate>
     
-	<atom:link href="https: //bradleetw.github.io/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bradleetw.github.io/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[Python] Exceptions: An introductions</title>
-      <link>https: //bradleetw.github.io/python/exceptions_1130/</link>
+      <link>https://bradleetw.github.io/python/exceptions_1130/</link>
       <pubDate>Fri, 30 Nov 2018 10:01:10 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/python/exceptions_1130/</guid>
+      <guid>https://bradleetw.github.io/python/exceptions_1130/</guid>
       <description>Refer to https://realpython.com/python-exceptions/
 Raising an Exception Example
 x = 10 if x &amp;gt; 5: raise Exception(&amp;#39;x should not exceed 5.&amp;#39;) The AssertionError Exception refer to https://dbader.org/blog/python-assert-tutorial
@@ -26,10 +26,10 @@ But if the assert condition evaluates to False, it raises an AssertionError exce
     
     <item>
       <title>[Python][Class] __str__ v.s. __repr__</title>
-      <link>https: //bradleetw.github.io/python/class_usage/str_repr_difference_1022/</link>
+      <link>https://bradleetw.github.io/python/class_usage/str_repr_difference_1022/</link>
       <pubDate>Mon, 22 Oct 2018 09:54:35 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/python/class_usage/str_repr_difference_1022/</guid>
+      <guid>https://bradleetw.github.io/python/class_usage/str_repr_difference_1022/</guid>
       <description>object._ _ str _ _(self) Purpose[Readability]: return a string which is a more convenient or concise representation can be used.
 object._ _ repr _ _(self) Purpose[Unambiguous]: return a string which should look like a valid Python expression that could be used to recreate an object with the same value (given an appropriate environemnt).
  If _ _ repr _ _ is defined, and _ _ str _ _ is not, the object will behave as though _ _ str _ _= _ _ repr _ _.</description>
@@ -37,10 +37,10 @@ object._ _ repr _ _(self) Purpose[Unambiguous]: return a string which should loo
     
     <item>
       <title>[Python] Comprehensions Concepts</title>
-      <link>https: //bradleetw.github.io/python/comprehension_01_0930/</link>
+      <link>https://bradleetw.github.io/python/comprehension_01_0930/</link>
       <pubDate>Sun, 30 Sep 2018 10:42:24 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/python/comprehension_01_0930/</guid>
+      <guid>https://bradleetw.github.io/python/comprehension_01_0930/</guid>
       <description>What is the Comprehension? 這個 Python 必須懂的高階使用概念, 在官方的資料中並沒有單獨 comprehension 的章節, 而是可以看到如下的詞:
  List Comprehension Set Comprehension Dict Comprehension Asynchronous Comprehension (New syntax features in 3.6)  而線上的資料大都從 List Comprehension 開始介紹這個概念. Python List Comprehensions: Explained Visually, 這篇由 Tery Hunner 邊寫的內容, 是我看到很多人引用來介紹的文章.
 Sometimes a programming design pattern becomes common enough to warrant its own special syntax. Python’s list comprehensions are a prime example of such a syntactic sugar. &amp;ndash; Tery Hunner.</description>
@@ -48,10 +48,10 @@ Sometimes a programming design pattern becomes common enough to warrant its own 
     
     <item>
       <title>[Python] Some Tips</title>
-      <link>https: //bradleetw.github.io/python/tips_01_0930/</link>
+      <link>https://bradleetw.github.io/python/tips_01_0930/</link>
       <pubDate>Sun, 30 Sep 2018 09:30:57 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/python/tips_01_0930/</guid>
+      <guid>https://bradleetw.github.io/python/tips_01_0930/</guid>
       <description>原帖: Python开发的10个小贴士
 Tips 1: List Comprehension [Python] Comprehensions Concepts
 Tips 2: Directly Get Value of List object Bad bag = [1, 2, 3, 4, 5] for i in range(len(bag)): print(bag[i]) Good bag = [1, 2, 3, 4, 5] for i in bag: print(i) Get the index of list itme if you need bag = [1, 2, 3, 4, 5] for index, element in enumerate(bag): print(index, element) Tips 3: Exchange the value of variables Bad a = 5 b = 10 tmp = a a = b b = tmp Good a = 5 b = 10 a, b = b, a Tips 4: Initialize List General bag = [] for _ in range(10): bag.</description>
@@ -59,10 +59,10 @@ Tips 2: Directly Get Value of List object Bad bag = [1, 2, 3, 4, 5] for i in ran
     
     <item>
       <title>[Python] virtualenv, virtualenvwrapper, pyenv, and pipenv</title>
-      <link>https: //bradleetw.github.io/python/pipenv_0918/</link>
+      <link>https://bradleetw.github.io/python/pipenv_0918/</link>
       <pubDate>Tue, 18 Sep 2018 12:17:10 +0800</pubDate>
       
-      <guid>https: //bradleetw.github.io/python/pipenv_0918/</guid>
+      <guid>https://bradleetw.github.io/python/pipenv_0918/</guid>
       <description>Python 為什麼需要虛擬開發環境 開發者的電腦中也許同時存在多個開發項目但需要同一個 package 的不同版本, 所以需要利用像是 virtualenv 這類的工具來建立不同的獨立開發環境.
 利用 virtualenv 建立虛擬開發環境 首先利用 pip 安裝: $ pip install virtualenv.
 建立虛擬環境 先為你要開發的項目建立一個目錄, 然後進入該附錄後, 執行以下命令來建立虛擬開發環境.
